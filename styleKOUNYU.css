@@ -17,12 +17,19 @@ position: fixed;
 text-align:center;
 }
 
+.yuubinotodoke{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .cart{
-margin-left: 300px;
+float: left;
+margin-left: 100px;
 }
 
 .kounyu{
-  margin-left:300px;
+  float: right;
+  margin-right:100px;
 }
 
 .TOPNIMODORU{
