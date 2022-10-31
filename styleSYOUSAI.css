@@ -1,0 +1,32 @@
+body { padding-top: 95px; }
+
+
+.header{
+position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+}
+
+#container {
+  padding-top: 150px;
+}
+
+
+.cartcheck{
+float:left;
+margin-left: 100px;
+margin-right: 250px;
+}
+
+.img{
+    margin-bottom: 50px;
+}
+
+
+.row{
+    margin-top: 30px;
+}
+.syohin{
+padding-top: 130px;
+}
