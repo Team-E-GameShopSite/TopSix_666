@@ -1,4 +1,6 @@
-body { padding-top: 95px; }
+body {
+   padding-top: 95px;
+  }
 
 
 .header{
@@ -18,9 +20,20 @@ text-align:center;
 }
 
 .fs-3{
-text-align:center;
+margin-left: 270px;
 }
 
 .login{
 text-align:center;
+margin-top: 70px;
 }
+
+.owasure{
+margin-left: 900px;
+margin-top: 10px;
+  }
+
+  .sinki{
+    text-align:center;
+    margin-top: 15px;
+    }
