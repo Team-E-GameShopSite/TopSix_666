@@ -17,6 +17,18 @@ body {
  .fs-1{
     text-align:center;
     }
- .fs-3{
+ .naiyou{
     text-align: center;
+ }
+ .name{
+  margin-top: 4%;
+  margin-left: 20%;
+ }
+ .text{
+  margin-left: 20%;
+  width:50%;
+ }
+
+ .touroku{
+  text-align: center;
  }
