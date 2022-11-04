@@ -16,10 +16,12 @@ position: fixed;
  position:fixed; top:0;
 }
 
+.cartcheck{
+  float:left;
+  }
+  
 .thankyou{
 margin-top: 15%;
 }
 
-.cartcheck{
-float:left;
-}
+
