@@ -12,6 +12,14 @@ position: fixed;
   padding-top: 150px;
 }
 
+.sum{
+  text-align: center;
+}
+
+.name{
+margin-left: 20%;
+}
+
 .form{
   margin-left: 20%;
 }
@@ -19,8 +27,8 @@ position: fixed;
   margin-right: 20%;
 }
 
-.fs-1{
-text-align:center;
+.fs-2{
+text-align:left;
 }
 
 .yuubinotodoke{
