@@ -12,25 +12,32 @@ position: fixed;
   padding-top: 150px;
 }
 
+.form{
+  margin-left: 20%;
+}
+.form2{
+  margin-right: 20%;
+}
 
 .fs-1{
 text-align:center;
 }
 
-
 .yuubinotodoke{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .cart{
 float: left;
-margin-left: 100px;
+margin-left:10%;
+margin-top: 3%;
 }
 
 .kounyu{
   float: right;
-  margin-right:100px;
+  margin-right:10%;
+  margin-top: 3%;
 }
 
 .TOPNIMODORU{
