@@ -1,0 +1,48 @@
+body {
+    padding-top: 95px;
+   }
+ 
+ 
+ .header{
+ position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 10000;
+ }
+ 
+ #container {
+   padding-top: 150px;
+ }
+
+
+ 
+
+ .cart{
+ margin-top:10%;
+ margin-left: 15%;
+ float: left;
+ }
+
+ .favorite{
+    margin-top:10%;
+    margin-left:10%;
+    margin-right:10% ;
+    float: left;
+}
+
+.history{
+    margin-top:10%;
+    margin-right: 7%;
+    float: left;
+}
+
+.logout{
+    margin-top:10%;
+    margin-left: 70%;
+}
+
+.button{
+    margin-top:5%;
+    text-align: right;
+    margin-right:15%;
+}

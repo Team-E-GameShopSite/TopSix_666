@@ -13,22 +13,15 @@ body {
  #container {
    padding-top: 150px;
  }
- 
+
  .fs-1{
     text-align:center;
     }
- .naiyou{
-    text-align: center;
- }
- .name{
-  margin-top: 4%;
-  margin-left: 20%;
- }
- .text{
-  margin-left: 20%;
-  width:50%;
- }
+.kounyuu{
+   text-align: center;
+   }
 
- .touroku{
-  text-align: center;
- }
+   
+.OKINIIRI{
+    margin-top:150px;
+    }

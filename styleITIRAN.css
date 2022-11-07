@@ -9,14 +9,14 @@ position: fixed;
 }
 
 #container {
-  padding-top: 150px;
+  padding-top: 150%;
 }
 
 
 .itiran{
-  margin-left: 50px;
+  margin-left: 3%;
   float: left;
-  margin-right: 70px;
+  margin-right: 4%;
 }
 
 .sort{
@@ -25,10 +25,10 @@ position: fixed;
 
 .secondsort{
   float: left;
-  margin-right: 450px;
+  margin-right: 3%;
 }
 .col-sm-9{
-  margin-bottom: 10px;
+  margin-bottom: 10%;
 }
 
 .card{

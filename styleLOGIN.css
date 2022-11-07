@@ -20,20 +20,30 @@ text-align:center;
 }
 
 .fs-3{
-margin-left: 270px;
+
 }
+
+.name{
+  margin-top: 2%;
+
+ }
+ .text{
+  margin-left: 20%;
+  width:50%;
+ }
 
 .login{
 text-align:center;
-margin-top: 70px;
+margin-top: 2%;
 }
 
+
+
 .owasure{
-margin-left: 900px;
-margin-top: 10px;
+margin-left: 60%;
   }
 
   .sinki{
     text-align:center;
-    margin-top: 15px;
+    margin-top: 2%;
     }
