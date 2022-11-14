@@ -15,18 +15,34 @@ position: fixed;
 
 .cartcheck{
 float:left;
-margin-left: 5%;
-margin-right: 2%;
+margin-left: 7%;
+margin-right: 5%;
 }
 
 .img{
-    margin-bottom: 50px;
+   margin-bottom: 5%;
 }
 
+
+.price{
+margin-top: 5%;
+}
+
+.col-sm-4{
+margin-bottom: 5%;
+}
+
+.setumei{
+text-align: left;
+}
 
 .row{
     margin-top: 30%;
 }
 .syohin{
-padding-top: 10%;
+padding-top: 5%;
+}
+
+.suuryo{
+  width:5%;
 }

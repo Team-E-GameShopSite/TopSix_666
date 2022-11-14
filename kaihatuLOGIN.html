@@ -18,13 +18,13 @@
             document.getElementById("errorMsg").innerHTML="";
             if(mailPattern.test(mail)==false){
                 let errorMsgTag=document.createElement("p");
-                errorMsgTag.textContent="メールアドレスの形式が不正です。";
+                errorMsgTag.textContent="正しいメールアドレスを入力してください。メールアドレスの形式が不正です。";
                 document.getElementById("errorMsg").appendChild(errorMsgTag);
                 isSuccess =false;
             }
             if(passPattern.test(pass)==false){
                 let errorMsgTag=document.createElement("p");
-                errorMsgTag.textContent="パスワードは８文字以上で英字(大文字/小文字)、数字、記号が一つ以上含まれる必要があります";
+                errorMsgTag.textContent="正しいパスワードを入力してください。パスワードは８文字以上で英字(大文字/小文字)、数字、記号が一つ以上含まれる必要があります";
                 document.getElementById("errorMsg").appendChild(errorMsgTag);
                 isSuccess =false;
             }
@@ -48,9 +48,9 @@
             <a class="navbar-brand" href="kaihatuTOP.html">
               <img src="img/TopSix.png" alt="" width="85" height="70">
             </a>
-            <form class="d-flex">
+            <form class="d-flex" action="kaihatuITIRAN.html">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i>Search</button>
+              <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
               <a  href="kaihatuCART.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
               <a  href="kaihatuOKINIIRI.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
               <a  href="kaihatuLOGIN.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
@@ -64,10 +64,6 @@
             <div class="offset-md-3 col-md-6">
                 <h1 class="text-center mb-5">ログイン</h1>
                 <p class="fs-3">会員登録がお済みのお客様</p>
-                <div class="row">
-                    <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
-                    </div>
-                </div>
                 <label for="lastname">メールアドレス</label>
                 <div class="row">
                     <div class="col-md-12">
@@ -86,10 +82,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg"></div>
+                    <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
+                    </div>
                 </div>
+
+                
 
                 <div class="row">
                     <div class="col-md-12 mt-3">
