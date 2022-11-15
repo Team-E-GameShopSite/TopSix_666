@@ -23,14 +23,20 @@ position: fixed;
   float: left;
 }
 
+
 .secondsort{
   float: left;
   margin-right: 3%;
 }
+
 .col-sm-9{
   margin-bottom: 10%;
 }
 
 .card{
   color:black;
+}
+
+.price{
+  margin-top: 30%;
 }
