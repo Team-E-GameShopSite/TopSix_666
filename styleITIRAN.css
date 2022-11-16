@@ -37,6 +37,10 @@ position: fixed;
   color:black;
 }
 
+.card-body{
+height: 230px;
+}
+
 .price{
   margin-top: 30%;
 }
