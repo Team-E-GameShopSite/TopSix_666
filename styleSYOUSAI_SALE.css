@@ -1,0 +1,65 @@
+body { padding-top: 95px; }
+
+
+.header{
+position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+}
+
+#container {
+  padding-top: 150px;
+}
+
+
+.cartcheck{
+float:left;
+margin-left: 7%;
+margin-right: 5%;
+}
+
+.img{
+   margin-bottom: 5%;
+}
+
+
+
+
+.reprice{
+  margin-top: 80%;
+}
+
+.col-sm-4{
+margin-bottom: 5%;
+}
+
+.setumei{
+text-align: left;
+}
+
+.row{
+    margin-top: 30%;
+}
+.syohin{
+padding-top: 5%;
+}
+
+.price{
+  margin-top: 5%;
+  }
+
+  .delete{
+    margin-right: 5%;
+  }
+
+
+.delete{
+  text-decoration-line: line-through;
+  text-decoration-style:double;
+  text-decoration-color: red;
+}
+
+.suuryo{
+  width:5%;
+}
