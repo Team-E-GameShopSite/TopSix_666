@@ -23,14 +23,27 @@ position: fixed;
   float: left;
 }
 
+
 .secondsort{
   float: left;
   margin-right: 3%;
 }
+
 .col-sm-9{
   margin-bottom: 10%;
 }
 
+.col-md-2{
+  margin-bottom: 3%;
+}
 .card{
   color:black;
+}
+
+.card-body{
+height: 230px;
+}
+
+.price{
+  margin-top: 30%;
 }
