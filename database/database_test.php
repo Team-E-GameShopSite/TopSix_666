@@ -8,14 +8,14 @@
 
 $pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8','LAA1418145','topsix666');
 
-// $sql = 'INSERT INTO helloDB (text)
-//          VALUES (?)';
-// 
-//   $ps = $pdo->prepare($sql);
-//   $ps->bindValue(1,$_POST['text'],PDO::PARAM_STR);
-//   $ps->execute();
+$sql = 'INSERT INTO helloDB (text)
+        VALUES (?)';
 
-  echo "TEXTの登録完了ページ<br>>";
+$ps = $pdo->prepare($sql);
+$ps->bindValue(1,$_POST['text'],PDO::PARAM_STR);
+$ps->execute();
+
+  echo "TEXTの登録完了ページ<br>";
   echo '送ったメッセージは「'. $_POST['text'] .'」です。';
 
 ?>
