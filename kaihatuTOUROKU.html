@@ -36,31 +36,31 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <p class="fs-3">氏名</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="simei">
   </div>
   <div class="name">
     <p class="fs-3">氏名（フリガナ）</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="huri">
   </div>
   <div class="name">
     <p class="fs-3">メールアドレス</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(例)abc@abc.com">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(例)abc@abc.com" name="meado">
   </div>
   <div class="name">
     <p class="fs-3">パスワード</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="pass">
   </div>
   <div class="name">
     <p class="fs-3">郵便番号</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="(例)×××-××××">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="(例)×××-××××" name="yuubin">
   </div>
   <div class="name">
     <p class="fs-3">住所</p>

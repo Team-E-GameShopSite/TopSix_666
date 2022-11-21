@@ -14,15 +14,15 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 <body>
   <?php
 
-    echo "　　　　　名前　　　　　　　　　　　　　".$_POST['simei']."<br><br>";
+    echo "　　　　　氏名　　　　　　　　　　　　　".$_POST['simei']."<br><br>";
 
-    echo "　　　　フリガナ　　　　　　　　　　　".$_POST['huri']."<br><br>";
+    echo "　　　　氏名(フリガナ)　　　　　　　　　　　".$_POST['huri']."<br><br>";
 
     echo "メールアドレス　　　　　　　　".$_POST['meado']."<br><br>";
 
     echo "　　パスワード　　　　　　　　　　".$_POST['pass']."<br><br>";
 
-    echo "パスワード（確認用）　　　　　".$_POST['pass2']."<br><br>";
+    echo "パスワード（確認用）　　　　　".$_POST['yuubin']."<br><br>";
 
    ?>
 
