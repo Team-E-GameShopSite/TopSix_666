@@ -34,21 +34,21 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         <div class="col-sm-9">
         <a href="kaihatuSYOUSAI_SALE.php">
         <div class="card text-white">
-          <img src="img/nintendo.switch.jpg" class="card-img" alt="..." height="80">
+          <img src="img/game/nintendo.switch.jpg" class="card-img" alt="..." height="80">
         </div>
         </div>
         </a>
         <div class="col-sm-9">
         <a href="kaihatuSYOUSAI_SALE.php">
         <div class="card text-white">
-          <img src="img/pokemon1.jpg" class="card-img" alt="..."  height="80">
+          <img src="img/soft/pokemon/pokemon1.jpg" class="card-img" alt="..."  height="80">
         </div>
         </div>
         </a>
         <div class="col-sm-9">
         <a href="kaihatuSYOUSAI_SALE.php">
         <div class="card text-white">
-          <img src="img/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" class="card-img" alt="..."  height="80">
+          <img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" class="card-img" alt="..."  height="80">
         </div>
         </div>
         </a>
@@ -56,21 +56,21 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         <div class="col-sm-9">
         <a href="kaihatuSYOUSAI.php">
         <div class="card  text-white">
-          <img src="img/spra.jpg" class="card-img" alt="..." height="100">
+          <img src="img/soft/spra/spra.jpg" class="card-img" alt="..." height="100">
         </div>
         </div>
         </a>
         <div class="col-sm-9">
         <a href="kaihatuSYOUSAI.php">
         <div class="card  text-white">
-          <img src="img/pokemon(2).jpg" class="card-img" alt="..." height="100">
+          <img src="img/soft/pokemon/pokemon(2).jpg" class="card-img" alt="..." height="100">
         </div>
         </div>
         </a>
         <div class="col-sm-9">
         <a href="kaihatuSYOUSAI.php">
         <div class="card  text-white">
-          <img src="img/procon.jpg" class="card-img" alt="..."  height="100">
+          <img src="img/otherproduct/procon/procon.jpg" class="card-img" alt="..."  height="100">
         </div>
         </div>
         </a> 
@@ -265,6 +265,10 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
    
    
          </div>
+        </div>
+
+        <div class="next">
+        <a  href="kaihatuITIRAN.html" style="color:black">次へ>></a>
         </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
