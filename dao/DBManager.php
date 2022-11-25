@@ -12,7 +12,5 @@ $ps = $pdo->prepare($sql);
 $ps->bindValue(1,$_POST['text'],PDO::PARAM_STR);
 $ps->execute();
 
-  echo "TEXTの登録完了ページ<br>";
-  echo '送ったメッセージは「'. $_POST['text'] .'」です。';
 
 ?>
