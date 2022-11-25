@@ -15,15 +15,15 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <div class="header">
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="kaihatuTOP.html">
+      <a class="navbar-brand" href="kaihatuTOP.php">
         <img src="img/TopSix.png" alt="" width="85" height="70">
       </a>
-      <form class="d-flex" action="kaihatuITIRAN.html">
+      <form class="d-flex" action="kaihatuITIRAN.php">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
-        <a  href="kaihatuCART.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
-        <a  href="kaihatuOKINIIRI.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
-        <a  href="kaihatuLOGIN.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
+        <a  href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
+        <a  href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
+        <a  href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
       </form>
     </div>
   </nav>
@@ -31,14 +31,14 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" width="">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2500">
-            <a  href="kaihatuSYOUSAI.html"><img src="img/game/switch.webp" alt = "任天堂switch" width = "1200" height = "630" class="d-block w-100" class="d-block w-100" alt="..." ></a>
+          <div class="carousel-item active" data-bs-interval="1000">
+            <a  href="kaihatuSYOUSAI.php"><img src="img/switch.webp" alt = "任天堂switch" width = "1200" height = "630" class="d-block w-100" class="d-block w-100" alt="..." ></a>
           </div>
-          <div class="carousel-item " data-bs-interval="2500">
-            <a  href="kaihatuSYOUSAI.html"><img src="img/soft/spra/sns.webp" alt = "任天堂switch" width = "1200" height = "630" class="d-block w-100" class="d-block w-100" alt="..." ></a>
+          <div class="carousel-item " data-bs-interval="1000">
+            <a  href="kaihatuSYOUSAI.php"><img src="img/sns.webp" alt = "任天堂switch" width = "1200" height = "630" class="d-block w-100" class="d-block w-100" alt="..." ></a>
           </div>
-          <div class="carousel-item " data-bs-interval="2500">
-            <a  href="kaihatuSYOUSAI.html"><img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" alt = "任天堂switch" width = "1200" height = "630" class="d-block w-100"  class="d-block w-100" alt="..."></a>
+          <div class="carousel-item " data-bs-interval="1000">
+            <a  href="kaihatuSYOUSAI.php"><img src="img/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" alt = "任天堂switch" width = "1200" height = "630" class="d-block w-100"  class="d-block w-100" alt="..."></a>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -58,7 +58,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         <div class="row mb-3 gr-3">
         <div class="col-sm-6">
           <div class="card bg-dark text-white">
-            <a  href="kaihatuITIRAN.html" style="color:whitesmoke"><img src="img/soft/pokemon/mainvisual_02_RGB._TTW_.png" class="card-img" alt="..."  height="353%">
+            <a  href="kaihatuITIRAN.php" style="color:whitesmoke"><img src="img/mainvisual_02_RGB._TTW_.png" class="card-img" alt="..."  height="353%">
             <div class="card-img-overlay">
               <h5 class="card-title">ゲームソフト</h5>
               <p class="card-text">様々なジャンルのゲームソフトを取り扱っています</p>
@@ -68,7 +68,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         </div>
         <div class="col-sm-6">
           <div class="card bg-dark text-white">
-            <a  href="kaihatuITIRAN.html" style="color:white"><img src="img/otherproduct/gamingdevice1.jpg" class="card-img" alt="..."  height="353%">
+            <a  href="kaihatuITIRAN.php" style="color:white"><img src="img/gamingdevice1.jpg" class="card-img" alt="..."  height="353%">
             <div class="card-img-overlay">
               <h5 class="card-title">その他周辺機器</h5>
               <p class="card-text">様々な周辺機器を取り扱っています</p>
@@ -82,7 +82,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       <div class="row">
         <div class="col-sm-6">
           <div class="card bg-dark text-white">
-            <a  href="kaihatuITIRAN.html" style="color:black"><img src="img/game/PS5.jpg" class="card-img" alt="..."   height="353%">
+            <a  href="kaihatuITIRAN.php" style="color:black"><img src="img/PS5.jpg" class="card-img" alt="..."   height="353%">
             <div class="card-img-overlay">
               <h5 class="card-title">ゲーム機</h5>
               <p class="card-text">様々なゲーム機を取り扱っています</p>
@@ -92,7 +92,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         </div>
         <div class="col-sm-6">
           <div class="card bg-dark text-white">
-            <a  href="kaihatuITIRAN.html" style="color:white"><img src="img/gamingPC/gtunenextgearcase .png" class="card-img" alt="..."   height="353%">
+            <a  href="kaihatuITIRAN.php" style="color:white"><img src="img/gtunenextgearcase .png" class="card-img" alt="..."   height="353%">
             <div class="card-img-overlay">
               <h5 class="card-title">ゲーミングPC</h5>
               <p class="card-text">様々なゲーミングPCを取り扱っています</p>

@@ -3,7 +3,7 @@
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content=Type">
 <style type="text/css"></style>
-<link href="styleSYOUSAI.css" rel="stylesheet" type="text/css">
+<link href="styleSYOUSAI_SALE.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -18,15 +18,15 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <div class="header">
     <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-       <a class="navbar-brand" href="kaihatuTOP.html">
+       <a class="navbar-brand" href="kaihatuTOP.php">
           <img src="img/TopSix.png" alt="" width="85" height="70">
        </a>
-       <form class="d-flex" action="kaihatuITIRAN.html">
+       <form class="d-flex" action="kaihatuITIRAN.php">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
-              <a  href="kaihatuCART.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
-              <a  href="kaihatuOKINIIRI.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
-              <a  href="kaihatuLOGIN.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
+              <a  href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
+              <a  href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
+              <a  href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
             </form>
     </div>
     </nav>
@@ -60,7 +60,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
   <div class="row">
     <div class="col-sm-6">
-      <a href="kaihatuTOP.html#contactt"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg"   type="button">お問い合わせ</button></a>
+      <a href="kaihatuTOP.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg"   type="button">お問い合わせ</button></a>
     </div>
 
     <div class="col-sm-6">
@@ -71,7 +71,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
  <div class="syohin">
    <h1 class="title">ポケットモンスター バイオレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h1>
-   <h1 class="price">6578円</h1>
+   <h1 class="price"><s class="delete">6578円</s><font color="red">5678円</font></h1>
    <select ="suuryo">
     <option value="one">1</option>
     <option value="two">2</option>
@@ -85,13 +85,13 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <option value="ten">10</option>
    </select>
    
-            <a href="kaihatuCART.html"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg   type="button">カートに入れる<i class="bi bi-cart"></i></button></a>
+            <a href="kaihatuCART.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg   type="button">カートに入れる<i class="bi bi-cart"></i></button></a>
   </div>
 
   <div class="setumei"> 
         <p>『ポケットモンスター』シリーズはオープンワールドへ。ポケモンを捕まえたり、交換したり、育ててバトルに挑んだり。『ポケットモンスター』シリーズならではの遊びを、""オープンワールド""の世界で楽しめます。大自然や街には、至る所にポケモンたちが息づいており、境目なく広がるフィールドを自由に冒険することができます。
           【最初のパートナー】あなたは、くさタイプの「ニャオハ」、ほのおタイプの「ホゲータ」、みずタイプの「クワッス」の3匹の中から1匹を選び冒険に出ることになります。はたして、どのように出会い、どのような物語を繰り広げるのでしょうか。
-          【伝説のポケモン「ミライドン」】他のポケモンたちをはるかに凌駕する力を持つといわれていますが、その生態は謎に包まれています。「ミライドン」の背に乗ることで、陸を走ったり、水上を泳いだり、滑空したり、崖を登ったりすることができ、さらに冒険の幅が広がります"														
+          【伝説のポケモン「ミライドン」】他のポケモンたちをはるかに凌駕する力を持つといわれていますが、その生態は謎に包まれています。「ミライドン」の背に乗ることで、陸を走ったり、水上を泳いだり、滑空したり、崖を登ったりすることができ、さらに冒険の幅が広がります"													
         </p>
   </div>
 
