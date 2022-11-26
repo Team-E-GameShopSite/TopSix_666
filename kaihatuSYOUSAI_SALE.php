@@ -18,15 +18,15 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <div class="header">
     <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-       <a class="navbar-brand" href="kaihatuTOP.html">
+       <a class="navbar-brand" href="kaihatuTOP.php">
           <img src="img/TopSix.png" alt="" width="85" height="70">
        </a>
-       <form class="d-flex" action="kaihatuITIRAN.html">
+       <form class="d-flex" action="kaihatuITIRAN.php">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
-              <a  href="kaihatuCART.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
-              <a  href="kaihatuOKINIIRI.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
-              <a  href="kaihatuLOGIN.html"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
+              <a  href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
+              <a  href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
+              <a  href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
             </form>
     </div>
     </nav>
@@ -60,7 +60,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
   <div class="row">
     <div class="col-sm-6">
-      <a href="kaihatuTOP.html#contactt"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg"   type="button">お問い合わせ</button></a>
+      <a href="kaihatuTOP.php#contactt"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg"   type="button">お問い合わせ</button></a>
     </div>
 
     <div class="col-sm-6">
@@ -85,7 +85,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <option value="ten">10</option>
    </select>
    
-            <a href="kaihatuCART.html"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg   type="button">カートに入れる<i class="bi bi-cart"></i></button></a>
+            <a href="kaihatuCART.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg   type="button">カートに入れる<i class="bi bi-cart"></i></button></a>
   </div>
 
   <div class="setumei"> 
