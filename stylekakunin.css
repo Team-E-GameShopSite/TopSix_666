@@ -1,0 +1,21 @@
+body { padding-top: 95px; }
+
+
+.header{
+position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+}
+
+#container {
+  padding-top: 150px;
+}
+
+.center{
+    text-align: center;
+}
+.touroku{
+    text-align: center;
+    color: red;
+}
