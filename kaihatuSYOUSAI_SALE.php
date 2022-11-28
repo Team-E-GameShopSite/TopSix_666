@@ -86,6 +86,7 @@
     <option value="nine">9</option>
     <option value="ten">10</option>
    </select>
+   
     <a href="kaihatuCART.php" class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg   type=" button">カートに入れる<i class="bi bi-cart"></i></button></a>
   </div>
 

@@ -54,10 +54,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
     echo"生年月日<br>"
     .$_POST['birthday']."<br><br>";
-
    ?>
    <a href="kaihatuTOUROKU.php">戻る</a>
-   <a href="kaihatuTOP.php">登録します</a>
+   <a class="simasu" href="kaihatuTOP.php">登録します</a>
    </h1>
 
 </body>
