@@ -12,20 +12,14 @@ position: fixed;
   padding-top: 150px;
 }
 
-
-.fs-1{
-text-align:center;
+.center{
+    text-align: center;
+}
+.touroku{
+    text-align: center;
+    color: red;
 }
 
-.TOPNIMODORU{
-text-align:center;
-}
-
-
-
-
-
-
-.OKINIIRI{
-margin-top:150px;
+.simasu{
+  margin-left: 60%;
 }

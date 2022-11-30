@@ -28,6 +28,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </div>
   </nav>
   </div>
+  <form action="TOUROKUkakunin.php" method="post">
   <p class="fs-1">会員登録</p>
   <div class="naiyou">
   <p class="fs-3">下記の内容をご入力の上、おすすめください</p>
@@ -36,73 +37,72 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <p class="fs-3">氏名</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="simei">
+    <input type="text" class="form-control" id="exampleInputEmail1"  name="simei">
   </div>
   <div class="name">
     <p class="fs-3">氏名（フリガナ）</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="huri">
+    <input type="text" class="form-control" id="exampleInputEmail1"  name="huri">
   </div>
   <div class="name">
     <p class="fs-3">メールアドレス</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(例)abc@abc.com" name="meado">
+    <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="(例)abc@abc.com" name="meado">
   </div>
   <div class="name">
     <p class="fs-3">パスワード</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="pass">
+    <input type="text" class="form-control" id="exampleInputEmail1"  name="pass">
   </div>
   <div class="name">
     <p class="fs-3">郵便番号</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="(例)×××-××××" name="yuubin">
+    <input type="text" class="form-control" id="exampleInputEmail1"   placeholder="(例)×××-××××" name="yuubin">
   </div>
   <div class="name">
     <p class="fs-3">住所</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(例)東京都○○市△△町○○マンション△△号室">
+    <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="(例)東京都○○市△△町○○マンション△△号室" name="jyusyo">
   </div>
   <div class="name">
     <p class="fs-3">電話番号</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="exampleInputEmail1" name="callnumber">
   </div>
   <div class="name">
     <p class="fs-3">生年月日</p>
   </div>
   <div class="text">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(例)0000年00月00日">
+    <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="(例)0000年00月00日" name="birthday">
   </div>
   <div class="name">
     <p class="fs-3">性別</p>
   </div>
   <div class="text">
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <input type="radio" class="form-check-input"  name="flexRadioDefault" value="男">
       <p class="fs-3">男</p>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+      <input type="radio" class="form-check-input"  name="flexRadioDefault" value="女">
       <p class="fs-3">女</p>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <input type="radio" class="form-check-input" name="flexRadioDefault" value="答えたくない" checked="checked">
       <p class="fs-3">答えたくない</p>
     </div>
   </div>
  
  <div class="touroku"> 
-    <a href="kaihatuTOP.php">
-    <button class="btn btn-primary btn-lg" type="button">登録</button>
-    </a>
+    <input type="submit" class="btn btn-primary btn-lg"  value="登録">
   </div>
+</form>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

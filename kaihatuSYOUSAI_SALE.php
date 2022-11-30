@@ -64,7 +64,9 @@
       </div>
 
       <div class="col-sm-6">
-        <a class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg" type="button">お気に入り<i class="bi bi-star"></i></button></a>
+      <form action="kaihatuOKINIIRI.php" action="post">
+      <input type="submit"   class=" btn btn-outline-primary btn-lg " value="お気に入り">
+      </form>
       </div>
     </div>
   </div>
@@ -74,20 +76,22 @@
     <h1 class="price"><s class="delete">6578円</s>
       <font color="red">5678円</font>
     </h1>
-    <select="suuryo">
-      <option value="one">1</option>
-      <option value="two">2</option>
-      <option value="three">3</option>
-      <option value="four">4</option>
-      <option value="five">5</option>
-      <option value="six">6</option>
-      <option value="seven">7</option>
-      <option value="eight">8</option>
-      <option value="nine">9</option>
-      <option value="ten">10</option>
-    </select>
-
-    <a href="kaihatuCART.php" class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg   type=" button">カートに入れる<i class="bi bi-cart"></i></button></a>
+    <form action="kaihatuCART.php" post="post">
+    <select ="suuryo">
+    <option value="one">1</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+    <option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+    <option value="eight">8</option>
+    <option value="nine">9</option>
+    <option value="ten">10</option>
+   </select>
+   
+   <input type="submit"   class="CARTIRERU  btn btn-outline-primary btn-lg " value="カートに入れる">
+</form>
   </div>
 
   <div class="setumei">
