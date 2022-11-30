@@ -64,7 +64,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </div>
 
     <div class="col-sm-6">
-      <a  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg "   type="button">お気に入り<i class="bi bi-star"></i></button></a>
+    <form action="kaihatuOKINIIRI.php" action="post">
+      <input type="submit"   class=" btn btn-outline-primary btn-lg " value="お気に入り">
     </div>
   </div>
 </div> 

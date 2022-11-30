@@ -64,7 +64,9 @@
       </div>
 
       <div class="col-sm-6">
-        <a class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg" type="button">お気に入り<i class="bi bi-star"></i></button></a>
+      <form action="kaihatuOKINIIRI.php" action="post">
+      <input type="submit"   class=" btn btn-outline-primary btn-lg " value="お気に入り">
+      </form>
       </div>
     </div>
   </div>
