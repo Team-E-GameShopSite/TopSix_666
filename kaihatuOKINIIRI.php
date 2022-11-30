@@ -30,10 +30,18 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   </div>
 
   <p class="fs-1">お気に入り</p>
-  <div class="OKINIIRI">
-  <p class="fs-1">お気に入りに登録したものはありません</p>
-  </div>
   <div class="TOPNIMODORU">
+  <?php
+$pdo = new PDO('mysql:host=localhost;dbname=webdb;charset=utf8','webuser','abccsd2');
+
+$sql="SELECT * FROM tweet_tbl";
+$selectData =$pdo->query($sql);
+
+foreach($selectData as $row){
+    echo "<h1>".$row['tweat']."<br></h1>";
+    echo"<h3>-------------------------------<br></h3>";
+}
+?>
   <a href="kaihatuTOP.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">TOPに戻る→</button></a>
   </div>
 
