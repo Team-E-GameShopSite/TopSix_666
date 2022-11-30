@@ -54,6 +54,17 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
     echo"生年月日<br>"
     .$_POST['birthday']."<br><br>";
+
+    echo"性別<br>";
+    switch($_POST["flexRadioDefault"]){
+      case "男":
+        echo"男<br>";break;
+      case "女":
+        echo"女<br>";break;
+      case"答えたくない":
+        echo "答えたくない<br>";break;
+        
+      }
    ?>
    <a href="kaihatuTOUROKU.php">戻る</a>
    <a class="simasu" href="kaihatuTOP.php">登録します</a>

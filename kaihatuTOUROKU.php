@@ -94,7 +94,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       <p class="fs-3">女</p>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" name="flexRadioDefault" value="答えたくない">
+      <input type="radio" class="form-check-input" name="flexRadioDefault" value="答えたくない" checked="checked">
       <p class="fs-3">答えたくない</p>
     </div>
   </div>
