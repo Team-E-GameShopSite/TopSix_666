@@ -29,7 +29,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   </nav>
   </div>
 
-  <p class="fs-1">ショッピングカート</p>
+  <p class="fs-1">ショッピングカート<i class="bi bi-cart"></i></p>
   <div class="TOPNIMODORU">
   <?php
 $pdo = new PDO('mysql:host=localhost;dbname=webdb;charset=utf8','webuser','abccsd2');
