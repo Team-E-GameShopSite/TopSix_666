@@ -64,7 +64,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </div>
 
     <div class="col-sm-6">
-      <a  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg"   type="button">お気に入り<i class="bi bi-star"></i></button></a>
+      <a  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg "   type="button">お気に入り<i class="bi bi-star"></i></button></a>
     </div>
   </div>
 </div> 
@@ -72,6 +72,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
  <div class="syohin">
    <h1 class="title">ポケットモンスター バイオレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h1>
    <h1 class="price">6578円</h1>
+   <form action="kaihatuCART.php" method="post">
    <select ="suuryo">
     <option value="one">1</option>
     <option value="two">2</option>
@@ -84,8 +85,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <option value="nine">9</option>
     <option value="ten">10</option>
    </select>
-   
-            <a href="kaihatuCART.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg   type="button">カートに入れる<i class="bi bi-cart"></i></button></a>
+ <input type="submit"   class="CARTIRERU  btn btn-outline-primary btn-lg " value="カートに入れる">
+</form>
   <div class="setumei"> 
         <p>『ポケットモンスター』シリーズはオープンワールドへ。ポケモンを捕まえたり、交換したり、育ててバトルに挑んだり。『ポケットモンスター』シリーズならではの遊びを、""オープンワールド""の世界で楽しめます。大自然や街には、至る所にポケモンたちが息づいており、境目なく広がるフィールドを自由に冒険することができます。
           【最初のパートナー】あなたは、くさタイプの「ニャオハ」、ほのおタイプの「ホゲータ」、みずタイプの「クワッス」の3匹の中から1匹を選び冒険に出ることになります。はたして、どのように出会い、どのような物語を繰り広げるのでしょうか。

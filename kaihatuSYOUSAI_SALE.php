@@ -74,6 +74,7 @@
     <h1 class="price"><s class="delete">6578円</s>
       <font color="red">5678円</font>
     </h1>
+    <form action="kaihatuCART.php" post="post">
     <select ="suuryo">
     <option value="one">1</option>
     <option value="two">2</option>
@@ -87,7 +88,8 @@
     <option value="ten">10</option>
    </select>
    
-    <a href="kaihatuCART.php" class="TOPNIMODORU"><button class="btn btn-outline-primary btn-lg   type=" button">カートに入れる<i class="bi bi-cart"></i></button></a>
+   <input type="submit"   class="CARTIRERU  btn btn-outline-primary btn-lg " value="カートに入れる">
+</form>
   </div>
 
   <div class="setumei">
