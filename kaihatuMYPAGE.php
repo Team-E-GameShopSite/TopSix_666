@@ -29,17 +29,17 @@
     <div class="header">
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="kaihatuTOP.html">
+                <a class="navbar-brand" href="kaihatuTOP.php">
                     <img src="img/TopSix.png" alt="" width="85" height="70">
                 </a>
-                <form class="d-flex" action="kaihatuITIRAN.html">
+                <form class="d-flex" action="kaihatuITIRAN.php">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
-                    <a href="kaihatuCART.html"><button class="btn btn-outline-primary me-2" type="button"><i
+                    <a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i
                                 class="bi bi-cart"></i>cart</button></a>
-                    <a href="kaihatuOKINIIRI.html"><button class="btn btn-outline-primary me-2" type="button"><i
+                    <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i
                                 class="bi bi-star"></i>favorite</button></a>
-                    <a href="kaihatuLOGIN.html"><button class="btn btn-outline-primary me-2" type="button"><i
+                    <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i
                                 class="bi bi-person-circle"></i>login</button></a>
                 </form>
             </div>
@@ -47,23 +47,23 @@
     </div>
     <div class="cart">
         <p class="fs-1">CART</p>
-        <a href="kaihatuCART.html" style="color:black"><i class="bi bi-cart"></i></a>
+        <a href="kaihatuCART.php" style="color:black"><i class="bi bi-cart"></i></a>
     </div>
     <div class="favorite">
         <p class="fs-1">FAVORITE</p>
-        <a href="kaihatuOKINIIRI.html" style="color:black"><i class="bi bi-star"></i></a>
+        <a href="kaihatuOKINIIRI.php" style="color:black"><i class="bi bi-star"></i></a>
     </div>
     <div class="history">
         <p class="fs-1">HISTORY</p>
-        <a href="kaihatuRIREKI.html" style="color:black"><i class="bi bi-book"></i></a>
+        <a href="kaihatuRIREKI.php" style="color:black"><i class="bi bi-book"></i></a>
     </div>
     <div class="logout">
         <p class="fs-1">LOG OUT</p>
-        <a href="kaihatuTOP.html" style="color:black"><i class="bi bi-box-arrow-right"></i></a>
+        <a href="kaihatuTOP.php" style="color:black"><i class="bi bi-box-arrow-right"></i></a>
     </div>
     <div class="button">
-    <a href="kaihatuTOP.html"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">トップへ</button></a>
-    <a href="kaihatuTOP.html"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">お問い合わせ</button></a>
+    <a href="kaihatuTOP.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">トップへ</button></a>
+    <a href="kaihatuTOP.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">お問い合わせ</button></a>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
