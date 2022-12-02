@@ -108,17 +108,17 @@
 
       if (!empty($searchArray)) {
         foreach ($searchArray as $row) {
-          echo "<div class='col-md-2'>
-          <div class='card'>
-            <a class='cardimg' href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
-              <img src='image_path/img/soft/pokemon/pokemon1.jpg' class='card-img' alt='...' height='170'>
-              <div class='card-body'>
-                <h5 class='card-title'>" . $row['item_name'] . "</h5>
-                <h5 class='price'>" . $row['item_price'] . "円</h5>
-              </div>
-            </a>
-          </div>
-        </div>";
+          echo
+          "<div class='col-md-2'>
+            <div class='card'>
+              <a href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
+                <img src='img/soft/pokemon/pokemon(2).jpg' class='card-img' alt='...' height='170'>
+                <div class='card-body'>
+                  <h5 class='card-title'>ポケットモンスター スカーレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h5>
+                  <h5 class='price'>6578円</h5>
+              </a>
+            </div>
+          </div>";
         }
       }
       ?>
