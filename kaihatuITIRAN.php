@@ -37,20 +37,20 @@
           <img src="img/game/nintendo.switch.jpg" class="card-img" alt="..." height="80">
         </div>
     </div>
-      </a>
-  <div class="col-sm-9">
-     <a href="kaihatuSYOUSAI_SALE.php">
-     <div class="card text-white">
-       <img src="img/soft/pokemon/pokemon1.jpg" class="card-img" alt="..." height="80">
-    </div>
-  </div>
     </a>
-  <div class="col-sm-9">
-    <a href="kaihatuSYOUSAI_SALE.php">
-      <div class="card text-white">
-        <img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" class="card-img" alt="..." height="80">
-      </div>
-  </div>
+    <div class="col-sm-9">
+      <a href="kaihatuSYOUSAI_SALE.php">
+        <div class="card text-white">
+          <img src="img/soft/pokemon/pokemon1.jpg" class="card-img" alt="..." height="80">
+        </div>
+    </div>
+    </a>
+    <div class="col-sm-9">
+      <a href="kaihatuSYOUSAI_SALE.php">
+        <div class="card text-white">
+          <img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" class="card-img" alt="..." height="80">
+        </div>
+    </div>
     </a>
     <h5>今月の人気商品</h5>
     <div class="col-sm-9">
@@ -59,14 +59,14 @@
           <img src="img/soft/spra/spra.jpg" class="card-img" alt="..." height="100">
         </div>
     </div>
-      </a>
+    </a>
     <div class="col-sm-9">
       <a href="kaihatuSYOUSAI.php">
         <div class="card  text-white">
           <img src="img/soft/pokemon/pokemon(2).jpg" class="card-img" alt="..." height="100">
         </div>
     </div>
-      </a>
+    </a>
     <div class="col-sm-9">
       <a href="kaihatuSYOUSAI.php">
         <div class="card  text-white">
@@ -100,20 +100,35 @@
 
   <div class="container">
     <div class="row mt-5 gy-3">
-<?php
-      require_once '../dao/DBManager.php';
+      <?php
+      require_once 'dao/DBManager.php';
       $dbmng = new DBManager();
-    
+
       $searchArray = $dbmng->getItemTblAll();
-      echo "表示テスト";
-?>
+
+      if (!empty($searchArray)) {
+        foreach ($searchArray as $row) {
+          echo "<div class='col-md-2'>
+          <div class='card'>
+            <a class='cardimg' href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
+              <img src='image_path/img/soft/pokemon/pokemon1.jpg' class='card-img' alt='...' height='170'>
+              <div class='card-body'>
+                <h5 class='card-title'>" . $row['item_name'] . "</h5>
+                <h5 class='price'>" . $row['item_price'] . "円</h5>
+              </div>
+            </a>
+          </div>
+        </div>";
+        }
+      }
+      ?>
 
     </div>
   </div>
-  
-<div class="next">
-  <a href="kaihatuITIRAN.php" style="color:black">次へ>></a>
-</div>
+
+  <div class="next">
+    <a href="kaihatuITIRAN.php" style="color:black">次へ>></a>
+  </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

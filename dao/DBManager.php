@@ -7,6 +7,7 @@ class DBManager{
   }
 
   public function databaseTest(){
+    $pdo = $this->dbConnect();
     $sql = 'INSERT INTO helloDB (text)
             VALUES (?)';
     $ps = $pdo->prepare($sql);
@@ -23,5 +24,3 @@ class DBManager{
     return $searchArray;
   }
 }
-
-?>

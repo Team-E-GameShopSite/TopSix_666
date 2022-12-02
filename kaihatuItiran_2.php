@@ -99,29 +99,6 @@
 
   <div class="container">
     <div class="row mt-5 gy-3">
-<?php
-      require_once '../dao/DBManager.php';
-      $dbmng = new DBManager();
-    
-      $searchArray = $dbmng->getItemTblAll();
-    
-      if(!empty($searchArray)){
-        foreach($searchArray as $row){
-          echo "<div class='col-md-2'>
-          <div class='card'>
-            <a class='cardimg' href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
-              <img src='image_path/img/soft/pokemon/pokemon1.jpg' class='card-img' alt='...' height='170'>
-              <div class='card-body'>
-                <h5 class='card-title'>". $row['item_name'] ."</h5>
-                <h5 class='price'>". $row['item_price']."円</h5>
-              </div>
-            </a>
-          </div>
-        </div>";
-        }
-      }
-?>
-
       <div class="col-md-2">
         <div class="card">
           <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
