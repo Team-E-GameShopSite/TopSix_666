@@ -34,8 +34,7 @@
     <div class="col-sm-9">
       <a href="kaihatuSYOUSAI_SALE.php">
         <div class="card text-white">
-          <img src="img/game/nintendo.switch.jpg" class="card-img" alt="..." height="80">
-        </div>
+          <img src="img/game/nintendo.switch.jpg" class="card-img" alt="..." height="80">        </div>
     </div>
     </a>
     <div class="col-sm-9">
