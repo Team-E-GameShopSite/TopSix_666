@@ -34,22 +34,23 @@
     <div class="col-sm-9">
       <a href="kaihatuSYOUSAI_SALE.php">
         <div class="card text-white">
-          <img src="img/game/nintendo.switch.jpg" class="card-img" alt="..." height="80">        </div>
-    </div>
-    </a>
-    <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI_SALE.php">
-        <div class="card text-white">
-          <img src="img/soft/pokemon/pokemon1.jpg" class="card-img" alt="..." height="80">
+          <img src="img/game/nintendo.switch.jpg" class="card-img" alt="..." height="80">
         </div>
     </div>
-    </a>
-    <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI_SALE.php">
-        <div class="card text-white">
-          <img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" class="card-img" alt="..." height="80">
-        </div>
+      </a>
+  <div class="col-sm-9">
+     <a href="kaihatuSYOUSAI_SALE.php">
+     <div class="card text-white">
+       <img src="img/soft/pokemon/pokemon1.jpg" class="card-img" alt="..." height="80">
     </div>
+  </div>
+    </a>
+  <div class="col-sm-9">
+    <a href="kaihatuSYOUSAI_SALE.php">
+      <div class="card text-white">
+        <img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" class="card-img" alt="..." height="80">
+      </div>
+  </div>
     </a>
     <h5>今月の人気商品</h5>
     <div class="col-sm-9">
@@ -58,14 +59,14 @@
           <img src="img/soft/spra/spra.jpg" class="card-img" alt="..." height="100">
         </div>
     </div>
-    </a>
+      </a>
     <div class="col-sm-9">
       <a href="kaihatuSYOUSAI.php">
         <div class="card  text-white">
           <img src="img/soft/pokemon/pokemon(2).jpg" class="card-img" alt="..." height="100">
         </div>
     </div>
-    </a>
+      </a>
     <div class="col-sm-9">
       <a href="kaihatuSYOUSAI.php">
         <div class="card  text-white">
@@ -99,7 +100,7 @@
 
   <div class="container">
     <div class="row mt-5 gy-3">
-      <?php
+      <?ph
       require_once '../dao/DBManager.php';
       $dbmng = new DBManager();
     
@@ -120,156 +121,14 @@
         </div>";
         }
       }
-      ?>
-      
-
-      <div class="col-md-2">
-        <div class="card">
-          <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-            <img src="img/soft/pokemon/pokemon(2).jpg" class="card-img" alt="..." height="170">
-            <div class="card-body">
-              <h5 class="card-title">ポケットモンスター スカーレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h5>
-              <h5 class="price">6578円</h5>
-          </a>
-        </div>
-      </div>
+?>
     </div>
-
-    <div class="col-md-2">
-      <div class="card">
-        <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-          <img src="img/soft/smabra/smabra1.jpg" class="card-img" alt="..." height="170">
-          <div class="card-body">
-            <h5 class="card-title">大乱闘スマッシュブラザーズ SPECIAL - Switch
-            </h5>
-            <h5 class="price"><br><br>7920円</h5>
-          </div>
-        </a>
-      </div>
-    </div>
-
-
-    <div class="col-md-2">
-      <div class="card">
-        <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-          <img src="img/soft/spra/spra.jpg" class="card-img" alt="..." height="170">
-          <div class="card-body">
-            <h5 class="card-title">スプラトゥーン3-Switch</h5>
-            <h5 class="price"><br><br><br><br>6578円</h5>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-2">
-      <div class="card">
-        <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-          <img src="img/soft/yorha/YoRHa.jpg" class="card-img" alt="..." height="170">
-          <div class="card-body">
-            <h5 class="card-title">ニーア オートマタ ジ エンド オブ ヨルハ エディション
-            </h5>
-            <h5 class="price"><br><br><br>4555円</h5>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-2">
-      <div class="card">
-        <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-          <img src="img/soft/monhan/MONSTERHUNTER.jpg" class="card-img" alt="..." height="170">
-          <div class="card-body">
-            <h5 class="card-title">モンスターハンターライズ サンブレイク
-            </h5>
-            <h5 class="price"><br><br><br>8789円</h5>
-          </div>
-        </a>
-      </div>
-    </div>
-
-<div class="col-md-2">
-        <div class="card">
-          <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-            <img src="img/soft/mario/Mario.jpg" class="card-img" alt="..." height="170">
-            <div class="card-body">
-              <h5 class="card-title">マリオカート8 デラックス - Switch
-              </h5>
-              <h5 class="price"><br><br><br>6570円</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-2">
-        <div class="card">
-          <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-            <img src="img/soft/zerda/ZERDA.jpg" class="card-img" alt="..." height="170">
-            <div class="card-body">
-              <h5 class="card-title">ゼルダの伝説 ブレス オブ ザ ワイルド - Switch
-              </h5>
-              <h5 class="price"><br><br><br>7678円</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-2">
-        <div class="card">
-          <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-            <img src="img/soft/monhanICEBORNE/monhan.jpg" class="card-img" alt="..." height="170">
-            <div class="card-body">
-              <h5 class="card-title">モンスターハンターワールド:アイスボーン マスターエディション - PS4
-              </h5>
-              <h5 class="price"><br><br>4390円</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-2">
-        <div class="card">
-          <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-            <img src="img/soft/elden/ELDENRING.jpg" class="card-img " alt="..." height="170">
-            <div class="card-body">
-              <h5 class="card-title">PS5ゲームソフト ELDEN RING
-              </h5>
-              <h5 class="price"><br><br><br><br>8170円</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-2">
-        <div class="card">
-          <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-            <img src="img/soft/bouei/bouei.jpg" class="card-img" alt="..." height="170">
-            <div class="card-body">
-              <h5 class="card-title">【PS5】地球防衛軍6
-              </h5>
-              <h5 class="price"><br><br><br><br>7079円</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-2">
-        <div class="card">
-          <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
-            <img src="img/soft/fifa/FIFA.jpg" class="card-img" alt="..." height="170">
-            <div class="card-body">
-              <h5 class="card-title">FIFA 23 - PS5
-              </h5>
-              <h5 class="price"><br><br><br><br><br>9700円</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-
   </div>
-  </div>
-  <div class="next">
-    <a href="kaihatuITIRAN.php" style="color:black">次へ>></a>
-  </div>
+  
+<div class="next">
+  <a href="kaihatuITIRAN.php" style="color:black">次へ>></a>
+</div>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
