@@ -100,7 +100,7 @@
 
   <div class="container">
     <div class="row mt-5 gy-3">
-      <?ph
+<?php
       require_once '../dao/DBManager.php';
       $dbmng = new DBManager();
     
