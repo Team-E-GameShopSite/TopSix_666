@@ -61,8 +61,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       </div> 
       
        <div class='syohin'>
-         <h1 class='title'>".row['item_name']."</h1>
-         <h1 class='price'>".row['item_price']."</h1>
+         <h1 class='title'>".$row['item_name']."</h1>
+         <h1 class='price'>".$row['item_price']."</h1>
          <form action='kaihatuCART.php' method='post'>
          <select ='suuryo'>
           <option value='one'>1</option>
@@ -79,7 +79,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
        <input type='submit'   class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
       </form>
         <div class='setumei'> 
-              <p>".row['item_info']."														
+              <p>".$row['item_info']."														
               </p>
         </div>";
         }
