@@ -38,7 +38,9 @@ $sql="SELECT * FROM items_tbl";
 $selectData =$pdo->query($sql);
 
 foreach($selectData as $row){
-    echo "<h1>".$row['item_name']."<br></h1>";
+    echo "<h1>".$row['image_path']."</h1>";
+    echo "<h1>".$row['item_name']."</h1>";
+    echo "<h1>".$row['item_price']."</h1>";
     echo"<h3>-------------------------------<br></h3>";
 }
 ?>
