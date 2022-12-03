@@ -38,7 +38,7 @@ $selectData =$pdo->query($sql);
 
 foreach($selectData as $row){
     echo "<h1>".$row['tweat']."<br></h1>";
-    echo"<h3>-------------------------------<br></h3>";
+    echo"<h3>-----------------------------------------------------------<br></h3>";
 }
 ?>
   <a href="kaihatuTOP.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">TOPに戻る→</button></a>

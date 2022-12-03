@@ -40,8 +40,8 @@ $selectData =$pdo->query($sql);
 foreach($selectData as $row){
     echo "<h1>".$row['image_path']."</h1>";
     echo "<h1>".$row['item_name']."</h1>";
-    echo "<h1>".$row['item_price']."</h1>";
-    echo"<h3>-------------------------------<br></h3>";
+    echo "<h1>".$row['item_price']."円</h1>";
+    echo"<h3>-----------------------------------------------------------<br></h3>";
 }
 ?>
   <a href="kaihatuTOP.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">TOPに戻る→</button></a>
