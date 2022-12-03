@@ -99,16 +99,17 @@
   <h1>ゲームソフト</h1>
 
   <div class='container'>
+    <div class="row mt-5 gy-3">
 
-    <div class='col-md-2'>
-      <div class='card'>
-        <a href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
-          <img src='img/soft/pokemon/pokemon(2).jpg' class='card-img' alt='...' height='170'>
-          <div class='card-body'>
-            <h5 class='card-title'>ポケットモンスター スカーレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h5>
-            <h5 class='price'>6578円</h5>
-          </div>
-        </a>
+      <div class='col-md-2'>
+        <div class='card'>
+          <a href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
+            <img src='img/soft/pokemon/pokemon(2).jpg' class='card-img' alt='...' height='170'>
+            <div class='card-body'>
+              <h5 class='card-title'>ポケットモンスター スカーレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h5>
+              <h5 class='price'>6578円</h5>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -118,9 +119,8 @@
         <a href="kaihatuSYOUSAI.php" style="text-decoration: none;color:black">
           <img src="img/soft/smabra/smabra1.jpg" class="card-img" alt="..." height="170">
           <div class="card-body">
-            <h5 class="card-title">大乱闘スマッシュブラザーズ SPECIAL - Switch
-            </h5>
-            <h5 class="price"><br><br>7920円</h5>
+            <h5 class="card-title">大乱闘スマッシュブラザーズ SPECIAL - Switch</h5>
+            <h5 class="price">7920円</h5>
           </div>
         </a>
       </div>
@@ -133,7 +133,7 @@
           <img src="img/soft/spra/spra.jpg" class="card-img" alt="..." height="170">
           <div class="card-body">
             <h5 class="card-title">スプラトゥーン3-Switch</h5>
-            <h5 class="price"><br><br><br><br>6578円</h5>
+            <h5 class="price">6578円</h5>
           </div>
         </a>
       </div>
@@ -146,7 +146,7 @@
           <div class="card-body">
             <h5 class="card-title">ニーア オートマタ ジ エンド オブ ヨルハ エディション
             </h5>
-            <h5 class="price"><br><br><br>4555円</h5>
+            <h5 class="price">4555円</h5>
           </div>
         </a>
       </div>
@@ -159,7 +159,7 @@
           <div class="card-body">
             <h5 class="card-title">モンスターハンターライズ サンブレイク
             </h5>
-            <h5 class="price"><br><br><br>8789円</h5>
+            <h5 class="price">8789円</h5>
           </div>
         </a>
       </div>
@@ -172,7 +172,7 @@
           <div class="card-body">
             <h5 class="card-title">マリオカート8 デラックス - Switch
             </h5>
-            <h5 class="price"><br><br><br>6570円</h5>
+            <h5 class="price">6570円</h5>
           </div>
         </a>
       </div>
@@ -185,7 +185,7 @@
           <div class="card-body">
             <h5 class="card-title">ゼルダの伝説 ブレス オブ ザ ワイルド - Switch
             </h5>
-            <h5 class="price"><br><br><br>7678円</h5>
+            <h5 class="price">7678円</h5>
           </div>
         </a>
       </div>
@@ -198,7 +198,7 @@
           <div class="card-body">
             <h5 class="card-title">モンスターハンターワールド:アイスボーン マスターエディション - PS4
             </h5>
-            <h5 class="price"><br><br>4390円</h5>
+            <h5 class="price">4390円</h5>
           </div>
         </a>
       </div>
@@ -211,7 +211,7 @@
           <div class="card-body">
             <h5 class="card-title">PS5ゲームソフト ELDEN RING
             </h5>
-            <h5 class="price"><br><br><br><br>8170円</h5>
+            <h5 class="price">8170円</h5>
           </div>
         </a>
       </div>
@@ -224,7 +224,7 @@
           <div class="card-body">
             <h5 class="card-title">【PS5】地球防衛軍6
             </h5>
-            <h5 class="price"><br><br><br><br>7079円</h5>
+            <h5 class="price">7079円</h5>
           </div>
         </a>
       </div>
@@ -237,7 +237,7 @@
           <div class="card-body">
             <h5 class="card-title">FIFA 23 - PS5
             </h5>
-            <h5 class="price"><br><br><br><br><br>9700円</h5>
+            <h5 class="price">9700円</h5>
           </div>
         </a>
       </div>
