@@ -99,21 +99,20 @@
   <h1>ゲームソフト</h1>
 
   <div class="container">
-    <div class="row mt-5 gy-3">
-      <?php
-      require_once 'dao/DBManager.php';
-      $dbmng = new DBManager();
+    <?php
+    require_once 'dao/DBManager.php';
+    $dbmng = new DBManager();
 
-      $flag = 1;
-      $searchArray = $dbmng->getItemTblAll();
+    $flag = 1;
+    $searchArray = $dbmng->getItemTblAll();
 
-      if (!empty($searchArray)) {
-        foreach ($searchArray as $row) {
-          if ($flag == 1) {
-            echo "<div class='row mt-5 gy-3'>";
-          }
-          echo
-          "<div class='col-md-2'>
+    if (!empty($searchArray)) {
+      foreach ($searchArray as $row) {
+        if ($flag == 1) {
+          echo "<div class='row mt-5 gy-3'>";
+        }
+        echo
+        "<div class='col-md-2'>
             <div class='card'>
               <a href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
                 <img src=" . $row['image_path'] . " class='card-img' alt='...' height='170'>
@@ -123,14 +122,12 @@
               </a>
             </div>
           </div>";
-          if ($flag == 1) {
-            echo "</div>";
-          }
+        if ($flag == 1) {
+          echo "</div>";
         }
       }
-      ?>
-
-    </div>
+    }
+    ?>
   </div>
 
   <div class="next">
