@@ -32,6 +32,59 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </nav>
   </div>
 
+
+  <?php
+      require_once '../dao/DBManager.php';
+      $dbmng = new DBManager();
+    
+      $searchArray = $dbmng->getItemTblAll();
+    
+      if(!empty($searchArray)){
+        foreach($searchArray as $row){
+          echo "<div class='cartcheck'>
+          <div class='img'>
+            <img src='image_path/img/soft/pokemon/pokemon1.jpg'   class='d-block w-100' alt='...'  weight='100%' height='400'>
+          </div>
+        </div>
+      
+      
+        <div class='row'>
+          <div class='col-sm-6'>
+            <a href='kaihatuTOP.php#contactt'  class='TOPNIMODORU'><button class='btn btn-outline-primary btn-lg'   type='button'>お問い合わせ</button></a>
+          </div>
+      
+          <div class='col-sm-6'>
+          <form action='kaihatuOKINIIRI.php' action='post'>
+            <input type='submit'   class=' btn btn-outline-primary btn-lg ' value='お気に入り'>
+          </div>
+        </div>
+      </div> 
+      
+       <div class='syohin'>
+         <h1 class='title'>".$row['item_name']."</h1>
+         <h1 class='price'>".$row['item_price']."</h1>
+         <form action='kaihatuCART.php' method='post'>
+         <select ='suuryo'>
+          <option value='one'>1</option>
+          <option value='two'>2</option>
+          <option value='three'>3</option>
+          <option value='four'>4</option>
+          <option value='five'>5</option>
+          <option value='six'>6</option>
+          <option value='seven'>7</option>
+          <option value='eight'>8</option>
+          <option value='nine'>9</option>
+          <option value='ten'>10</option>
+         </select>
+       <input type='submit'   class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
+      </form>
+        <div class='setumei'> 
+              <p>".$row['item_info']."														
+              </p>
+        </div>";
+        }
+      }
+      ?>
   <div class="cartcheck">
     <div class="img">
       <img src="img/soft/pokemon/pokemon1.jpg"   class="d-block w-100" alt="..."  weight="100%" height="400">
