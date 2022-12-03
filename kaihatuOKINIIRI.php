@@ -32,13 +32,13 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <p class="fs-1">お気に入り<i class="bi bi-star"></i></p>
   <div class="TOPNIMODORU">
   <?php
-$pdo = new PDO('mysql:host=localhost;dbname=webdb;charset=utf8','webuser','abccsd2');
+$pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8','LAA1418145','topsix666');
 
-$sql="SELECT * FROM tweet_tbl";
+$sql="SELECT * FROM items_tbl";
 $selectData =$pdo->query($sql);
 
 foreach($selectData as $row){
-    echo "<h1>".$row['tweat']."<br></h1>";
+    echo "<h1>".$row['item_name']."<br></h1>";
     echo"<h3>-------------------------------<br></h3>";
 }
 ?>
