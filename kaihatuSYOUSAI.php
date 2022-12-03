@@ -45,7 +45,6 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
           <div class='img'>
             <img src=".$row['image_path'].  " class='d-block w-100' alt='...'  weight='100%' height='400'>
           </div>
-        </div>
       
       
         <div class='row'>
