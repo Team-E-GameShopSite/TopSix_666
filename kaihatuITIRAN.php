@@ -104,10 +104,14 @@
       require_once 'dao/DBManager.php';
       $dbmng = new DBManager();
 
+      $flag = 1;
       $searchArray = $dbmng->getItemTblAll();
 
       if (!empty($searchArray)) {
         foreach ($searchArray as $row) {
+          if ($flag == 1) {
+            echo "<div class='row mt-5 gy-3'>";
+          }
           echo
           "<div class='col-md-2'>
             <div class='card'>
@@ -119,6 +123,9 @@
               </a>
             </div>
           </div>";
+          if ($flag == 1) {
+            echo "</div>";
+          }
         }
       }
       ?>
