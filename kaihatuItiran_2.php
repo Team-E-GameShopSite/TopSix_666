@@ -99,17 +99,16 @@
   <h1>ゲームソフト</h1>
 
   <div class='container'>
-    <div class="row mt-5 gy-3">
 
-      <div class='col-md-2'>
-        <div class='card'>
-          <a href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
-            <img src='img/soft/pokemon/pokemon(2).jpg' class='card-img' alt='...' height='170'>
-            <div class='card-body'>
-              <h5 class='card-title'>ポケットモンスター スカーレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h5>
-              <h5 class='price'>6578円</h5>
-          </a>
-        </div>
+    <div class='col-md-2'>
+      <div class='card'>
+        <a href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
+          <img src='img/soft/pokemon/pokemon(2).jpg' class='card-img' alt='...' height='170'>
+          <div class='card-body'>
+            <h5 class='card-title'>ポケットモンスター スカーレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h5>
+            <h5 class='price'>6578円</h5>
+          </div>
+        </a>
       </div>
     </div>
 
