@@ -124,6 +124,7 @@
           </div>";
         if ($flag == 1) {
           echo "</div>";
+          $flag = 0;
         }
       }
     }
