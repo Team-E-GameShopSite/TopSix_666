@@ -34,7 +34,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
 
   <?php
-      require_once '../dao/DBManager.php';
+      require_once 'dao/DBManager.php';
       $dbmng = new DBManager();
     
       $searchArray = $dbmng->getItemTblAll();
@@ -43,7 +43,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         foreach($searchArray as $row){
           echo "<div class='cartcheck'>
           <div class='img'>
-            <img src='image_path/img/soft/pokemon/pokemon1.jpg'   class='d-block w-100' alt='...'  weight='100%' height='400'>
+            <img src=".$row['image_path']. "class='d-block w-100' alt='...'  weight='100%' height='400'>
           </div>
         </div>
       
