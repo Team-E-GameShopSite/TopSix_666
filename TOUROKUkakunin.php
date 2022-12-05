@@ -67,7 +67,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       }
       $pdo=new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8','LAA1418145','topsix666');
 
-$sql="INSERT INTO User_tbl(user_name,user_name_furi,email,pass,
+$sql="INSERT INTO user_tbl(user_name,user_name_furi,email,pass,
 
                            address,post_no,tell,date,femail)
 
