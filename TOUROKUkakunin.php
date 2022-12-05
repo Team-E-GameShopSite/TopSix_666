@@ -31,6 +31,41 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <h1 class="touroku">以下の内容で登録します。よろしいですか？</h1>
   <h1 class="center">
   <?php
+
+$pdo=new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8','LAA1418145','topsix666');
+
+$sql="INSERT INTO User_tbl(user_name,user_name_furi,email,pass,
+
+                           address,post_no,tell,date,femail)
+
+                           VALUE(?,?,?,?,?,?,?,?)";
+
+$ps=$pdo->prepare($sql);
+
+$dayStr=date("Y\m\d");
+
+$ps->bindValue(1,$_POST[''],PDO::PARAM_STR):
+
+$ps->bindValue(2,$_POST[''],PDO::PARAM_STR):
+
+$ps->bindValue(3,$_POST[''],PDO::PARAM_STR):
+
+$ps->bindValue(4,$_POST[''],PDO::PARAM_STR):
+
+$ps->bindValue(5,$_POST[''],PDO::PARAM_STR):
+
+$ps->bindValue(6,$_POST[''],PDO::PARAM_STR):
+
+$ps->bindValue(7,$_POST[''],PDO::PARAM_STR):
+
+$ps->bindValue(8,$dayStr,PDO::PARAM_STR):
+
+$ps->bindValue(9,$_POST[''],PDO::PARAM_STR):
+
+$ps->execute();
+
+?>
+  <?php
     echo"氏名<br>"
     .$_POST['simei']."<br><br>";
 
