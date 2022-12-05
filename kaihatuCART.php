@@ -35,9 +35,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   require_once 'dao/DBManager.php';
   $dbmng = new DBManager();
   $searchArray = $dbmng->getItemTblAll();
-  
+
 if(!empty($searchArray)){
-foreach($selectArray as $row){
+foreach($searchArray as $row){
     echo "<h1>".$row['item_name']."<br></h1>";
     echo "<h1>".$row['image_path']."<br></h1>";
     echo"<h3>-------------------------------<br></h3>";
