@@ -32,6 +32,10 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <p class="fs-1">お気に入り<i class="bi bi-star"></i></p>
   <div class="TOPNIMODORU">
   <?php
+   require_once 'dao/DBManager.php';
+   $dbmng = new DBManager();
+ 
+   $searchArray = $dbmng->getItemTblAll();
 foreach($selectData as $row){
     echo "<h1>".$row['image_path'].$row['item_name'].$row['item_price']."円</h1>";
     echo"<h3>-----------------------------------------------------------<br></h3>";

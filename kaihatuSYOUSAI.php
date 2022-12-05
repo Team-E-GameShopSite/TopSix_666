@@ -55,6 +55,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
           <div class='col-sm-6'>
           <form action='kaihatuOKINIIRI.php' action='post'>
             <input type='submit'   class=' btn btn-outline-primary btn-lg ' value='お気に入り'>
+          </form>
           </div>
         </div>
       </div> 
