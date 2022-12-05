@@ -36,7 +36,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
    $dbmng = new DBManager();
  
    $searchArray = $dbmng->getItemTblAll();
-foreach($selectData as $row){
+foreach($searchArray as $row){
     echo "<h1>".$row['image_path'].$row['item_name'].$row['item_price']."円</h1>";
     echo"<h3>-----------------------------------------------------------<br></h3>";
 }
