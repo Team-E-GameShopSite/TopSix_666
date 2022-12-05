@@ -92,9 +92,11 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
             <a href="kaihatuCART.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">カートに戻る</button></a>
         </div>
 
+        <form action="kaihatuKOUNYUKANRYOU.php" method="post">
         <div class="kounyu">
-            <a href="kaihatuKOUNYUKANRYOU.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">購入する</button></a>
+          <input type="submit" class=" TOPNIMODORU btn btn-outline-primary  me-2 btn-lg" value="購入する">
         </div>
+        </form> 
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
