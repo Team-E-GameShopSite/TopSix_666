@@ -32,15 +32,13 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <p class="fs-1">ショッピングカート<i class="bi bi-cart"></i></p>
   <div class="TOPNIMODORU">
   <?php
-  require_once 'dao/DBManager.php';
-  $dbmng = new DBManager();
-  $searchArray = $dbmng->getItemTblAll();
-
-if(!empty($searchArray)){
-foreach($searchArray as $row){
-    echo "<img src=".$row['image_path']."><h1>".$row['item_name']."<br></h1>";
-    echo"<h3>-------------------------------<br></h3>";
-}
+   require_once 'dao/DBManager.php';
+   $dbmng = new DBManager();
+ 
+   $searchArray = $dbmng->getItemTblAll();
+   foreach($searchArray as $row){
+    echo "<img src=".$row['image_path'].">";
+    echo"<h3>-----------------------------------------------------------<br></h3>";
 }
 ?>
   <a href="kaihatuKOUNYU.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">購入手続きへ→</button></a>
