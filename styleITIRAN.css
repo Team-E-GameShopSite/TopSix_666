@@ -36,6 +36,7 @@ position: fixed;
 .col-md-2{
   margin-bottom: 3%;
 }
+
 .card{
   color:black;
 }
@@ -45,7 +46,17 @@ height: 230px;
 }
 
 .price{
-  margin-bottom: 10px;
+      border: none;
+      margin: 20px auto;
+      display: block;
+      text-align: center;
+      padding: 10px 80px;
+      margin-top: auto;
+}
+
+.price > a {
+  display: flex;
+  flex-direction: column;
 }
 
 .next{
