@@ -32,14 +32,16 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <p class="fs-1">ショッピングカート<i class="bi bi-cart"></i></p>
   <div class="TOPNIMODORU">
   <?php
-$pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8','LAA1418145','topsix666');
-
-$sql="SELECT * FROM items_tbl";
+  require_once 'dao/DBManager.php';
+  $dbmng = new DBManager();
+  $searchArray = $dbmng->getItemTblAll();
 $selectData =$pdo->query($sql);
 
+if(!empty($searchArray)){
 foreach($selectData as $row){
     echo "<h1>".$row['item_name']."<br></h1>";
     echo"<h3>-------------------------------<br></h3>";
+}
 }
 ?>
   <a href="kaihatuKOUNYU.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">購入手続きへ→</button></a>
