@@ -40,6 +40,7 @@ $selectData =$pdo->query($sql);
 if(!empty($searchArray)){
 foreach($selectData as $row){
     echo "<h1>".$row['item_name']."<br></h1>";
+    echo "<h1>".$row['image_path']."<br></h1>";
     echo"<h3>-------------------------------<br></h3>";
 }
 }
