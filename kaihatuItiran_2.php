@@ -107,7 +107,9 @@
             <img src='img/soft/pokemon/pokemon(2).jpg' class='card-img' alt='...' height='170'>
             <div class='card-body'>
               <h5 class='card-title'>ポケットモンスター スカーレット -Switch (【早期購入特典】プロモカード「ピカチュウ」 ×1 同梱)</h5>
-              <h5 class='price'>6578円</h5>
+              <h5>
+                <div class="price">6578円</div>
+              </h5>
           </a>
         </div>
       </div>
@@ -120,7 +122,9 @@
           <img src="img/soft/smabra/smabra1.jpg" class="card-img" alt="..." height="170">
           <div class="card-body">
             <h5 class="card-title">大乱闘スマッシュブラザーズ SPECIAL - Switch</h5>
-            <h5 class="price">7920円</h5>
+            <h5>
+              <div class="price">7920円</div>
+            </h5>
           </div>
         </a>
       </div>
