@@ -37,7 +37,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
  
    $searchArray = $dbmng->getItemTblAll();
 foreach($searchArray as $row){
-    echo "<h1><img src=".$row['image_path']."円</h1>";
+    echo "<img src=".$row['image_path'].">";
     echo"<h3>-----------------------------------------------------------<br></h3>";
 }
 ?>
