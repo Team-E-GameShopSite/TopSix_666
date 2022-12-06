@@ -75,15 +75,15 @@ $sql="INSERT INTO user_tbl(user_name,user_name_furi,email,pass,
 
 $ps=$pdo->prepare($sql);
 
-$ps->bindValue(1,$_POST['simei'],PDO::PARAM_STR):
-$ps->bindValue(2,$_POST['huri'],PDO::PARAM_STR):
-$ps->bindValue(3,$_POST['meado'],PDO::PARAM_STR):
-$ps->bindValue(4,$_POST['pass'],PDO::PARAM_STR):
-$ps->bindValue(5,$_POST['yuubin'],PDO::PARAM_STR):
-$ps->bindValue(6,$_POST['jyusyo'],PDO::PARAM_STR):
-$ps->bindValue(7,$_POST['callnumber'],PDO::PARAM_STR):
-$ps->bindValue(8,$_POST['birthday'],PDO::PARAM_STR):
-$ps->bindValue(9,$_POST['flexRadioDefault'],PDO::PARAM_STR):
+$ps->bindValue(1,$_POST['simei'],PDO::PARAM_STR);
+$ps->bindValue(2,$_POST['huri'],PDO::PARAM_STR);
+$ps->bindValue(3,$_POST['meado'],PDO::PARAM_STR);
+$ps->bindValue(4,$_POST['pass'],PDO::PARAM_STR);
+$ps->bindValue(5,$_POST['yuubin'],PDO::PARAM_STR);
+$ps->bindValue(6,$_POST['jyusyo'],PDO::PARAM_STR);
+$ps->bindValue(7,$_POST['callnumber'],PDO::PARAM_STR);
+$ps->bindValue(8,$_POST['birthday'],PDO::PARAM_STR);
+$ps->bindValue(9,$_POST['flexRadioDefault'],PDO::PARAM_STR);
 $ps->execute();
    ?>
    <a href="kaihatuTOUROKU.php">戻る</a>
