@@ -65,26 +65,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         echo "答えたくない<br>";break;
         
       }
-      $pdo=new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8','LAA1418145','topsix666');
-
-$sql="INSERT INTO user_tbl(user_name,user_name_furi,email,pass,
-
-                           address,post_no,tell,birthday,femail)
-
-                           VALUE(?,?,?,?,?,?,?,?,?)";
-
-$ps=$pdo->prepare($sql);
-
-$ps->bindValue(1,$_POST['simei'],PDO::PARAM_STR);
-$ps->bindValue(2,$_POST['huri'],PDO::PARAM_STR);
-$ps->bindValue(3,$_POST['meado'],PDO::PARAM_STR);
-$ps->bindValue(4,$_POST['pass'],PDO::PARAM_STR);
-$ps->bindValue(5,$_POST['yuubin'],PDO::PARAM_STR);
-$ps->bindValue(6,$_POST['jyusyo'],PDO::PARAM_STR);
-$ps->bindValue(7,$_POST['callnumber'],PDO::PARAM_STR);
-$ps->bindValue(8,$_POST['birthday'],PDO::PARAM_STR);
-$ps->bindValue(9,$_POST['flexRadioDefault'],PDO::PARAM_STR);
-$ps->execute();
+    require_once 'dao/DBManager.php';
+    $dbmng = new DBManager();
+    $dbmng->user_insert($_POST['simei'],$_POST['huri'],$_POST['meado'],$_POST['pass'],$_POST['yuubin'],$_POST['jyusyo'],$_POST['callnumber'],$_POST['birthday'],$_POST['flexRadioDefault']);
    ?>
    <a href="kaihatuTOUROKU.php">戻る</a>
    <a class="simasu" href="kaihatuTOP.php">登録します</a>
