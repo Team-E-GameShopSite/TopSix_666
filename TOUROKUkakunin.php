@@ -71,7 +71,7 @@ $sql="INSERT INTO user_tbl(user_name,user_name_furi,email,pass,
 
                            address,post_no,tell,date,femail)
 
-                           VALUE(?,?,?,?,?,?,?,?)";
+                           VALUE(?,?,?,?,?,?,?,?,?)";
 
 $ps=$pdo->prepare($sql);
 
