@@ -69,7 +69,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
 $sql="INSERT INTO user_tbl(user_name,user_name_furi,email,pass,
 
-                           address,post_no,tell,date,femail)
+                           address,post_no,tell,birthday,femail)
 
                            VALUE(?,?,?,?,?,?,?,?,?)";
 
