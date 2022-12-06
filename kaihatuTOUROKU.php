@@ -28,7 +28,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </div>
   </nav>
   </div>
-  <form action="kaihatuTOUROKU.php" method="post">
+  <form action="kaihatuTOP.php" method="post">
   <p class="fs-1">会員登録</p>
   <div class="naiyou">
   <p class="fs-3">下記の内容をご入力の上、おすすめください</p>
