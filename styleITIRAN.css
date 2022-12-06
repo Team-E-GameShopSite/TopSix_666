@@ -45,20 +45,6 @@ position: fixed;
 height: 230px;
 }
 
-.price{
-      border: none;
-      margin: 20px auto;
-      display: block;
-      text-align: center;
-      padding: 10px 80px;
-      margin-top: auto;
-}
-
-.price > a {
-  display: flex;
-  flex-direction: column;
-}
-
 .next{
   margin-left:60%;
   text-align: center;
