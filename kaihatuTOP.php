@@ -137,7 +137,12 @@
     <img src="img/TopSix.png" alt="" width="130" height="130">
   </div>
 
+  <?php
+require_once "DBManager.php";
 
+$dbm=new DBManager();
+$userList=$dbm->insert($_POST['simei'],$_POST['huri'],$_POST['meado'],$_POST['pass'],$_POST['yuubin'],$_POST['jyusyo'],$_POST['callnumber'],$_POST['birthday']);
+>
 
 
 
