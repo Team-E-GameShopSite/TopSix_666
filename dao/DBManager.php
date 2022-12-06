@@ -23,4 +23,19 @@ class DBManager{
     $searchArray = $ps->fetchAll();
     return $searchArray;
   }
+
+  public function insert($user_name,$user_name_furi,$email,$pass,$address,$post_no,$tell,$birthday){
+    $pdo=$this->dbConnect();
+    $sql="INSERT INTO user_tbl(user_name,user_name_furi,email,pass,address,post_no,tell,birthday) VALUES (?,?,?,?,?,?,?,?)";
+    $ps=$pdo->prepare($sql);
+    $ps->bindvalue(1,$user_name,PDO::PARAM_STR);
+    $ps->bindvalue(2,$user_name_huri,PDO::PARAM_STR);
+    $ps->bindvalue(3,$email,PDO::PARAM_STR);
+    $ps->bindvalue(4,password_hash($pass,PASSWORD_DEFAULT),PDO::PARAM_STR);
+    $ps->bindvalue(5,$address,PDO::PARAM_STR);
+    $ps->bindvalue(6,post_no,PDO::PARAM_STR);
+    $ps->bindvalue(7,$tell,PDO::PARAM_STR);
+    $ps->bindvalue(8,$birthday,PDO::PARAM_STR);
+    $ps->execute();
+  }
 }
