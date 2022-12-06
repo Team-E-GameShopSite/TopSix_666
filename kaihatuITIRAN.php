@@ -118,7 +118,7 @@
                 <img src=" . $row['image_path'] . " class='card-img' alt='...' height='170'>
                 <div class='card-body'>
                   <h5 class='card-title'>" . $row['item_name'] . "</h5>
-                  <h5 class='price'>" . $row['item_price'] . "円</h5>
+                  <h5 class='price'>" . $row['item_price'] . "円</h5>"
         if ($flag == 0) {
           echo "</div>";
         }
