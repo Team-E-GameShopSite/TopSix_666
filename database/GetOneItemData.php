@@ -1,6 +1,5 @@
 <?php
-require_once '../dao/DBManager.php';
-$dbmng = new DBManager();
+$pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8', 'LAA1418145', 'topsix666');
 
 $sql = "SELECT * FROM item_tbl WHERE item_id = 1";
 
