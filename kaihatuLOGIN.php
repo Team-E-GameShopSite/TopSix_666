@@ -59,6 +59,8 @@
                         </div>
                     </div>
                 </div>
+                
+  
                 <div class="row">
                     <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
                     </div>
@@ -69,7 +71,7 @@
                 <div class="row">
                     <div class="col-md-12 mt-3">
                         <div class="d-grid gap-2">
-                            <input type="submit" class="btn btn-outline-primary" value="ログイン">
+                            <input type="submit" class="btn btn-outline-primary" id="login" value="ログイン">
                         </div>
                     </div>
                 </div>
@@ -88,7 +90,27 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+<!-- エラー処理 -->
+    <script language="javascript" type="text/javascript">
+    const usermail = document.getElementById("usermail").value;
+    const pass = document.getElementById("pass").value;
+    var flag = 0;
+    if (usermail.length == 0) {
+      flag = 1;
+    }
+    if (pass.length == 0) {
+      flag = 1;
+    }  
+
+    if (flag == 1) {
+      document.getElementById("login").onclick = () => {
+      document.getElementById("errorMsg").textContent = "未記入の項目があります";
+      return false;
+    } 
+
+    };
 </body>
 
 </html>
