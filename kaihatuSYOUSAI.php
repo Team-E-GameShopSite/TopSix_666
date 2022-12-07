@@ -39,7 +39,6 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     
       $searchItem = $dbmng->GetItemInfoToID($_GET['item_id']);
     
-      echo $_GET['item_id'];
       if(!empty($searchItem)){
         foreach($searchItem as $row){
           echo "<div class='cartcheck'>
@@ -84,6 +83,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
               </p>
         </div>";
         }
+      }else{
+        echo $_GET['item_id'];
       }
       ?>
 </body>
