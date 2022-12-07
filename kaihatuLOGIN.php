@@ -33,6 +33,18 @@
         </nav>
         </div>
     
+
+        <?php
+require_once "DBManager.php";
+$dbm=new DBManager();
+$userData=$dbm->login($_POST['mail'],$_POST['pass']);
+foreach ($userData as $row){
+      echo"ログイン成功！ようこそ".$row['user_name']."さん！";
+    }
+if(count($userData)==0){
+    echo"アカウントが存在しません";
+}
+?>
     <form action="kaihatuLOGIN.php" method="post">
     <div id="maindiv" class="container">
         <div class="row mt-5">
@@ -43,7 +55,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="usermail" placeholder="abc@abc.com">
+                            <input type="text" class="form-control" id="usermail" name="mail" placeholder="abc@abc.com">
                             
                         </div>
                     </div>
@@ -52,7 +64,7 @@
                 <div class="row">
                     <div class="col-md-12 mt-2">
                         <div class="form-floating">
-                            <input type="password" class="form-control" id="pass" placeholder="abc@abc.com">
+                            <input type="password" class="form-control" id="pass"  name="pass" placeholder="abc@abc.com">
                             
                         </div>
                     </div>

@@ -42,7 +42,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <h3 id="name_chk" style="display: none; color: red;">名前が漢字になっていません</h3>
   </div>  
     <div class="name">
-      <p class="fs-3">氏名（フリガナ）</p>
+      <p class="fs-3">氏名（ふりがな）</p>
     </div>
   <div class="text">
     <input type="text" size="100" maxlength="200" placeholder="やまだたろう" id="name_huri" name="huri" autocomplete="off">
