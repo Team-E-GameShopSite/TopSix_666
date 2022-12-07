@@ -35,7 +35,7 @@
     
 
 
-    <form action="TOUROKUkanryou.php" method="post" autocomplete="off">
+    <form action="" method="post" autocomplete="off">
     <div id="maindiv" class="container">
         <div class="row mt-5">
             <div class="offset-md-3 col-md-6">
@@ -94,6 +94,7 @@
     </script>
 <!-- エラー処理 -->
     <script language="javascript" type="text/javascript">
+    document.getElementById("login").onclick = function(){
     const usermail = document.getElementById("usermail").value;
     const pass = document.getElementById("pass").value;
     var flag = 0;
@@ -105,12 +106,13 @@
     }  
 
     if (flag == 1) {
-      document.getElementById("login").onclick = () => {
+      
       document.getElementById("errorMsg").textContent = "未記入の項目があります";
       return false;
     } 
 
     };
+    </script>
 </body>
 
 </html>
