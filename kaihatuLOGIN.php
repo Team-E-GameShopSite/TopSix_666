@@ -35,7 +35,7 @@
     
 
 
-    <form action="kaihatuLOGIN.php" method="post">
+    <form action="kaihatuLOGIN.php" method="post" autocomplete="off">
     <div id="maindiv" class="container">
         <div class="row mt-5">
             <div class="offset-md-3 col-md-6">
@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="usermail" name="mail" placeholder="abc@abc.com">
+                            <input type="text" class="form-control" id="usermail" name="mail" placeholder="abc@abc.com" autocomplete="off">
                             
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                 <div class="row">
                     <div class="col-md-12 mt-2">
                         <div class="form-floating">
-                            <input type="password" class="form-control" id="pass"  name="pass" placeholder="abc@abc.com">
+                            <input type="password" class="form-control" id="pass"  name="pass" placeholder="abc@abc.com" autocomplete="off">
                             
                         </div>
                     </div>
