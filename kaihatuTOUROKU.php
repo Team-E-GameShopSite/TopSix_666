@@ -29,7 +29,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </nav>
     </div>
   </body>
-  <form method="post" action="TOUROKUkakunin.php" autocomplete="off">
+  <form method="post" action="TOUROKUkakunin.php">
   <p class="fs-1">会員登録</p>
     <div class="naiyou">
   <p class="fs-3">下記の内容をご入力の上、おすすめください</p>
