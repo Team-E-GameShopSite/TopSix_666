@@ -28,10 +28,10 @@ class DBManager
     return $searchArray;
   }
 
-  public function insert($user_name, $user_name_furi, $email, $pass, $address, $post_no, $tell, $birthday)
+  public function user_insert($user_name, $user_name_furi, $email, $pass, $address, $post_no, $tell, $birthday, $femail)
   {
     $pdo = $this->dbConnect();
-    $sql = "INSERT INTO user_tbl(user_name,user_name_furi,email,pass,address,post_no,tell,birthday) VALUES (?,?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO user_tbl(user_name,user_name_furi,email,pass,address,post_no,tell,birthday,femail) VALUES (?,?,?,?,?,?,?,?,?)";
     $ps = $pdo->prepare($sql);
     $ps->bindvalue(1, $user_name, PDO::PARAM_STR);
     $ps->bindvalue(2, $user_name_furi, PDO::PARAM_STR);
@@ -41,6 +41,24 @@ class DBManager
     $ps->bindvalue(6, $post_no, PDO::PARAM_STR);
     $ps->bindvalue(7, $tell, PDO::PARAM_STR);
     $ps->bindvalue(8, $birthday, PDO::PARAM_STR);
+    $ps->bindvalue(9, $femail, PDO::PARAM_STR);
     $ps->execute();
+  }
+
+  public function login($usermail, $userpass)
+  {
+    $ret = [];
+    $pdo = $this->dbConnect();
+    $sql = "SELECT * FROM user_tbl WHERE user_mail=?";
+    $ps = $pdo->prepare($sql);
+    $ps->bindvalue(1, $usermail, PDO::PARAM_STR);
+    $ps->execute();
+    $userList = $ps->fetchAll();
+    foreach ($userList as $row) {
+      if (password_verify($userpass, $row['pass']) == true) {
+        $ret = $userList;
+      }
+    }
+    return $ret;
   }
 }

@@ -28,7 +28,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </div>
   </nav>
   </div>
-  <h1 class="touroku">以下の内容で登録します。よろしいですか？</h1>
+  <h1 class="touroku">以下の内容で登録しました。</h1>
   <h1 class="center">
   <?php
     echo"氏名<br>"
@@ -56,40 +56,20 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     .$_POST['birthday']."<br><br>";
 
     echo"性別<br>";
-    switch($_POST["flexRadioDefault"]){
+    switch($_POST['flexRadioDefault']){
       case "男":
-        echo"男<br>";break;
+        echo "男<br>";break;
       case "女":
-        echo"女<br>";break;
-      case"答えたくない":
+        echo "女<br>";break;
+      case "答えたくない":
         echo "答えたくない<br>";break;
         
       }
-      $pdo=new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8','LAA1418145','topsix666');
-
-$sql="INSERT INTO user_tbl(user_name,user_name_furi,email,pass,
-
-                           address,post_no,tell,date,femail)
-
-                           VALUE(?,?,?,?,?,?,?,?)";
-
-$ps=$pdo->prepare($sql);
-
-$dayStr=date("Y\m\d");
-
-$ps->bindValue(1,$_POST['simei'],PDO::PARAM_STR):
-$ps->bindValue(2,$_POST['huri'],PDO::PARAM_STR):
-$ps->bindValue(3,$_POST['meado'],PDO::PARAM_STR):
-$ps->bindValue(4,$_POST['pass'],PDO::PARAM_STR):
-$ps->bindValue(5,$_POST['yuubin'],PDO::PARAM_STR):
-$ps->bindValue(6,$_POST['jyusyo'],PDO::PARAM_STR):
-$ps->bindValue(7,$_POST['callnumber'],PDO::PARAM_STR):
-$ps->bindValue(8,$dayStr,PDO::PARAM_STR):
-$ps->bindValue(9,$_POST['birthday'],PDO::PARAM_STR):
-$ps->execute();
+    require_once 'dao/DBManager.php';
+    $dbmng = new DBManager();
+    $dbmng->user_insert($_POST['simei'],$_POST['huri'],$_POST['meado'],$_POST['pass'],$_POST['yuubin'],$_POST['jyusyo'],$_POST['callnumber'],$_POST['birthday'],$_POST['flexRadioDefault']);
    ?>
-   <a href="kaihatuTOUROKU.php">戻る</a>
-   <a class="simasu" href="kaihatuTOP.php">登録します</a>
+   
    </h1>
 
 </body>
