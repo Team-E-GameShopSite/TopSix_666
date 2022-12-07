@@ -49,13 +49,13 @@ class DBManager
   {
     $ret = [];
     $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM user_tbl WHERE user_mail=?";
+    $sql = "SELECT * FROM user_tbl WHERE email=?";
     $ps = $pdo->prepare($sql);
     $ps->bindvalue(1, $usermail, PDO::PARAM_STR);
     $ps->execute();
     $userList = $ps->fetchAll();
     foreach ($userList as $row) {
-      if (password_verify($userpass, $row['pass']) == true) {
+      if (password_verify($userpass, $row['pass']) == true){
         $ret = $userList;
       }
     }
