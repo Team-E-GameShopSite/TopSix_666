@@ -7,32 +7,6 @@
     <style>
     </style>
     <script type="text/javascript">
-        function registClick(){
-            const mailPattern=/^[A-Za-z0-9]{1}[A-za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/;
-            const passPattern=/^(?=.*[A-Z])(?=.*[.?/-])[a-zA-Z0-9.?/-]{8,24}$/;
-    
-            let mail =document.getElementById("usermail").value;
-            let pass =document.getElementById("pass").value;
-            let isSuccess=true;
-    
-            document.getElementById("errorMsg").innerHTML="";
-            if(mailPattern.test(mail)==false){
-                let errorMsgTag=document.createElement("p");
-                errorMsgTag.textContent="正しいメールアドレスを入力してください。メールアドレスの形式が不正です。";
-                document.getElementById("errorMsg").appendChild(errorMsgTag);
-                isSuccess =false;
-            }
-            if(passPattern.test(pass)==false){
-                let errorMsgTag=document.createElement("p");
-                errorMsgTag.textContent="正しいパスワードを入力してください。パスワードは８文字以上で英字(大文字/小文字)、数字、記号が一つ以上含まれる必要があります";
-                document.getElementById("errorMsg").appendChild(errorMsgTag);
-                isSuccess =false;
-            }
-            if(isSuccess==true){
-                window.location.href='kaihatuTOP.php';
-            }
-        }
-    
         </script>
     <link href="styleLOGIN.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -58,7 +32,8 @@
           </div>
         </nav>
         </div>
-        
+    
+    <form action="kaihatuLOGIN.php" method="post">
     <div id="maindiv" class="container">
         <div class="row mt-5">
             <div class="offset-md-3 col-md-6">
@@ -92,13 +67,13 @@
                 <div class="row">
                     <div class="col-md-12 mt-3">
                         <div class="d-grid gap-2">
-                            <button class="btn btn-outline-primary" type="button"
-                                onclick="registClick()">ログイン</button>
+                            <input type="submit" class="btn btn-outline-primary" value="ログイン">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+</form>
 
         <div class="owasure">
             <button class="btn btn-outline-dark  me-2 btn-sm"   type="button">パスワードをお忘れですか？</button>
