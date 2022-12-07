@@ -28,7 +28,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </div>
   </nav>
   </div>
-  <h1 class="touroku">以下の内容で登録します。よろしいですか？</h1>
+  <h1 class="touroku">以下の内容で登録しました。</h1>
   <h1 class="center">
   <?php
     echo"氏名<br>"
@@ -69,8 +69,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     $dbmng = new DBManager();
     $dbmng->user_insert($_POST['simei'],$_POST['huri'],$_POST['meado'],$_POST['pass'],$_POST['yuubin'],$_POST['jyusyo'],$_POST['callnumber'],$_POST['birthday'],$_POST['flexRadioDefault']);
    ?>
-   <a href="kaihatuTOUROKU.php">戻る</a>
-   <a class="simasu" href="kaihatuTOP.php">登録します</a>
+   
    </h1>
 
 </body>

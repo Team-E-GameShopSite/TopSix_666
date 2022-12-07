@@ -136,17 +136,6 @@
   <div class="photo">
     <img src="img/TopSix.png" alt="" width="130" height="130">
   </div>
-
-<?php
-require_once "DBManager.php";
-
-$dbm=new DBManager();
-$userList=$dbm->insert($_POST['simei'],$_POST['huri'],$_POST['meado'],$_POST['pass'],$_POST['yuubin'],$_POST['jyusyo'],$_POST['callnumber'],$_POST['birthday']);
-?>
-
-
-
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
