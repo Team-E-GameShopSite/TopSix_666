@@ -137,7 +137,7 @@
     const yuubin = document.getElementById("yuubin").value;
     const address = document.getElementById("address").value;
     const phone = document.getElementById("phone").value;
-    const birth = document.getElementById("birth").value;
+    const birth = document.getElementById("birthday").value;
 
     var flag = 0;
     if (name.length == 0) {
