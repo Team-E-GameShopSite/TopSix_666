@@ -115,7 +115,7 @@
         echo "
               <div class='col-md-2'>
                 <div class='card'>
-                  <a href='kaihatuSYOUSAI.php' style='text-decoration: none;color:black'>
+                  <a href='kaihatuSYOUSAI.php?item_id=".$row['item_id']."' style='text-decoration: none;color:black'>
                     <img src=" . $row['image_path'] . " class='card-img' alt='...' height='170'>
                     <div class='card-body'>
                       <h5 class='card-title'>" . $row['item_name'] . "</h5>
