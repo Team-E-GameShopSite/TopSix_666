@@ -64,7 +64,7 @@ class DBManager
 
   public function GetItemInfoToID($item_id){
     $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM item_tbl WHERE item_id = ?";
+    $sql = "SELECT * FROM items_tbl WHERE item_id = ?";
 
     $ps = $pdo->prepare($sql);
     $ps->bindValue(1,$item_id,PDO::PARAM_INT);
