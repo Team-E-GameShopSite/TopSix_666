@@ -37,10 +37,10 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       require_once 'dao/DBManager.php';
       $dbmng = new DBManager();
     
-      $searchArray = $dbmng->getItemTblAll();
+      $searchItem = $dbmng->GetItemInfoToID($_GET['item_id']);
     
-      if(!empty($searchArray)){
-        foreach($searchArray as $row){
+      if(!empty($searchItem)){
+        foreach($searchItem as $row){
           echo "<div class='cartcheck'>
           <div class='img'>
             <img src=".$row['image_path'].  " class='d-block w-100' alt='...'  weight='100%' height='400'>
