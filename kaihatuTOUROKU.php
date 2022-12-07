@@ -98,7 +98,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       <p class="fs-3">生年月日</p>
     </div>
     <div class="text">
-      <input type="date"  size="100" name="calendar" max="9999-12-31" name="birthday">
+      <input type="date"  size="100" max="9999-12-31" name="birthday">
     </div>
       <div class="name">
         <p class="fs-3">性別</p>
@@ -114,7 +114,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         <p class="fs-3">女</p>
       </div>
       <div class="form-check">
-        <input class="form-check-input" size="100" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <input class="form-check-input" size="100" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  checked="checked">
         <p class="fs-3">答えたくない</p>
       </div>
     </div>
