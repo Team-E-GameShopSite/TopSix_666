@@ -38,35 +38,35 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <p class="fs-3">氏名</p>
   </div>
   <div class="text">
-    <input type="text" size="100" maxlength="100"  placeholder="山田太郎" name="simei" autocomplete="off">
+    <input type="text" size="100" maxlength="100"  placeholder="山田太郎" id="name" name="simei" autocomplete="off">
     <h3 id="name_chk" style="display: none; color: red;">名前が漢字になっていません</h3>
   </div>  
     <div class="name">
       <p class="fs-3">氏名（フリガナ）</p>
     </div>
   <div class="text">
-    <input type="text" size="100" maxlength="200" placeholder="やまだたろう" name="huri" autocomplete="off">
+    <input type="text" size="100" maxlength="200" placeholder="やまだたろう" id="name_huri" name="huri" autocomplete="off">
     <h3 id="name_huri_chk" style="display: none; color: red;">名前(ふりがな)がひらがなになっていません</h3>
   </div>
     <div class="name">
     <p class="fs-3">メールアドレス</p>
   </div>
   <div class="text">
-  <input type="text"   size="100" maxlength="254" placeholder="aaaa@gmail.com" name="meado" autocomplete="off">
+  <input type="text"   size="100" maxlength="254" placeholder="aaaa@gmail.com" id="mail" name="meado" autocomplete="off">
   <h3 id="mail_chk" style="display: none; color: red;">メールアドレスが形式に沿っていません</h3>
   </div>
   <div class="name">
     <p class="fs-3">パスワード</p>
   </div>
   <div class="text">
-  <input type="text" size="100" maxlength="20" placeholder="半角英数8文字以上" name="pass" autocomplete="off">
+  <input type="text" size="100" maxlength="20" placeholder="半角英数8文字以上" id="pass" name="pass" autocomplete="off">
   <h3 id="pass_chk" style="display: none; color: red;">パスワードが半角英数8文字以上になっていません</h3>
   </div>
   <div class="name">
     <p class="fs-3">パスワード再入力</p>
   </div>
   <div class="text">
-    <input type="text" size="100" maxlength="20" placeholder="半角英数8文字以上" name="passkakunin" autocomplete="off">
+    <input type="text" size="100" maxlength="20" placeholder="半角英数8文字以上" id="repass" name="passkakunin" autocomplete="off">
     <h3 id="repass_chk" style="display: none; color: red;">パスワードが最初と違っています</h3>
   </div>
 
@@ -75,7 +75,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <p class="fs-3">郵便番号</p>
   </div>
   <div class="text">
-    <input type="text" size="100" maxlength="7" placeholder="ハイフンなし" name="yuubin" autocomplete="off">
+    <input type="text" size="100" maxlength="7" placeholder="ハイフンなし"  id="yuubin" name="yuubin" autocomplete="off">
     <h3 id="yuubin_chk" style="display: none; color: red;">郵便番号が7桁になっていません</h3>
   </div>
 
@@ -90,7 +90,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <p class="fs-3">電話番号</p>
   </div>
     <div class="text">
-      <input type="text" size="100" maxlength="21" placeholder="ハイフンなし" name="callnumber" autocomplete="off">
+      <input type="text" size="100" maxlength="21" placeholder="ハイフンなし" id="phone" name="callnumber" autocomplete="off">
       <h3 id="phone_chk" style="display: none; color: red;">電話番号が形式に沿っていません</h3>
     </diV>
 
@@ -98,7 +98,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       <p class="fs-3">生年月日</p>
     </div>
     <div class="text">
-      <input type="date"  size="100" max="9999-12-31" name="birthday">
+      <input type="date"  size="100" max="9999-12-31"   id="birth" name="birthday">
     </div>
       <div class="name">
         <p class="fs-3">性別</p>
