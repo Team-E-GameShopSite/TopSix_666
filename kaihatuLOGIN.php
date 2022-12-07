@@ -35,7 +35,7 @@
     
 
 
-    <form action="kaihatuTOP.php" method="post">
+    <form action="kaihatuLOGIN.php" method="post">
     <div id="maindiv" class="container">
         <div class="row mt-5">
             <div class="offset-md-3 col-md-6">
