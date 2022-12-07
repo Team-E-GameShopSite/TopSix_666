@@ -29,7 +29,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </nav>
     </div>
   </body>
-  <form method="post" action="TOUROKUkakunin.php">
+  <form method="post" action="TOUROKUkakunin.php" autocomplete="off">
   <p class="fs-1">会員登録</p>
     <div class="naiyou">
   <p class="fs-3">下記の内容をご入力の上、おすすめください</p>
@@ -38,35 +38,35 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <p class="fs-3">氏名</p>
   </div>
   <div class="text">
-    <input type="text" size="100" maxlength="100"  placeholder="山田太郎" id="name">
+    <input type="text" size="100" maxlength="100"  placeholder="山田太郎" id="name" autocomplete="off">
     <h3 id="name_chk" style="display: none; color: red;">名前が漢字になっていません</h3>
   </div>  
     <div class="name">
       <p class="fs-3">氏名（フリガナ）</p>
     </div>
   <div class="text">
-    <input type="text" size="100" maxlength="200" placeholder="やまだたろう" id="name_huri">
+    <input type="text" size="100" maxlength="200" placeholder="やまだたろう" id="name_huri" autocomplete="off">
     <h3 id="name_huri_chk" style="display: none; color: red;">名前(ふりがな)がひらがなになっていません</h3>
   </div>
     <div class="name">
     <p class="fs-3">メールアドレス</p>
   </div>
   <div class="text">
-  <input type="text"   size="100" maxlength="254" placeholder="aaaa@gmail.com" id="mail">
+  <input type="text"   size="100" maxlength="254" placeholder="aaaa@gmail.com" id="mail" autocomplete="off">
   <h3 id="mail_chk" style="display: none; color: red;">メールアドレスが形式に沿っていません</h3>
   </div>
   <div class="name">
     <p class="fs-3">パスワード</p>
   </div>
   <div class="text">
-  <input type="password" size="100" maxlength="20" placeholder="半角英数8文字以上" id="pass">
+  <input type="text" size="100" maxlength="20" placeholder="半角英数8文字以上" id="pass" autocomplete="off">
   <h3 id="pass_chk" style="display: none; color: red;">パスワードが半角英数8文字以上になっていません</h3>
   </div>
   <div class="name">
     <p class="fs-3">パスワード再入力</p>
   </div>
   <div class="text">
-    <input type="password" size="100" maxlength="20" placeholder="半角英数8文字以上" id="repass">
+    <input type="text" size="100" maxlength="20" placeholder="半角英数8文字以上" id="repass" autocomplete="off">
     <h3 id="repass_chk" style="display: none; color: red;">パスワードが最初と違っています</h3>
   </div>
 
@@ -75,7 +75,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <p class="fs-3">郵便番号</p>
   </div>
   <div class="text">
-    <input type="text" size="100" maxlength="7" placeholder="ハイフンなし" id="yuubin">
+    <input type="text" size="100" maxlength="7" placeholder="ハイフンなし" id="yuubin" autocomplete="off">
     <h3 id="yuubin_chk" style="display: none; color: red;">郵便番号が7桁になっていません</h3>
   </div>
 
@@ -83,14 +83,14 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     <p class="fs-3">住所</p>
   </div>
     <div class="text">
-      <input type="text" size="100" maxlength="200" id="address">
+      <input type="text" size="100" maxlength="200" id="address" autocomplete="off">
     </div>
 
     <div class="name">
     <p class="fs-3">電話番号</p>
   </div>
     <div class="text">
-      <input type="text" size="100" maxlength="21" placeholder="ハイフンなし" id="phone">
+      <input type="text" size="100" maxlength="21" placeholder="ハイフンなし" id="phone" autocomplete="off">
       <h3 id="phone_chk" style="display: none; color: red;">電話番号が形式に沿っていません</h3>
     </diV>
 
@@ -98,7 +98,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       <p class="fs-3">生年月日</p>
     </div>
     <div class="text">
-      <input type="date"  size="100" name="calendar" max="9999-12-31" id="birth">
+      <input type="date"  size="100" name="calendar" max="9999-12-31" id="birth" autocomplete="off">
     </div>
     <div class="name">
         <p class="fs-3">性別</p>
@@ -114,7 +114,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         <p class="fs-3">女</p>
       </div>
       <div class="form-check">
-        <input type="radio" class="form-check-input" size="100"  value="答えたくない" name="flexRadioDefault" id="flexRadioDefault1">
+        <input type="radio" class="form-check-input" size="100"  value="答えたくない" name="flexRadioDefault" id="flexRadioDefault1" checked="checked">
         <p class="fs-3">答えたくない</p>
       </div>
     </div>
