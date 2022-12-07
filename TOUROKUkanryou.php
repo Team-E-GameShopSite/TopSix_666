@@ -12,29 +12,17 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 </head>
 
 <body>
-  <h1 class="title">登録完了しました</h1>
-  <?php
-  $pdo = new PDO('mysql:host=localhost;dbname=fishing goods;charset=utf8',
-
-  'webuser','abccsd2');
-
-  $sql="INSERT INTO user_tbl(user_name,user_hurigana,user_pass,user_mail)VALUE(?,?,?,?)";
-
-  $ps=$pdo->prepare($sql);
-
-  $ps->bindValue(1,$_POST['simei'],PDO::PARAM_STR);
-
-  $ps->bindValue(2,$_POST['huri'],PDO::PARAM_STR);
-
- //$ps->bindValue(3,password_hash($_POST['pass'],PASSWORD_DEFAULT),PDO::PARAM_STR);
-
- $ps->bindValue(3,$_POST['pass'],PDO::PARAM_STR);
-
-  $ps->bindValue(4,$_POST['meado'],PDO::PARAM_STR);
-
-  $ps->execute();
-
- ?>
+<?php
+require_once 'dao/DBManager.php';
+$dbm=new DBManager();
+$userData=$dbm->login($_POST['mail'],$_POST['pass']);
+foreach ($userData as $row){
+      echo"ログイン成功！ようこそ".$row['user_name']."さん！";
+    }
+if(count($userData)==0){
+    echo"アカウントが存在しません";
+}
+?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

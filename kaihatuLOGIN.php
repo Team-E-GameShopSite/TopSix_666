@@ -35,7 +35,7 @@
     
 
 
-    <form action="kaihatuLOGIN.php" method="post" autocomplete="off">
+    <form action="TOUROKUkanryou.php" method="post" autocomplete="off">
     <div id="maindiv" class="container">
         <div class="row mt-5">
             <div class="offset-md-3 col-md-6">
@@ -90,16 +90,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
-<?php
-require_once 'dao/DBManager.php';
-$dbm=new DBManager();
-$userData=$dbm->login($_POST['mail'],$_POST['pass']);
-foreach ($userData as $row){
-      echo"ログイン成功！ようこそ".$row['user_name']."さん！";
-    }
-if(count($userData)==0){
-    echo"アカウントが存在しません";
-}
-?>
 
 </html>
