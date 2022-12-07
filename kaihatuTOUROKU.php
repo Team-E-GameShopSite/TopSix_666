@@ -98,7 +98,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       <p class="fs-3">生年月日</p>
     </div>
     <div class="text">
-      <input type="text"  size="100" max="9999-12-31" id="birth" name="birthday" autocomplete="off">
+      <input type="text"  size="100" max="9999-12-31" id="birthday" name="birthday" autocomplete="off">
     </div>
     <div class="name">
         <p class="fs-3">性別</p>
