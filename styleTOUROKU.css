@@ -16,7 +16,7 @@ body {
  
  .fs-1{
     text-align:center;
-    }
+  }
  .naiyou{
     text-align: center;
  }
@@ -31,4 +31,17 @@ body {
 
  .touroku{
   text-align: center;
+ }
+ 
+ .size{
+  display: inline-block;
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  margin: 0.5em 0;
+ }
+ .baka{
+  margin: 100px 50px 30px 80px;
  }
