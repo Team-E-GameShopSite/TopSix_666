@@ -46,25 +46,25 @@
         </nav>
     </div>
     <div class="cart">
-    <a href="kaihatuCART.php" style="color:black">
+    <a href="kaihatuCART.php"  style='text-decoration: none;color:black'>
         <p class="fs-1">CART</p>
         <i class="bi bi-cart"></i>
     </a>
     </div>
     <div class="favorite">
-    <a href="kaihatuOKINIIRI.php" style="color:black">
+    <a href="kaihatuOKINIIRI.php"  style='text-decoration: none;color:black'>
         <p class="fs-1">FAVORITE</p>
         <i class="bi bi-star"></i>
     </a>
     </div>
     <div class="history">
-    <a href="kaihatuRIREKI.php" style="color:black">
+    <a href="kaihatuRIREKI.php" style='text-decoration: none;color:black'>
         <p class="fs-1">HISTORY</p>
         <i class="bi bi-book"></i>
     </a>
     </div>
     <div class="logout">
-    <a href="kaihatuTOP.php" style="color:black">
+    <a href="kaihatuTOP.php"  style='text-decoration: none;color:black'>
         <p class="fs-1">LOG OUT</p>
         <i class="bi bi-box-arrow-right"></i>
     </a>

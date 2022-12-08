@@ -13,12 +13,11 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
 <body>
 <?php
-session_start();
 require_once 'dao/DBManager.php';
 $dbm=new DBManager();
 $userData=$dbm->login($_POST['mail'],$_POST['pass']);
 foreach ($userData as $row){
-      header('Location:kaihatuTOP.php');
+      echo"ログイン成功！ようこそ".$row['user_name']."さん！";
     }
 if(count($userData)==0){
     echo"アカウントが存在しません";
