@@ -34,12 +34,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <?php
    require_once 'dao/DBManager.php';
    $dbmng = new DBManager();
- 
-   $searchArray = $dbmng->getItemTblAll();
-   foreach($searchArray as $row){
-    echo "<img src=".$row['image_path'].">";
-    echo"<h3>-----------------------------------------------------------<br></h3>";
-}
+   $searchArray = $dbmng->carts($_POST['suuryo']);
+    echo "$_POST['suuryo']";
 ?>
   <a href="kaihatuKOUNYU.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">購入手続きへ→</button></a>
   </div>
