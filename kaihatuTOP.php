@@ -28,7 +28,7 @@
              require_once 'dao/DBManager.php';
              $dbmng = new DBManager();
            
-             $loginresult = $dbmng->login_session($_POST['mail'],$_POST['pass']);
+             $loginresult = $dbmng->login_session($_POST['usermail'],$_POST['pass']);
              echo $loginresult;
            ?>
           </button></a>
