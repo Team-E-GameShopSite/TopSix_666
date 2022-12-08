@@ -74,11 +74,11 @@ class DBManager
     return $searchItem;
   }
 
-  public function carts($suuryo){
+  public function carts($item_count){
     $pdo = $this->dbConnect();
-    $sql = "INSERT INTO carts(suuryo) VALUES (?)";
+    $sql = "INSERT INTO carts(item_count) VALUES (?)";
     $ps = $pdo->prepare($sql);
-    $ps->bindvalue(1, $suuryo, PDO::PARAM_INT);
+    $ps->bindvalue(1, $item_count, PDO::PARAM_INT);
     $ps->execute();
   }
 }
