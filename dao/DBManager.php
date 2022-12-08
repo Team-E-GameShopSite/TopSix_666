@@ -83,6 +83,7 @@ class DBManager
   }
 
   public function login_session($mail,$pass){
+    session_start();
     $pdo = $this->dbConnect();
     $sql=$pdo->prepare('select * from user_tbl  where email=? and pass=?');
     $sql->execute([$mail,$pass]);
