@@ -46,24 +46,32 @@
         </nav>
     </div>
     <div class="cart">
+    <a href="kaihatuCART.php" style="color:black">
         <p class="fs-1">CART</p>
-        <a href="kaihatuCART.php" style="color:black"><i class="bi bi-cart"></i></a>
+        <i class="bi bi-cart"></i>
+    </a>
     </div>
     <div class="favorite">
+    <a href="kaihatuOKINIIRI.php" style="color:black">
         <p class="fs-1">FAVORITE</p>
-        <a href="kaihatuOKINIIRI.php" style="color:black"><i class="bi bi-star"></i></a>
+        <i class="bi bi-star"></i>
+    </a>
     </div>
     <div class="history">
+    <a href="kaihatuRIREKI.php" style="color:black">
         <p class="fs-1">HISTORY</p>
-        <a href="kaihatuRIREKI.php" style="color:black"><i class="bi bi-book"></i></a>
+        <i class="bi bi-book"></i>
+    </a>
     </div>
     <div class="logout">
+    <a href="kaihatuTOP.php" style="color:black">
         <p class="fs-1">LOG OUT</p>
-        <a href="kaihatuTOP.php" style="color:black"><i class="bi bi-box-arrow-right"></i></a>
+        <i class="bi bi-box-arrow-right"></i>
+    </a>
     </div>
     <div class="button">
     <a href="kaihatuTOP.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">トップへ</button></a>
-    <a href="kaihatuTOP.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">お問い合わせ</button></a>
+    <a href="kaihatuTOP.php#contactt"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">お問い合わせ</button></a>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
