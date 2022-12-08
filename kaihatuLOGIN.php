@@ -35,7 +35,7 @@
     
 
 
-    <form action="TOUROKUkanryou.php" method="post" autocomplete="off">
+    <form action="kaihatuTOP.php" method="post" autocomplete="off">
     <div id="maindiv" class="container">
         <div class="row mt-5">
             <div class="offset-md-3 col-md-6">

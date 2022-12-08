@@ -23,7 +23,15 @@
           <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
           <a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
           <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
-          <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
+          <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
+           <?php 
+             require_once 'dao/DBManager.php';
+             $dbmng = new DBManager();
+           
+             $loginresult = $dbmng->login_session($_POST['mail'],$_POST['pass']);
+             echo $loginresult;
+           ?>
+          </button></a>
         </form>
       </div>
     </nav>
