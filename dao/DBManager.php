@@ -81,30 +81,5 @@ class DBManager
     $ps->bindvalue(1, $item_count, PDO::PARAM_INT);
     $ps->execute();
   }
-
-  public function login_session($mail,$pass){
-    session_start();
-    $pdo = $this->dbConnect();
-    $sql=$pdo->prepare('select * from user_tbl  where email=? and pass=?');
-    $sql->execute([$mail,$pass]);
-    foreach($sql->fetchAll() as $row){
-      $_SESSION['customer']=[
-        'id'=>$row['user_id'],
-        'name'=>$row['user_name'],
-        'furi'=>$row['user_name_furi'],
-        'email'=>$row['email'],
-        'pass'=>$row['pass'],
-        'address'=>$row['address'],
-        'post'=>$row['post_no'],
-        'tell'=>$row['tell'],
-        'birthday'=>$row['birthday'],
-        'femail'=>$row['femail']];
-    }
-    if(isset($_SESSION['customer'])){
-      return $_SESSION['customer']['name'];
-    }else{
-      return "false";
-    }
-  }
 }
 ?>
