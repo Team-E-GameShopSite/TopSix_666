@@ -39,7 +39,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       </div>
       </div>
       <div class="form">
-      <input type="email" class="form-control" id="customer">
+      <input type="email" class="form-control" id="customer" autocomplete="off">
       </div>
     </div>
     <div class="col-sm-6">
@@ -64,13 +64,13 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       <p class="fs-2">メールアドレス</p>
       </div>
       <div class="form">
-      <input type="email" class="form-control" id="mail" >
+      <input type="email" class="form-control" id="mail" autocomplete="off">
       </div>
     </div>
     <div class="col-sm-6">
       <p class="fs-2">電話番号</p>
       <div class="form2">
-      <input type="email" class="form-control" id="phone">
+      <input type="email" class="form-control" id="phone" autocomplete="off">
       </div>
     </div>
     </div>
@@ -78,13 +78,13 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
       <div class="yuubinotodoke">
       <p class="fs-2">郵便番号</p>
-      <input type="email" class="form-control" id="post">
+      <input type="email" class="form-control" id="post" autocomplete="off">
       </div>
 
 
     <div class="yuubinotodoke">
       <p class="fs-2">お届け先住所</p>
-      <textarea class="form-control" id="jyusyo" rows="3"  placeholder="(例)東京都○○市△△町○○マンション△△号室"></textarea>
+      <textarea class="form-control" id="jyusyo" rows="3" autocomplete="off"  placeholder="(例)東京都○○市△△町○○マンション△△号室"></textarea>
     </div>
 
   
@@ -92,12 +92,10 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
             <a href="kaihatuCART.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">カートに戻る</button></a>
         </div>
 
-        <form action="kaihatuKOUNYUKANRYOU.php" method="post">
+        <form action="kaihatuKOUNYUKANRYOU.php" method="post" autocomplete="off">
         <div class="kounyu">
-         <div class="row">
             <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
              </div>
-         </div>
           <input type="submit" class=" TOPNIMODORU btn btn-outline-primary  me-2 btn-lg" id="buy" value="購入する">
         </div>
         </form> 
