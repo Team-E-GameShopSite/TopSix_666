@@ -87,6 +87,10 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       <textarea class="form-control" id="jyusyo" rows="3" autocomplete="off"  placeholder="(例)東京都○○市△△町○○マンション△△号室"></textarea>
     </div>
 
+    <div class="row">
+      <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
+      </div>
+    </div>
   
         <div class="cart">
             <a href="kaihatuCART.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg"   type="button">カートに戻る</button></a>
@@ -94,8 +98,6 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
         <form action="kaihatuKOUNYUKANRYOU.php" method="post" autocomplete="off">
         <div class="kounyu">
-            <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
-             </div>
           <input type="submit" class=" TOPNIMODORU btn btn-outline-primary  me-2 btn-lg" id="buy" value="購入する">
         </div>
         </form> 
