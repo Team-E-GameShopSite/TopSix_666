@@ -59,10 +59,10 @@
         <a href="kaihatuSYOUSAI.php"><img src="img/game/switch.webp" alt="任天堂switch" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
       </div>
       <div class="carousel-item " data-bs-interval="2500">
-        <a href="kaihatuSYOUSAI.php"><img src="img/soft/spra/sns.webp" alt="任天堂switch" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
+        <a href="kaihatuSYOUSAI.php"><img src="img/soft/spra/sns.webp" alt="スプラトゥーン" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
       </div>
       <div class="carousel-item " data-bs-interval="2500">
-        <a href="kaihatuSYOUSAI.php"><img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" alt="任天堂switch" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
+        <a href="kaihatuSYOUSAI.php"><img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" alt="PS5" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
