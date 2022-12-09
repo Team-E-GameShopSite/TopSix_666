@@ -36,26 +36,6 @@
     <div class="img">
       <img src="img/soft/pokemon/pokemon1.jpg" class="d-block w-100" alt="..." weight="100%" height="400">
     </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <a href="img/soft/pokemon/pokemon2.jpg" data-lightbox="group"><img src="img/soft/pokemon/pokemon2.jpg" class="card-img" alt="..." height="100"></a>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="card">
-          <a href="img/soft/pokemon/pokemon3.jpg" data-lightbox="group"><img src="img/soft/pokemon/pokemon3.jpg" class="card-img" alt="..." height="100"></a>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="card">
-          <a href="img/soft/pokemon/pokemon4.jpg" data-lightbox="group"><img src="img/soft/pokemon/pokemon4.jpg" class="card-img" alt="..." height="100"></a>
-        </div>
-      </div>
-
-    </div>
 
 
     <div class="row">
