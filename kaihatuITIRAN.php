@@ -96,7 +96,20 @@
     <button type="button" class="btn btn-primary">7</button>
     <button type="button" class="btn btn-primary">8</button>
   </div>
-  <h1>ゲームソフト</h1>
+  <h1>
+    <?php
+      require_once 'dao/DBManager.php';
+      $dbmng = new DBManager();
+
+      $genre = $dbmng->GetGenretoGenreID($_GET['genre_id']);
+
+      if (!empty($searchArray)) {
+        foreach ($searchArray as $row) {
+          echo $row['genre'];
+        }
+      }
+    ?>
+  </h1>
 
   <div class="container">
     <?php
