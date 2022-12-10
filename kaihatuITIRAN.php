@@ -54,21 +54,21 @@
     </a>
     <h5>今月の人気商品</h5>
     <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI.php">
+      <a href="kaihatuSYOUSAI.php?item_id=4">
         <div class="card  text-white">
           <img src="img/soft/spra/spra.jpg" class="card-img" alt="..." height="100">
         </div>
     </div>
     </a>
     <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI.php">
+      <a href="kaihatuSYOUSAI.php?item_id=2">
         <div class="card  text-white">
           <img src="img/soft/pokemon/pokemon(2).jpg" class="card-img" alt="..." height="100">
         </div>
     </div>
     </a>
     <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI.php">
+      <a href="kaihatuSYOUSAI.php?item_id=28">
         <div class="card  text-white">
           <img src="img/otherproduct/procon/procon.jpg" class="card-img" alt="..." height="100">
         </div>
