@@ -74,7 +74,7 @@ class DBManager
     return $searchItem;
   }
 
-  public function GetItemInfoToGenreID($genre_id){
+  public function GetItemToGenreID($genre_id){
     $pdo = $this->dbConnect();
     $sql = "SELECT * FROM items_tbl WHERE genre_id = ?";
 

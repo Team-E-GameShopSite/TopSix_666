@@ -104,7 +104,7 @@
     $dbmng = new DBManager();
 
     $flag = 1;
-    $searchArray = $dbmng->getItemTblAll();
+    $searchArray = $dbmng->GetItemToGenreID($_GET['genre_id']);
 
     if (!empty($searchArray)) {
       foreach ($searchArray as $row) {

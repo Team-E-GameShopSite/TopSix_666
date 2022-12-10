@@ -82,7 +82,7 @@
   <div class="row mb-3 gr-3">
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
-        <a href="kaihatuITIRAN.php" style="color:whitesmoke"><img src="img/soft/pokemon/mainvisual_02_RGB._TTW_.png" class="card-img" alt="..." height="353%">
+        <a href="kaihatuITIRAN.php?genre_id=1" style="color:whitesmoke"><img src="img/soft/pokemon/mainvisual_02_RGB._TTW_.png" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">ゲームソフト</h5>
             <p class="card-text">様々なジャンルのゲームソフトを取り扱っています</p>
@@ -92,7 +92,7 @@
     </div>
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
-        <a href="kaihatuITIRAN.php" style="color:white"><img src="img/otherproduct/gamingdevice1.jpg" class="card-img" alt="..." height="353%">
+        <a href="kaihatuITIRAN.php?genre_id=2" style="color:white"><img src="img/otherproduct/gamingdevice1.jpg" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">その他周辺機器</h5>
             <p class="card-text">様々な周辺機器を取り扱っています</p>
@@ -106,7 +106,7 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
-        <a href="kaihatuITIRAN.php" style="color:black"><img src="img/game/PS5.jpg" class="card-img" alt="..." height="353%">
+        <a href="kaihatuITIRAN.php?genre_id=3" style="color:black"><img src="img/game/PS5.jpg" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">ゲーム機</h5>
             <p class="card-text">様々なゲーム機を取り扱っています</p>
@@ -116,7 +116,7 @@
     </div>
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
-        <a href="kaihatuITIRAN.php" style="color:white"><img src="img/gamingPC/gtunenextgearcase .png" class="card-img" alt="..." height="353%">
+        <a href="kaihatuITIRAN.php?genre_id=4" style="color:white"><img src="img/gamingPC/gtunenextgearcase .png" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">ゲーミングPC</h5>
             <p class="card-text">様々なゲーミングPCを取り扱っています</p>
