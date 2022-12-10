@@ -103,8 +103,8 @@
 
       $genre = $dbmng->GetGenretoGenreID($_GET['genre_id']);
 
-      if (!empty($searchArray)) {
-        foreach ($searchArray as $row) {
+      if (!empty($genre)) {
+        foreach ($genre as $row) {
           echo $row['genre'];
         }
       }
