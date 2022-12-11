@@ -39,9 +39,9 @@
         foreach ($searchArray as $row) {
           if($row['sale_flag'] == 1 && $row['sale_price'] != 0){
             echo "<div class='col-sm-9'>
-            <a href='kaihatuSYOUSAI_SALE.php?item_id=".$row['item_id']">
+            <a href='kaihatuSYOUSAI_SALE.php?item_id=".$row['item_id'].">
               <div class='card text-white'>
-              <img src=" . $row['image_path'] . "class='card-img' alt='...' height='80'>
+              <img src=". $row['image_path'] . "class='card-img' alt='...' height='80'>
               </div>
             </a>
             </div>";
