@@ -99,6 +99,30 @@ class DBManager
   }
   //ジャンルIDを検索→商品情報を引っ張ってくる関数
 
+  public function SortPriceASC(){
+    $pdo = $this->dbConnect();
+    $sql = "SELECT * FROM items_tbl ORDER BY item_price DESC";
+
+    $ps = $pdo->prepare($sql);
+    $ps->execute();
+  }
+  //金額高い順に並べ替え
+  public function SortPriceDESC(){
+    $pdo = $this->dbConnect();
+    $sql = "SELECT * FROM items_tbl ORDER BY item_price";
+
+    $ps = $pdo->prepare($sql);
+    $ps->execute();
+  }
+  //金額安い順に並べ替え
+  public function SortNew(){
+    $pdo = $this->dbConnect();
+    $sql = "SELECT * FROM items_tbl ORDER BY item_id DESC";
+
+    $ps = $pdo->prepare($sql);
+    $ps->execute();
+  }
+  //新着順に並べ替え
   public function carts($item_count){
     $pdo = $this->dbConnect();
     $sql = "INSERT INTO carts(item_count) VALUES (?)";
