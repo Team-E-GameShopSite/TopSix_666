@@ -144,13 +144,13 @@
   <div class="media">
     <div class="row">
       <div class="col-sm-4">
-      <a href="https://twitter.com/twitterjp?lang=ja"><p class="fs-3"><i class="bi bi-twitter"></i></p></a>
+      <a href="https://twitter.com/twitterjp?lang=ja" style='text-decoration: none;color:black'><p class="fs-3"><i class="bi bi-twitter"></i></p></a>
       </div>
       <div class="col-sm-4">
-      <a href="https://www.facebook.com/"><p class="fs-3"><i class="bi bi-facebook"></i></p></a>
+      <a href="https://www.facebook.com/"><p class="fs-3" style='text-decoration: none;color:black'><i class="bi bi-facebook"></i></p></a>
       </div>
       <div class="col-sm-4">
-      <a href="https://business.instagram.com/getting-started?locale=ja_JP"><p class="fs-3"><i class="bi bi-instagram"></i></p></a>
+      <a href="https://business.instagram.com/getting-started?locale=ja_JP" style='text-decoration: none;color:black'><p class="fs-3"><i class="bi bi-instagram"></i></p></a>
       </div>
     </div>
   </div>
