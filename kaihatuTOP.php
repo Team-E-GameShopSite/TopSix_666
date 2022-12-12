@@ -4,7 +4,7 @@
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content=Type">
   <style type="text/css"></style>
-  <link href="styleTOP.css" rel="stylesheet" type="text/css">
+  <link href="cssTest/styleTOP.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,37 +18,36 @@
         <a class="navbar-brand" href="kaihatuTOP.php">
           <img src="img/TopSix.png" alt="" width="85" height="70">
         </a>
-        <form class="d-flex" action="kaihatuITIRAN.php?genre_id=9">
+        <form class="d-flex" action="kaihatuITIRAN.php">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
           <a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
           <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
           <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
-              <?php session_start();
-              $pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8', 'LAA1418145', 'topsix666');
-              $sql = $pdo->prepare('select * from user_tbl  where email=? and pass=?');
-              $sql->execute(["前田大然", "MAEDADAIZEN"]);
-              foreach ($sql->fetchAll() as $row) {
-                $_SESSION['customer'] = [
-                  'id' => $row['user_id'],
-                  'name' => $row['user_name'],
-                  'furi' => $row['user_name_furi'],
-                  'email' => $row['email'],
-                  'pass' => $row['pass'],
-                  'address' => $row['address'],
-                  'post' => $row['post_no'],
-                  'tell' => $row['tell'],
-                  'birthday' => $row['birthday'],
-                  'femail' => $row['femail']
-                ];
-              }
-              if (isset($_SESSION['customer'])) {
-                echo $_SESSION['customer']['name'];
-              } else {
-                echo "false";
-              }
-              ?>
-            </button></a>
+           <?php session_start();
+                $pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8', 'LAA1418145', 'topsix666');
+                $sql=$pdo->prepare('select * from user_tbl  where email=? and pass=?');
+                $sql->execute(["前田大然","MAEDADAIZEN"]);
+                foreach($sql->fetchAll() as $row){
+                  $_SESSION['customer']=[
+                    'id'=>$row['user_id'],
+                    'name'=>$row['user_name'],
+                    'furi'=>$row['user_name_furi'],
+                    'email'=>$row['email'],
+                    'pass'=>$row['pass'],
+                    'address'=>$row['address'],
+                    'post'=>$row['post_no'],
+                    'tell'=>$row['tell'],
+                    'birthday'=>$row['birthday'],
+                    'femail'=>$row['femail']];
+                }
+                if(isset($_SESSION['customer'])){
+                  echo $_SESSION['customer']['name'];
+                }else{
+                  echo "false";
+                }
+           ?>
+          </button></a>
         </form>
       </div>
     </nav>
@@ -76,8 +75,8 @@
     </button>
   </div>
 
-  <p class="fs-2">商品について</p>
-  <p class="fs-3">About product</p>
+  <p class="fs-1">商品について</p>
+  <p class="fs-2">About product</p>
 
 
   <div class="row mb-3 gr-3">
@@ -129,8 +128,8 @@
   </a>
 
   <div id="contactt"></div>
-  <p class="fs-2">お問い合わせ</p>
-  <p class="fs-3">contact</p>
+  <p class="fs-1">お問い合わせ</p>
+  <p class="fs-2">contact</p>
 
   <div class="row">
     <div class="col-sm-6">
