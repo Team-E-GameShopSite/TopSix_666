@@ -75,8 +75,8 @@
     </button>
   </div>
 
-  <p class="fs-1">商品について</p>
-  <p class="fs-2">About product</p>
+  <p class="fs-2">商品について</p>
+  <p class="fs-3">About product</p>
 
 
   <div class="row mb-3 gr-3">
@@ -128,8 +128,8 @@
   </a>
 
   <div id="contactt"></div>
-  <p class="fs-1">お問い合わせ</p>
-  <p class="fs-2">contact</p>
+  <p class="fs-2">お問い合わせ</p>
+  <p class="fs-3">contact</p>
 
   <div class="row">
     <div class="col-sm-6">
