@@ -34,8 +34,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <?php
    require_once 'dao/DBManager.php';
    $dbmng = new DBManager();
-   $searchArray = $dbmng->carts($_POST['suuryo']);
-    echo "$_POST['suuryo']";
+   $searchArray = $dbmng->carts($_GET['suuryo']);
+    echo "$_GET['suuryo']";
 ?>
   <a href="kaihatuKOUNYU.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">購入手続きへ→</button></a>
   </div>

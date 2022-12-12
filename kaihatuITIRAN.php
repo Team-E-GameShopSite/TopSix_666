@@ -31,44 +31,43 @@
 
   <div class="itiran">
     <h5>セール品</h5>
-    <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI_SALE.php">
-        <div class="card text-white">
-          <img src="img/game/nintendo.switch.jpg" class="card-img" alt="..." height="80">
-        </div>
-    </div>
-    </a>
-    <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI_SALE.php">
-        <div class="card text-white">
-          <img src="img/soft/pokemon/pokemon1.jpg" class="card-img" alt="..." height="80">
-        </div>
-    </div>
-    </a>
-    <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI_SALE.php">
-        <div class="card text-white">
-          <img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" class="card-img" alt="..." height="80">
-        </div>
-    </div>
-    </a>
+    <?php
+    require_once 'dao/DBManager.php';
+    $dbmng = new DBManager();
+    $searchArray = $dbmng->getItemTblAll();
+    if (!empty($searchArray)) {
+      foreach ($searchArray as $row) {
+        if ($row['sale_flag'] == 1 && $row['sale_price'] != 0) {
+          echo "<div class='col-sm-9'>
+            <a href='kaihatuSYOUSAI_SALE.php?item_id=" . $row['item_id'] . " '>
+              <div class='card text-white'>
+              <img src=" . $row['image_path'] . " class='card-img' alt='...' height='80'>
+              </div>
+            </a>
+            </div>";
+        }
+      }
+    }
+    ?>
+
+
     <h5>今月の人気商品</h5>
     <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI.php">
+      <a href="kaihatuSYOUSAI.php?item_id=4">
         <div class="card  text-white">
           <img src="img/soft/spra/spra.jpg" class="card-img" alt="..." height="100">
         </div>
     </div>
     </a>
     <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI.php">
+      <a href="kaihatuSYOUSAI.php?item_id=2">
         <div class="card  text-white">
           <img src="img/soft/pokemon/pokemon(2).jpg" class="card-img" alt="..." height="100">
         </div>
     </div>
     </a>
     <div class="col-sm-9">
-      <a href="kaihatuSYOUSAI.php">
+      <a href="kaihatuSYOUSAI.php?item_id=28">
         <div class="card  text-white">
           <img src="img/otherproduct/procon/procon.jpg" class="card-img" alt="..." height="100">
         </div>
@@ -101,7 +100,20 @@
     <button type="button" class="btn btn-primary">7</button>
     <button type="button" class="btn btn-primary">8</button>
   </div>
-  <h1>ゲームソフト</h1>
+  <h1>
+    <?php
+    require_once 'dao/DBManager.php';
+    $dbmng = new DBManager();
+
+    $genre = $dbmng->GetGenretoGenreID($_GET['genre_id']);
+
+    if (!empty($genre)) {
+      foreach ($genre as $row) {
+        echo $row['genre'];
+      }
+    }
+    ?>
+  </h1>
 
   <div class="container">
     <?php
@@ -109,7 +121,7 @@
     $dbmng = new DBManager();
 
     $flag = 1;
-    $searchArray = $dbmng->getItemTblAll();
+    $searchArray = $dbmng->GetItemToGenreID($_GET['genre_id']);
 
     if (!empty($searchArray)) {
       foreach ($searchArray as $row) {
@@ -120,7 +132,7 @@
         echo "
               <div class='col-md-2'>
                 <div class='card'>
-                  <a href='kaihatuSYOUSAI.php?item_id=".$row['item_id']."' style='text-decoration: none;color:black'>
+                  <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'>
                     <img src=" . $row['image_path'] . " class='card-img' alt='...' height='170'>
                     <div class='card-body'>
                       <h5 class='card-title'>" . $row['item_name'] . "</h5>
@@ -139,10 +151,6 @@
       }
     }
     ?>
-  </div>
-
-  <div class="next">
-    <a href="kaihatuITIRAN.php" style="color:black">次へ>></a>
   </div>
 
 </body>

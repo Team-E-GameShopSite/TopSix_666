@@ -74,19 +74,7 @@ class DBManager
     return $searchItem;
   }
 
-  public function GetItemInfoToID($item_id){
-    $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM items_tbl WHERE item_id = ?";
-
-    $ps = $pdo->prepare($sql);
-    $ps->bindValue(1,$item_id,PDO::PARAM_INT);
-    $ps->execute();
-
-    $searchItem = $ps->fetchAll();
-    return $searchItem;
-  }
-
-  public function GetItemInfoToGenreID($genre_id){
+  public function GetItemToGenreID($genre_id){
     $pdo = $this->dbConnect();
     $sql = "SELECT * FROM items_tbl WHERE genre_id = ?";
 
@@ -129,6 +117,19 @@ class DBManager
     $ps = $pdo->prepare($sql);
     $ps->bindvalue(1, $item_count, PDO::PARAM_INT);
     $ps->execute();
+  }
+
+  // ジャンルIDからジャンル名を検索するDAOだお
+  public function GetGenretoGenreID($genre_id){
+    $pdo = $this->dbConnect();
+    $sql = "SELECT * FROM genre WHERE genre_id = ?";
+
+    $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$genre_id,PDO::PARAM_INT);
+    $ps->execute();
+
+    $searchGenre = $ps->fetchAll();
+    return $searchGenre;
   }
 }
 ?>

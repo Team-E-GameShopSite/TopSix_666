@@ -18,36 +18,37 @@
         <a class="navbar-brand" href="kaihatuTOP.php">
           <img src="img/TopSix.png" alt="" width="85" height="70">
         </a>
-        <form class="d-flex" action="kaihatuITIRAN.php">
+        <form class="d-flex" action="kaihatuITIRAN.php?genre_id=9">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
           <a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
           <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
           <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
-           <?php session_start();
-                $pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8', 'LAA1418145', 'topsix666');
-                $sql=$pdo->prepare('select * from user_tbl  where email=? and pass=?');
-                $sql->execute(["前田大然","MAEDADAIZEN"]);
-                foreach($sql->fetchAll() as $row){
-                  $_SESSION['customer']=[
-                    'id'=>$row['user_id'],
-                    'name'=>$row['user_name'],
-                    'furi'=>$row['user_name_furi'],
-                    'email'=>$row['email'],
-                    'pass'=>$row['pass'],
-                    'address'=>$row['address'],
-                    'post'=>$row['post_no'],
-                    'tell'=>$row['tell'],
-                    'birthday'=>$row['birthday'],
-                    'femail'=>$row['femail']];
-                }
-                if(isset($_SESSION['customer'])){
-                  echo $_SESSION['customer']['name'];
-                }else{
-                  echo "false";
-                }
-           ?>
-          </button></a>
+              <?php session_start();
+              $pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8', 'LAA1418145', 'topsix666');
+              $sql = $pdo->prepare('select * from user_tbl  where email=? and pass=?');
+              $sql->execute(["前田大然", "MAEDADAIZEN"]);
+              foreach ($sql->fetchAll() as $row) {
+                $_SESSION['customer'] = [
+                  'id' => $row['user_id'],
+                  'name' => $row['user_name'],
+                  'furi' => $row['user_name_furi'],
+                  'email' => $row['email'],
+                  'pass' => $row['pass'],
+                  'address' => $row['address'],
+                  'post' => $row['post_no'],
+                  'tell' => $row['tell'],
+                  'birthday' => $row['birthday'],
+                  'femail' => $row['femail']
+                ];
+              }
+              if (isset($_SESSION['customer'])) {
+                echo $_SESSION['customer']['name'];
+              } else {
+                echo "false";
+              }
+              ?>
+            </button></a>
         </form>
       </div>
     </nav>
@@ -56,13 +57,13 @@
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" width="">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="2500">
-        <a href="kaihatuSYOUSAI.php"><img src="img/game/switch.webp" alt="任天堂switch" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
+        <a href="kaihatuSYOUSAI.php?item_id=15"><img src="img/game/switch.webp" alt="任天堂switch" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
       </div>
       <div class="carousel-item " data-bs-interval="2500">
-        <a href="kaihatuSYOUSAI.php"><img src="img/soft/spra/sns.webp" alt="任天堂switch" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
+        <a href="kaihatuSYOUSAI.php?item_id=4"><img src="img/soft/spra/sns.webp" alt="スプラトゥーン" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
       </div>
       <div class="carousel-item " data-bs-interval="2500">
-        <a href="kaihatuSYOUSAI.php"><img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" alt="任天堂switch" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
+        <a href="kaihatuSYOUSAI.php?item_id=21"><img src="img/game/ps5-buy-now-product-thumbnail-01-en-18mar22.webp" alt="PS5" width="1200" height="630" class="d-block w-100" class="d-block w-100" alt="..."></a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -75,14 +76,14 @@
     </button>
   </div>
 
-  <p class="fs-1">商品について</p>
-  <p class="fs-2">About product</p>
+  <p class="fs-2">商品について</p>
+  <p class="fs-3">About product</p>
 
 
   <div class="row mb-3 gr-3">
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
-        <a href="kaihatuITIRAN.php" style="color:whitesmoke"><img src="img/soft/pokemon/mainvisual_02_RGB._TTW_.png" class="card-img" alt="..." height="353%">
+        <a href="kaihatuITIRAN.php?genre_id=1" style="color:whitesmoke"><img src="img/soft/pokemon/mainvisual_02_RGB._TTW_.png" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">ゲームソフト</h5>
             <p class="card-text">様々なジャンルのゲームソフトを取り扱っています</p>
@@ -92,7 +93,7 @@
     </div>
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
-        <a href="kaihatuITIRAN.php" style="color:white"><img src="img/otherproduct/gamingdevice1.jpg" class="card-img" alt="..." height="353%">
+        <a href="kaihatuITIRAN.php?genre_id=3" style="color:white"><img src="img/otherproduct/gamingdevice1.jpg" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">その他周辺機器</h5>
             <p class="card-text">様々な周辺機器を取り扱っています</p>
@@ -106,7 +107,7 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
-        <a href="kaihatuITIRAN.php" style="color:black"><img src="img/game/PS5.jpg" class="card-img" alt="..." height="353%">
+        <a href="kaihatuITIRAN.php?genre_id=2" style="color:black"><img src="img/game/PS5.jpg" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">ゲーム機</h5>
             <p class="card-text">様々なゲーム機を取り扱っています</p>
@@ -116,7 +117,7 @@
     </div>
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
-        <a href="kaihatuITIRAN.php" style="color:white"><img src="img/gamingPC/gtunenextgearcase .png" class="card-img" alt="..." height="353%">
+        <a href="kaihatuITIRAN.php?genre_id=4" style="color:white"><img src="img/gamingPC/gtunenextgearcase .png" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">ゲーミングPC</h5>
             <p class="card-text">様々なゲーミングPCを取り扱っています</p>
@@ -128,8 +129,8 @@
   </a>
 
   <div id="contactt"></div>
-  <p class="fs-1">お問い合わせ</p>
-  <p class="fs-2">contact</p>
+  <p class="fs-2">お問い合わせ</p>
+  <p class="fs-3">contact</p>
 
   <div class="row">
     <div class="col-sm-6">
