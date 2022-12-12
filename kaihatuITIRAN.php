@@ -32,25 +32,25 @@
   <div class="itiran">
     <h5>セール品</h5>
     <?php
-      require_once 'dao/DBManager.php';
-      $dbmng = new DBManager();
-      $searchArray = $dbmng->getItemTblAll();
-       if (!empty($searchArray)){
-        foreach ($searchArray as $row) {
-          if($row['sale_flag'] == 1 && $row['sale_price'] != 0){
-            echo "<div class='col-sm-9'>
-            <a href='kaihatuSYOUSAI_SALE.php?item_id=".$row['item_id'].">
+    require_once 'dao/DBManager.php';
+    $dbmng = new DBManager();
+    $searchArray = $dbmng->getItemTblAll();
+    if (!empty($searchArray)) {
+      foreach ($searchArray as $row) {
+        if ($row['sale_flag'] == 1 && $row['sale_price'] != 0) {
+          echo "<div class='col-sm-9'>
+            <a href='kaihatuSYOUSAI_SALE.php?item_id=" . $row['item_id'] . " '>
               <div class='card text-white'>
-              <img src=". $row['image_path'] . " class='card-img' alt='...' height='80'>
+              <img src=" . $row['image_path'] . " class='card-img' alt='...' height='80'>
               </div>
             </a>
             </div>";
-          }
         }
-       }
+      }
+    }
     ?>
-    
-    
+
+
     <h5>今月の人気商品</h5>
     <div class="col-sm-9">
       <a href="kaihatuSYOUSAI.php?item_id=4">
@@ -97,16 +97,16 @@
   </div>
   <h1>
     <?php
-      require_once 'dao/DBManager.php';
-      $dbmng = new DBManager();
+    require_once 'dao/DBManager.php';
+    $dbmng = new DBManager();
 
-      $genre = $dbmng->GetGenretoGenreID($_GET['genre_id']);
+    $genre = $dbmng->GetGenretoGenreID($_GET['genre_id']);
 
-      if (!empty($genre)) {
-        foreach ($genre as $row) {
-          echo $row['genre'];
-        }
+    if (!empty($genre)) {
+      foreach ($genre as $row) {
+        echo $row['genre'];
       }
+    }
     ?>
   </h1>
 
@@ -127,7 +127,7 @@
         echo "
               <div class='col-md-2'>
                 <div class='card'>
-                  <a href='kaihatuSYOUSAI.php?item_id=".$row['item_id']."' style='text-decoration: none;color:black'>
+                  <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'>
                     <img src=" . $row['image_path'] . " class='card-img' alt='...' height='170'>
                     <div class='card-body'>
                       <h5 class='card-title'>" . $row['item_name'] . "</h5>
