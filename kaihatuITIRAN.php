@@ -80,13 +80,17 @@
   </div>
   <div class="secondsort">
     <button type="button" class="btn btn-primary btn-sm" name="SortASC">高い順</button>
+    <button type="button" class="btn btn-primary btn-sm" name="SortDESC">安い順</button>
+    <button type="button" class="btn btn-primary btn-sm" name="SortNew">新着順</button>
     <?php
       if (isset($_POST['SortASC'])) {
         SortPriceASC();
+      }else if(isset($_POST['SortDESC'])){
+        SortPriceDESC();
+      }else if(isset($_POST['SortNew'])){
+        SortNew();
       }
-    ?>
-    <button type="button" class="btn btn-primary btn-sm">安い順</button>
-    <button type="button" class="btn btn-primary btn-sm">新着順</button>
+  ?>
   </div>
 
 
