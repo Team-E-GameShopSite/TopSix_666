@@ -41,7 +41,7 @@
             echo "<div class='col-sm-9'>
             <a href='kaihatuSYOUSAI_SALE.php?item_id=".$row['item_id'].">
               <div class='card text-white'>
-              <img src=". $row['image_path'] . "class='card-img' alt='...' height='80'>
+              <img src=". $row['image_path'] . " class='card-img' alt='...' height='80'>
               </div>
             </a>
             </div>";
