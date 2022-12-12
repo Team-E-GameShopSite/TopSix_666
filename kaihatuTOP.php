@@ -42,7 +42,7 @@
                     'femail'=>$row['femail']];
                 }
                 if(isset($_SESSION['customer'])){
-                  echo $_SESSION['customer']['name'];
+                  echo "MyPage";
                 }else{
                   echo "false";
                 }
