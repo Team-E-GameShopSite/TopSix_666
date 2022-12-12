@@ -51,7 +51,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
           <div class='col-sm-6'>
             <a href='kaihatuTOP.php#contactt'  class='TOPNIMODORU'><button class='btn btn-outline-primary btn-lg'   type='button'>お問い合わせ</button></a>
           </div>
+        </div>
       
+        <div class='row'>
           <div class='col-sm-6'>
           <form action='kaihatuOKINIIRI.php' action='post'>
             <input type='submit'   class=' btn btn-outline-primary btn-lg ' value='お気に入り'>
