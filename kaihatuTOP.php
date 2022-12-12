@@ -18,7 +18,7 @@
         <a class="navbar-brand" href="kaihatuTOP.php">
           <img src="img/TopSix.png" alt="" width="85" height="70">
         </a>
-        <form class="d-flex" action="kaihatuITIRAN.php">
+        <form class="d-flex" action="kaihatuITIRAN.php?genre_id=9">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
           <a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
