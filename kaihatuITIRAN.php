@@ -34,7 +34,7 @@
     <?php
       require_once 'dao/DBManager.php';
       $dbmng = new DBManager();
-      $searchArray = $dbmng->GetItemInfoToID($_GET['item_id']);
+      $searchArray = $dbmng->getItemTblAll();
        if (!empty($searchArray)){
         foreach ($searchArray as $row) {
           if($row['sale_flag'] == 1 && $row['sale_price'] != 0){
