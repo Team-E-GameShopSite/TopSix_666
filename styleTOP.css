@@ -11,7 +11,9 @@ position: fixed;
 #container {
   padding-top: 150px;
 }
-
+.fs-8{
+text-align:center;
+}
 .fs-1{
 text-align:center;
 }
@@ -23,9 +25,11 @@ text-align:center;
 .fs-3{
 text-align:center;
 }
+.fs-4{
+text-align:center;
+}
 
-
-
+p.fs-2 { margin: 90px 10px 10px 10px;}
 
 .navbar navbar-light bg-light{
  position:fixed; top:0;
