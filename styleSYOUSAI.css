@@ -49,3 +49,6 @@ padding-top: 5%;
   float:left;
 }
 
+.btn btn-outline-primary btn-lg{
+  white-space: nowrap;
+}
