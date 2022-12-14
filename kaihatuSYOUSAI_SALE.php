@@ -56,30 +56,30 @@
       
           <div class='okiniiri'>
           <form action='kaihatuOKINIIRI.php' action='post'>
-            <input type='submit'   class=' btn btn-outline-primary btn-lg ' value='お気に入り'>
+            <input type='submit'   class='btn btn-outline-primary btn-lg ' value='お気に入り'>
           </form>
           </div>
-        </div>
+          </div>
       </div> 
       
       <div class='col-sm-6'>
        <div class='syohin'>
-         <h1 class='title'>".$row['item_name']."</h1>
-         <h1 class='price'><s class='delete'>".$row['item_price']."円</s>
-         <font color='red'>".$row['sale_price']."円</font>
-         </h1>
+       <h1 class='title'>".$row['item_name']."</h1>
+       <h1 class='price'><s class='delete'>".$row['item_price']."円</s>
+       <font color='red'>".$row['sale_price']."円</font>
+       </h1>
          <form action='kaihatuCART.php' method='post'>
          <select name='suuryo'>
-          <option value='one'>1</option>
-          <option value='two'>2</option>
-          <option value='three'>3</option>
-          <option value='four'>4</option>
-          <option value='five'>5</option>
-          <option value='six'>6</option>
-          <option value='seven'>7</option>
-          <option value='eight'>8</option>
-          <option value='nine'>9</option>
-          <option value='ten'>10</option>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+          <option value='4'>4</option>
+          <option value='5'>5</option>
+          <option value='6'>6</option>
+          <option value='7'>7</option>
+          <option value='8'>8</option>
+          <option value='9'>9</option>
+          <option value=''>10</option>
          </select>
        <input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
       </form>
