@@ -24,10 +24,10 @@
 
     $searchArray = $dbmng->getItemTblAll();
     foreach ($searchArray as $row) {
-      echo "<img src=" . $row['image_path'] . "class='img' height='50'>";
+      echo "<img src=" . $row['image_path'] . " class='img' height='50'>";
       echo "<div class='container'>
              <div class='row'>
-              <div class='col-sm-6'>" . $row['item_name'] ."</div><div><div>";
+              <div class='col-sm-6'>" . $row['item_name'] ."</div></div></div>";
       echo $row['item_price']."円";
       echo "<button class='btn btn-outline-primary btn-lg'   type='button'>お気に入り解除</button>";
       echo "<button class='btn btn-outline-primary btn-lg'   type='button'>カートに入れる</button>";
