@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="text/html; ;charset=utf-8" http-equiv="Content-Type">
   <title></title>
   <style>
   </style>
@@ -39,10 +39,10 @@
               <?php
 
               if (isset($_SESSION['user_id']) == false) {
-                header('Location: kaihatuLOGIN.php');
+                echo "Login";
+              } else {
+                echo "MyPage";
               }
-
-              echo "MyPage";
 
               ?>
             </button></a>
