@@ -32,6 +32,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     </nav>
   </div>
 
+  <div class="container">
+    <div class='row'>
+      <div class='col-sm-6'>
 
   <?php
       require_once 'dao/DBManager.php';
@@ -47,19 +50,16 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
           </div>
       
       
-        <div class='row'>
-          <div class='col-sm-6'>
+        
             <a href='kaihatuTOP.php#contactt'  class='TOPNIMODORU'><button class='btn btn-outline-primary btn-lg'   type='button'>お問い合わせ</button></a>
-          </div>
       
-          <div class='col-sm-6'>
           <form action='kaihatuOKINIIRI.php' action='post'>
             <input type='submit'   class=' btn btn-outline-primary btn-lg ' value='お気に入り'>
           </form>
           </div>
-        </div>
       </div> 
       
+      <div class='col-sm-6'>
        <div class='syohin'>
          <h1 class='title'>".$row['item_name']."</h1>
          <h1 class='price'>".$row['item_price']."円</h1>
@@ -87,6 +87,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         echo $_GET['item_id'];
       }
       ?>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
