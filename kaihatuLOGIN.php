@@ -24,7 +24,7 @@
   }
   ?>
 
-  <div class="header">
+<!--  <div class="header">
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="kaihatuTOP.php">
@@ -49,7 +49,11 @@
         </form>
       </div>
     </nav>
-  </div>
+  </div> -->
+
+<?php
+  require 'Template.php';
+?>
 
   <form action="logincheck.php" method="post" autocomplete="off">
     <div id="maindiv" class="container">
