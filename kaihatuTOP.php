@@ -27,7 +27,9 @@
               <?php session_start();
 
               if (isset($_SESSION['user_id']) == false) {
-                header('Location: kaihatuLOGIN.php');
+                echo "Login";
+              }else{
+                echo "MyPage";
               }
 
               echo "MyPage";
