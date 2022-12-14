@@ -24,6 +24,9 @@ text-align:center;
 margin-top:150px;
 }
 
+.img{
+  float: left;
+}
 .btn btn-outline-primary btn-lg{
   margin-left: 3%;
 }
