@@ -62,6 +62,24 @@ class DBManager
     return $ret;
   }
 
+  // ログインしているかどうか、ログインできるuserがあるかどうか判断する関数
+  public function checkLoginByMailAndPass($mail,$pass){
+    $ret = [];
+    $pdo = $this->dbConnect();
+    $sql = "SELECT * FROM user_tbl WHERE user_mail = ?";
+    $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$mail,PDO::PARAM_STR);
+    $ps->execute();
+    $userList = $ps->fetchAll();
+
+    foreach($userList as $row){
+      if(password_verify($pass,$row['pass']) == true){
+        $ret = $userList;
+      }
+    }
+    return $ret;
+  }
+
   public function GetItemInfoToID($item_id){
     $pdo = $this->dbConnect();
     $sql = "SELECT * FROM items_tbl WHERE item_id = ?";

@@ -24,29 +24,37 @@
           <a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
           <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
           <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
-           <?php session_start();
-                $pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8', 'LAA1418145', 'topsix666');
-                $sql=$pdo->prepare('select * from user_tbl  where email=? and pass=?');
-                $sql->execute(["前田大然","MAEDADAIZEN"]);
-                foreach($sql->fetchAll() as $row){
-                  $_SESSION['customer']=[
-                    'id'=>$row['user_id'],
-                    'name'=>$row['user_name'],
-                    'furi'=>$row['user_name_furi'],
-                    'email'=>$row['email'],
-                    'pass'=>$row['pass'],
-                    'address'=>$row['address'],
-                    'post'=>$row['post_no'],
-                    'tell'=>$row['tell'],
-                    'birthday'=>$row['birthday'],
-                    'femail'=>$row['femail']];
-                }
-                if(isset($_SESSION['customer'])){
-                  echo "MyPage";
-                }else{
-                  echo "false";
-                }
+           <?php  session_start();
+                // $pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1418145-topsix666;charset=utf8', 'LAA1418145', 'topsix666');
+                // $sql=$pdo->prepare('select * from user_tbl  where email=? and pass=?');
+                // $sql->execute(["前田大然","MAEDADAIZEN"]);
+                // foreach($sql->fetchAll() as $row){
+                //   $_SESSION['customer']=[
+                //     'id'=>$row['user_id'],
+                //     'name'=>$row['user_name'],
+                //     'furi'=>$row['user_name_furi'],
+                //     'email'=>$row['email'],
+                //     'pass'=>$row['pass'],
+                //     'address'=>$row['address'],
+                //     'post'=>$row['post_no'],
+                //     'tell'=>$row['tell'],
+                //     'birthday'=>$row['birthday'],
+                //     'femail'=>$row['femail']];
+                // }
+                // if(isset($_SESSION['customer'])){
+                //   echo "MyPage";
+                // }else{
+                //   echo "false";
+                // }
+
+            if(isset($_SESSION['user_id']) == false){
+              header('Location: kaihatuLOGIN.php');
+            }
+
+            echo "MyPage";
+
            ?>
+            
           </button></a>
         </form>
       </div>
