@@ -66,7 +66,7 @@ class DBManager
   public function checkLoginByMailAndPass($mail,$pass){
     $ret = [];
     $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM user_tbl WHERE user_mail = ?";
+    $sql = "SELECT * FROM user_tbl WHERE email = ?";
     $ps = $pdo->prepare($sql);
     $ps->bindValue(1,$mail,PDO::PARAM_STR);
     $ps->execute();
