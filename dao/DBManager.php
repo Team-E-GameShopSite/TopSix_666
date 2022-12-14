@@ -143,6 +143,7 @@ class DBManager
             VALUES (?,?,?,?,?)';
     $date = date('Yhis');
 
+    $date = (int) $date;
     $ps = $pdo->prepare($spl);
     $ps->bindValue(1,$item_id,PDO::PARAM_INT);
     $ps->bindValue(2,$item_id,PDO::PARAM_INT);
