@@ -23,7 +23,18 @@
           <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
           <a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
           <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
-          <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
+          <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
+              <?php session_start();
+
+              if (isset($_SESSION['user_id']) == false) {
+                header('Location: kaihatuLOGIN.php');
+              }
+
+              echo $_SESSION['user_name'];
+
+              ?>
+
+            </button></a>
         </form>
       </div>
     </nav>
@@ -120,19 +131,15 @@
     if (isset($_POST['SortDESC'])) {
 
       $searchArray = $dbmng->GetItemToGenreIDDESC($_GET['genre_id']);
-    
-    }else if(isset($_POST['SortASC'])){
-    
+    } else if (isset($_POST['SortASC'])) {
+
       $searchArray = $dbmng->GetItemToGenreIDASC($_GET['genre_id']);
-    
-    }else if(isset($_POST['SortNew'])){
-    
+    } else if (isset($_POST['SortNew'])) {
+
       $searchArray = $dbmng->GetItemToGenreIDNew($_GET['genre_id']);
-    
-    }else{
-    
+    } else {
+
       $searchArray = $dbmng->GetItemToGenreID($_GET['genre_id']);
-    
     }
 
     if (!empty($searchArray)) {

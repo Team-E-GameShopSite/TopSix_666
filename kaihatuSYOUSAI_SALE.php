@@ -26,7 +26,18 @@
           <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
           <a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a>
           <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
-          <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>login</button></a>
+          <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
+              <?php session_start();
+
+              if (isset($_SESSION['user_id']) == false) {
+                header('Location: kaihatuLOGIN.php');
+              }
+
+              echo $_SESSION['user_name'];
+
+              ?>
+
+            </button></a>
         </form>
       </div>
     </nav>
@@ -36,17 +47,17 @@
     <div class='row'>
       <div class='col-sm-6'>
 
-  <?php
-      require_once 'dao/DBManager.php';
-      $dbmng = new DBManager();
-    
-      $searchItem = $dbmng->GetItemInfoToID($_GET['item_id']);
-    
-      if(!empty($searchItem)){
-        foreach($searchItem as $row){
-          echo "<div class='cartcheck'>
+        <?php
+        require_once 'dao/DBManager.php';
+        $dbmng = new DBManager();
+
+        $searchItem = $dbmng->GetItemInfoToID($_GET['item_id']);
+
+        if (!empty($searchItem)) {
+          foreach ($searchItem as $row) {
+            echo "<div class='cartcheck'>
           <div class='img'>
-            <img src=".$row['image_path'].  " class='d-block' alt='...'  weight='100' height='400'>
+            <img src=" . $row['image_path'] .  " class='d-block' alt='...'  weight='100' height='400'>
           </div>
       
       
@@ -64,9 +75,9 @@
       
       <div class='col-sm-6'>
        <div class='syohin'>
-       <h1 class='title'>".$row['item_name']."</h1>
-       <h1 class='price'><s class='delete'>".$row['item_price']."円</s>
-       <font color='red'>".$row['sale_price']."円</font>
+       <h1 class='title'>" . $row['item_name'] . "</h1>
+       <h1 class='price'><s class='delete'>" . $row['item_price'] . "円</s>
+       <font color='red'>" . $row['sale_price'] . "円</font>
        </h1>
          <form action='kaihatuCART.php' method='post'>
          <select name='suuryo'>
@@ -84,14 +95,14 @@
        <input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
       </form>
         <div class='setumei'> 
-              <p>".$row['item_info']."														
+              <p>" . $row['item_info'] . "														
               </p>
         </div>";
+          }
+        } else {
+          echo $_GET['item_id'];
         }
-      }else{
-        echo $_GET['item_id'];
-      }
-      ?>
+        ?>
       </div>
     </div>
   </div>
