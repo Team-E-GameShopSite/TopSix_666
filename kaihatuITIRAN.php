@@ -13,7 +13,7 @@
 
 <body>
   <?php
-  require 'Header.php';
+  // require 'Header.php';
   ?>
 
   <div class="itiran">
