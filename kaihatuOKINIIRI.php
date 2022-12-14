@@ -28,9 +28,8 @@
       echo "<div class='container'>
              <div class='row'>
               <div class='col-sm-6'>" . $row['item_name'] ."</div>"
-              . $row['item_price']. "円</div></div>";
-      echo "<button class='btn btn-outline-primary btn-lg'   type='button'>お気に入り解除</button>";
-      echo "<button class='btn btn-outline-primary btn-lg'   type='button'>カートに入れる</button>";
+              . $row['item_price']. "円<button class='btn btn-outline-primary btn-lg'   type='button'>お気に入り解除</button>
+              <button class='btn btn-outline-primary btn-lg'   type='button'>カートに入れる</button></div></div>";
       echo "<h3>-----------------------------------------------------------<br></h3>";
     }
     ?>
