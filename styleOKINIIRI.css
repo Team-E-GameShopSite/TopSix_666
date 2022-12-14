@@ -28,6 +28,9 @@ margin-top:150px;
   float: left;
   margin-left:5%;
 }
+.col-sm-6{
+  float: left;
+}
 .btn btn-outline-primary btn-lg{
   margin-left: 3%;
 }
