@@ -20,12 +20,14 @@ text-align:center;
 .TOPNIMODORU{
 text-align:center;
 }
-
-
-
-
-
-
 .OKINIIRI{
 margin-top:150px;
+}
+
+.img{
+  float: left;
+  margin-left:5%;
+}
+.btn btn-outline-primary btn-lg{
+  margin-left: 3%;
 }
