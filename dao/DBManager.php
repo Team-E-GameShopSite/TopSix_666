@@ -141,7 +141,7 @@ class DBManager
     $pdo = $this->dbConnect();
     $spl = 'INSERT INTO carts (item_id,item_count,user_id,cart_date)
             VALUES (?,?,?,?,?)';
-    $date = date('his');
+    $date = date('Yhis');
 
     $ps = $pdo->prepare($spl);
     $ps->bindValue(1,$item_id,PDO::PARAM_INT);
