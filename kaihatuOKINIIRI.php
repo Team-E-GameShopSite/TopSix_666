@@ -25,6 +25,8 @@
     $searchArray = $dbmng->getItemTblAll();
     foreach ($searchArray as $row) {
       echo "<img src=" . $row['image_path'] . " height='50'>";
+      echo .$row['item_name'];
+      echo .$row['item_price'];
       echo "<h3>-----------------------------------------------------------<br></h3>";
     }
     ?>
