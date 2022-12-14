@@ -45,23 +45,6 @@ class DBManager
     $ps->execute();
   }
 
-  public function login($usermail, $userpass)
-  {
-    $ret = [];
-    $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM user_tbl WHERE email=?";
-    $ps = $pdo->prepare($sql);
-    $ps->bindvalue(1, $usermail, PDO::PARAM_STR);
-    $ps->execute();
-    $userList = $ps->fetchAll();
-    foreach ($userList as $row) {
-      if (password_verify($userpass, $row['pass']) == true){
-        $ret = $userList;
-      }
-    }
-    return $ret;
-  }
-
   // ログインしているかどうか、ログインできるuserがあるかどうか判断する関数
   public function checkLoginByMailAndPass($mail,$pass){
     $ret = [];
