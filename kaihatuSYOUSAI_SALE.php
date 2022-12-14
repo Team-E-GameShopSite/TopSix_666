@@ -60,6 +60,7 @@
         </div>
       </div> 
       
+      <div class='col-sm-6'>
        <div class='syohin'>
          <h1 class='title'>".$row['item_name']."</h1>
          <h1 class='price'><s class='delete'>".$row['item_price']."円</s>
