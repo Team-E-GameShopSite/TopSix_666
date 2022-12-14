@@ -162,13 +162,7 @@
     } else {
       flag_chk = 0;
 
-      var regexp = /^([\u{3005}\u{3007}\u{303b}\u{3400}-\u{9FFF}\u{F900}-\u{FAFF}\u{20000}-\u{2FFFF}][\u{E0100}-\u{E01EF}\u{FE00}-\u{FE02}]?)+$/mu;
-      if (regexp.test(name) != true) {
-        document.getElementById('name_chk').style.display = "block";
-        flag_chk = 1;
-      } else {
-        document.getElementById('name_chk').style.display = "none";
-      }
+      
 
       var regexp = /^[\u{3000}-\u{301C}\u{3041}-\u{3093}\u{309B}-\u{309E}]+$/mu;
       if (regexp.test(name_huri) != true) {
