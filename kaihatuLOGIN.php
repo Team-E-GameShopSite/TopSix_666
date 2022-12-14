@@ -18,7 +18,7 @@
 
   <?php
 
-  if (isset($_SESSION['username']) == true) {
+  if (isset($_SESSION['user_name']) == true) {
     header('Location: kaihatuMYPAGE.php');
   }
   ?>
