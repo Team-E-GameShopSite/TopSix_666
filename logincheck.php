@@ -7,7 +7,7 @@ foreach($userData as $row){
   $_SESSION['user_id'] = $row['user_id'];
   $_SESSION['user_name'] = $row['user_name'];
   $_SESSION['user_email'] = $row['email'];
-  header('Location: kaihatuTop.php');
+  header('Location: kaihatuTOP.php');
 }
 echo $_POST['mail'] . $_POST['pass'];
 echo count($userData);
