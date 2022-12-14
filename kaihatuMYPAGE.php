@@ -64,7 +64,7 @@
     </a>
     </div>
     <div class="logout">
-    <a href=\"logout.php\"  style='text-decoration: none;color:black'>
+    <a href="logout.php"  style='text-decoration: none;color:black'>
         <p class="fs-1">LOG OUT</p>
         <i class="bi bi-box-arrow-right"></i>
     </a>
