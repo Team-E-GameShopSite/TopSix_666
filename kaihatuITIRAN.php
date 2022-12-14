@@ -128,7 +128,7 @@
               <div class='col-md-2'>
                 <div class='card'>
                   <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'>
-                    <img src=" . $row['image_path'] . " class='card-img' alt='...' weight='170' height='170'>
+                    <img src=" . $row['image_path'] . " class='card-img' alt='...' weight='100%' height='100%'>
                     <div class='card-body'>
                       <h5 class='card-title'>" . $row['item_name'] . "</h5>
                       <h5 class='price'>" . $row['item_price'] . "円</h5>";
