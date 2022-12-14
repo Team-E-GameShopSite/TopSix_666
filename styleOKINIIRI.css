@@ -24,6 +24,6 @@ text-align:center;
 margin-top:150px;
 }
 
-.item_name{
-  width: 3%;
+.btn btn-outline-primary btn-lg{
+  margin-left: 3%;
 }
