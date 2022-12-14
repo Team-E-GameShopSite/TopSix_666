@@ -150,8 +150,8 @@ class DBManager
     $ps->bindValue(4,$date,PDO::PARAM_STR);
 
     var_dump((int)$item_id)."<br>";
-    var_dump(int)$user_id)."<br>";
-    var_dump(int)$item_count)."<br>";
+    var_dump((int)$user_id)."<br>";
+    var_dump((int)$item_count)."<br>";
 
     $ps->execute();
 
