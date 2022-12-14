@@ -165,5 +165,29 @@ class DBManager
     $searchGenre = $ps->fetchAll();
     return $searchGenre;
   }
+
+  // user_idを渡すことでカートに登録されている商品のデータを取得することが出来る関数
+  public function GetItemInfoForCartsByUserId($user_id){
+    $pdo = $this->dbConnect();
+    $sql = "SELECT CT.item_id AS item_id,
+            CT.item_count AS item_count,
+            IT.image_path AS image_path,
+            IT.item_name AS item_name,
+            IT.item_id AS item_id
+            FROM carts AS CT INNER JOIN items_tbl AS IT
+            ON CT.item_id = IT.item_id
+            WHERE CT.user_id = ?
+            ORDER BY CT.cart_date";
+    
+    $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$user_id,PDO::PARAM_INT);
+    $ps->execute();
+
+    $searchItem = $ps->fetchAll();
+    return $searchItem;
+
+  }
 }
+
+  
 ?>

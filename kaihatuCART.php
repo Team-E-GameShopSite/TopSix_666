@@ -19,11 +19,16 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <p class="fs-1">ショッピングカート<i class="bi bi-cart"></i></p>
   <div class="TOPNIMODORU">
   <?php
-   require_once 'dao/DBManager.php';
-   $dbmng = new DBManager();
-   $searchArray = $dbmng->carts($_GET['suuryo']);
-    echo "$_GET['suuryo']";
-?>
+  require_once 'dao/DBManager.php';
+  $dbmng = new DBManager();
+
+  $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
+  if (!empty($searchList)) {
+    foreach ($searchList as $row) {
+      echo $row['item_name'];
+    }
+  }
+  ?>
   <a href="kaihatuKOUNYU.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">購入手続きへ→</button></a>
   </div>
   
