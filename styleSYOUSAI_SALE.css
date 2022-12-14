@@ -47,7 +47,7 @@ padding-top: 5%;
 }
 
 .price{
-  margin-top: 5%;
+  padding-right: 5%;
   }
 
 
@@ -68,8 +68,10 @@ padding-top: 5%;
   height:400px;
 }
 .otoiawase{
+  max-width:100%;
+  height: auto;
   float: left;
-  margin-right: 10%;
+  padding-right: 10%;
 }
 .okiniiri{
   float:right;
