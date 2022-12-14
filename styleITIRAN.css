@@ -41,6 +41,10 @@ position: fixed;
   color:black;
 }
 
+.card-img{
+width:100%;
+}
+
 .card-body{
 height: 230px;
 }
