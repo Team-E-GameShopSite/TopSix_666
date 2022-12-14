@@ -9,6 +9,7 @@ foreach($userData as $row){
   $_SESSION['user_email'] = $row['email'];
   header('Location: kaihatuTop.php');
 }
+echo $_POST['mal'] . $_POST['pass'];
 echo count($userData);
 // if(count($userData) == 0){  header('Location: kaihatuLOGIN.php'); }
 ?>
