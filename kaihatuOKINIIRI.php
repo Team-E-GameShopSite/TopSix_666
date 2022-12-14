@@ -25,7 +25,7 @@
     $searchArray = $dbmng->getItemTblAll();
     foreach ($searchArray as $row) {
       echo "<img src=" . $row['image_path'] . " height='50'>";
-      echo $row['item_name'];
+      echo "<div class='item_name'>" . $row['item_name'] . "</div>";
       echo $row['item_price']."円";
       echo "<button class='btn btn-outline-primary btn-lg'   type='button'>お気に入り解除</button>";
       echo "<button class='btn btn-outline-primary btn-lg'   type='button'>カートに入れる</button>";
