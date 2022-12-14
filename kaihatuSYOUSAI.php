@@ -54,7 +54,7 @@
          <h1 class='title'>" . $row['item_name'] . "</h1>
          <h1 class='price'>" . $row['item_price'] . "円</h1>
          <form action='AddCart.php' method='post'>
-         <imput type='text' name='item_id' value=". $_GET['item_id'] ." >
+         <input type='text' name='item_id' value=". $_GET['item_id'] ." >
          <select name='suuryo'>
           <option value='1'>1</option>
           <option value='2'>2</option>
