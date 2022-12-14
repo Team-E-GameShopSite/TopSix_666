@@ -63,6 +63,7 @@ class DBManager
     return $ret;
   }
 
+// item_idを一つ引数として渡すと商品情報を取ってきます
   public function GetItemInfoToID($item_id){
     $pdo = $this->dbConnect();
     $sql = "SELECT * FROM items_tbl WHERE item_id = ?";
@@ -127,12 +128,29 @@ class DBManager
   }
   //ジャンルＩＤを検索→商品情報を引っ張ってくる関数＋新着順に並べ替え
 
-  public function carts($item_count){
+//  public function carts($item_count){
+//    $pdo = $this->dbConnect();
+//    $sql = "INSERT INTO carts(item_count) VALUES (?)";
+//    $ps = $pdo->prepare($sql);
+//    $ps->bindvalue(1, $item_count, PDO::PARAM_INT);
+//    $ps->execute();
+//  }
+
+  public function AddCartById($user_id,$item_id,$item_count){
+
     $pdo = $this->dbConnect();
-    $sql = "INSERT INTO carts(item_count) VALUES (?)";
-    $ps = $pdo->prepare($sql);
-    $ps->bindvalue(1, $item_count, PDO::PARAM_INT);
+    $spl = 'INSERT INTO carts (item_id,item_count,user_id,cart_date)
+            VALUES (?,?,?,?,?)';
+    $date = date('his');
+
+    $ps = $pdo->prepare($spl);
+    $ps->bindValue(1,$item_id),PDO::PARAM_INT);
+    $ps->bindValue(2,$item_id),PDO::PARAM_INT);
+    $ps->bindValue(3,$user_id,PDO::PARAM_INT);
+    $ps->bindValue(4,$date),PDO::PARAM_INT);
+
     $ps->execute();
+
   }
 
   // ジャンルIDからジャンル名を検索するDAOだお
