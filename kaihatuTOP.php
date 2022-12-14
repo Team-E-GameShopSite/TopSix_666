@@ -51,7 +51,7 @@
               header('Location: kaihatuLOGIN.php');
             }
 
-            echo "MyPage";
+            echo $_SESSION['user_name'];
 
            ?>
             
