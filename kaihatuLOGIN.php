@@ -38,11 +38,11 @@
           <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
               <?php
 
-              if (isset($_SESSION['user_id']) == false) {
-                echo "Login";
-              } else {
-                echo "MyPage";
-              }
+              // if (isset($_SESSION['user_id']) == false) {
+              //   echo "Login";
+              // } else {
+              //   echo "MyPage";
+              // }
 
               ?>
             </button></a>
