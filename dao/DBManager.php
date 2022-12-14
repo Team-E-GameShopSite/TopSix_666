@@ -144,10 +144,10 @@ class DBManager
     $date = date('his');
 
     $ps = $pdo->prepare($spl);
-    $ps->bindValue(1,$item_id),PDO::PARAM_INT);
-    $ps->bindValue(2,$item_id),PDO::PARAM_INT);
+    $ps->bindValue(1,$item_id,PDO::PARAM_INT);
+    $ps->bindValue(2,$item_id,PDO::PARAM_INT);
     $ps->bindValue(3,$user_id,PDO::PARAM_INT);
-    $ps->bindValue(4,$date),PDO::PARAM_INT);
+    $ps->bindValue(4,$date,PDO::PARAM_INT);
 
     $ps->execute();
 
