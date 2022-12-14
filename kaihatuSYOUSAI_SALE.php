@@ -46,7 +46,7 @@
         foreach($searchItem as $row){
           echo "<div class='cartcheck'>
           <div class='img'>
-            <img src=".$row['image_path'].  " class='d-block w-100' alt='...'  weight='100' height='400'>
+            <img src=".$row['image_path'].  " class='d-block' alt='...'  weight='100' height='400'>
           </div>
       
       
