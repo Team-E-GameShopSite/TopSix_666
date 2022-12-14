@@ -14,44 +14,62 @@ position: fixed;
 
 
 .cartcheck{
+  max-width:100%;
+  height: auto;
 float:left;
 margin-left: 7%;
 margin-right: 5%;
 }
 
 .img{
-   margin-bottom: 5%;
+  max-width:100%;
+  height: auto;
+   padding-bottom: 5%;
 }
 
 
 
 
 .reprice{
-  margin-top: 80%;
+  max-width:100%;
+  height: auto;
+  padding-top: 80%;
 }
 
 .col-sm-4{
-margin-bottom: 5%;
+  max-width:100%;
+  height: auto;
+padding-bottom: 5%;
 }
 
 .setumei{
+  max-width:100%;
+  height: auto;
 	text-align: left;
 	  overflow: hidden;
 }
 
 .row{
-    margin-top: 55%;
+  max-width:100%;
+  height: auto;
+    padding-top: 55%;
 }
 .syohin{
+  max-width:100%;
+  height: auto;
 padding-top: 5%;
 }
 
 .price{
+  max-width:100%;
+  height: auto;
   padding-right: 5%;
   }
 
 
 .delete{
+  max-width:100%;
+  height: auto;
   margin-right: 5%;
   text-decoration-line: line-through;
   text-decoration-style:double;
@@ -59,6 +77,8 @@ padding-top: 5%;
 }
 
 .suuryo{
+  max-width:100%;
+  height: auto;
   width:5%;
   float:left;
 }
@@ -74,5 +94,7 @@ padding-top: 5%;
   padding-right: 10%;
 }
 .okiniiri{
+  max-width:100%;
+  height: auto;
   float:right;
 }
