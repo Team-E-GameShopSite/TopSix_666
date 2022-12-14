@@ -145,7 +145,7 @@ class DBManager
 
     $ps = $pdo->prepare($spl);
     $ps->bindValue(1,(int)$item_id,PDO::PARAM_INT);
-    $ps->bindValue(2,(int)$item_id,PDO::PARAM_INT);
+    $ps->bindValue(2,(int)$item_count,PDO::PARAM_INT);
     $ps->bindValue(3,(int)$user_id,PDO::PARAM_INT);
     $ps->bindValue(4,$date,PDO::PARAM_STR);
 
