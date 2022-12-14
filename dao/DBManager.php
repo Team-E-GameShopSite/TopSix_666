@@ -103,32 +103,47 @@ class DBManager
     $searchItem = $ps->fetchAll();
     return $searchItem;
   }
-  //ジャンルIDを検索→商品情報を引っ張ってくる関数
+  //ジャンルＩＤを検索→商品情報を引っ張ってくる関数
 
-  public function SortPriceASC(){
+  public function GetItemToGenreIDDESC($genre_id){
     $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM items_tbl ORDER BY item_price DESC";
+    $sql = "SELECT * FROM items_tbl WHERE genre_id = ? ORDER BY item_price DESC";
 
     $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$genre_id,PDO::PARAM_INT);
     $ps->execute();
+
+    $searchItem = $ps->fetchAll();
+    return $searchItem;
   }
-  //金額高い順に並べ替え
-  public function SortPriceDESC(){
+  //ジャンルＩＤを検索→商品情報を引っ張ってくる関数＋金額高い順に並べ替え
+  
+  public function GetItemToGenreIDASC($genre_id){
     $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM items_tbl ORDER BY item_price";
+    $sql = "SELECT * FROM items_tbl WHERE genre_id = ? ORDER BY item_price";
 
     $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$genre_id,PDO::PARAM_INT);
     $ps->execute();
+
+    $searchItem = $ps->fetchAll();
+    return $searchItem;
   }
-  //金額安い順に並べ替え
-  public function SortNew(){
+  //ジャンルＩＤを検索→商品情報を引っ張ってくる関数＋金額安い順に並べ替え
+
+  public function GetItemToGenreIDNew($genre_id){
     $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM items_tbl ORDER BY item_id DESC";
+    $sql = "SELECT * FROM items_tbl WHERE genre_id = ? ORDER BY item_id DESC";
 
     $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$genre_id,PDO::PARAM_INT);
     $ps->execute();
+
+    $searchItem = $ps->fetchAll();
+    return $searchItem;
   }
-  //新着順に並べ替え
+  //ジャンルＩＤを検索→商品情報を引っ張ってくる関数＋新着順に並べ替え
+
   public function carts($item_count){
     $pdo = $this->dbConnect();
     $sql = "INSERT INTO carts(item_count) VALUES (?)";

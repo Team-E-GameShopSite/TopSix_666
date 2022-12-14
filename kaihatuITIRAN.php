@@ -79,18 +79,9 @@
     <h6>並び替え</h6>
   </div>
   <div class="secondsort">
-    <button type="button" class="btn btn-primary btn-sm" name="SortASC">高い順</button>
-    <button type="button" class="btn btn-primary btn-sm" name="SortDESC">安い順</button>
+    <button type="button" class="btn btn-primary btn-sm" name="SortDESC">高い順</button>
+    <button type="button" class="btn btn-primary btn-sm" name="SortASC">安い順</button>
     <button type="button" class="btn btn-primary btn-sm" name="SortNew">新着順</button>
-    <?php
-      if (isset($_POST['SortASC'])) {
-        SortPriceASC();
-      }else if(isset($_POST['SortDESC'])){
-        SortPriceDESC();
-      }else if(isset($_POST['SortNew'])){
-        SortNew();
-      }
-  ?>
   </div>
 
 
@@ -125,7 +116,24 @@
     $dbmng = new DBManager();
 
     $flag = 1;
-    $searchArray = $dbmng->GetItemToGenreID($_GET['genre_id']);
+
+    if (isset($_POST['SortDESC'])) {
+
+      $searchArray = $dbmng->GetItemToGenreIDDESC($_GET['genre_id']);
+    
+    }else if(isset($_POST['SortASC'])){
+    
+      $searchArray = $dbmng->GetItemToGenreIDASC($_GET['genre_id']);
+    
+    }else if(isset($_POST['SortNew'])){
+    
+      $searchArray = $dbmng->GetItemToGenreIDNew($_GET['genre_id']);
+    
+    }else{
+    
+      $searchArray = $dbmng->GetItemToGenreID($_GET['genre_id']);
+    
+    }
 
     if (!empty($searchArray)) {
       foreach ($searchArray as $row) {

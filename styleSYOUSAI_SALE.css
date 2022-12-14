@@ -40,7 +40,7 @@ margin-bottom: 5%;
 }
 
 .row{
-    margin-top: 30%;
+    margin-top: 55%;
 }
 .syohin{
 padding-top: 5%;
@@ -50,12 +50,9 @@ padding-top: 5%;
   margin-top: 5%;
   }
 
-  .delete{
-    margin-right: 5%;
-  }
-
 
 .delete{
+  margin-right: 5%;
   text-decoration-line: line-through;
   text-decoration-style:double;
   text-decoration-color: red;
@@ -66,7 +63,14 @@ padding-top: 5%;
   float:left;
 }
 
+.d-block{
+  width: 400px;
+  height:400px;
+}
 .otoiawase{
   float: left;
   margin-right: 10%;
+}
+.okiniiri{
+  float:right;
 }
