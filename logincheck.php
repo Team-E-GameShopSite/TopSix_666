@@ -1,5 +1,5 @@
 <?php
-$session_start();
+session_start();
 $dbm = new DBManager();
 $userData = $dbm->checkLoginByMailAndPass($_POST['mail'],$_POST['pass']);
 foreach($userData as $row){
