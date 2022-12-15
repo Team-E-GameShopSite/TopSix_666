@@ -16,7 +16,7 @@
   require 'Header.php';
   ?>
 
-  <h1 class="sum">合計金額～円</h1>
+    <h1 class="sum">合計金額<?php echo $_POST['sum_price'];  ?>円</h1>
 
   <div class="row">
     <div class="col-sm-6">

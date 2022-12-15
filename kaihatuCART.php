@@ -22,6 +22,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   require_once 'dao/DBManager.php';
   $dbmng = new DBManager();
 
+  $sum_price = 0;
   $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
     echo "<div class='container'>";
     echo "<div class='row'>";
@@ -36,14 +37,18 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       echo "<div class='col-sm-2'><input type='submit' class='btn btn-outline-danger btn-lg' value='キャンセル'></div>";
       echo "</form>";
       echo "<hr class='hr2'><br>";
+      $sum_price += $row['item_price'] * $row['item_count'];
     }
   }
     echo "</div>";
     echo "</div>";
+
+    echo "<form action='kaihatuKOUNYU.php' method='post'> 
+            <input type='hidden' name='sum_price' value=". $sum_price .">
+            <input type='submit' class='TOPNIMODORU btn btn-outline-primary  btn-lg' value='購入手続きへ→'>
+          </form>";
+  
   ?>
-  <form action="kaihatuKOUNYU.php" method="post"> 
-  <input type='submit' class='TOPNIMODORU btn btn-outline-primary  btn-lg' value='購入手続きへ→'>
-  </form>
   </div>
   
 
