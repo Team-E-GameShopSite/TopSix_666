@@ -80,7 +80,7 @@
   </div>
 
   <div class="cart">
-    <a href="kaihatuCART.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg" type="button">カートに戻る</button></a>
+    <a href="kaihatuCART.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg" type="button">←カートに戻る</button></a>
   </div>
 
   <form action="kaihatuKOUNYUKANRYOU.php" method="post" autocomplete="off">
