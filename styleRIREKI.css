@@ -25,3 +25,21 @@ body {
 .OKINIIRI{
     margin-top:150px;
     }
+
+    .img{
+      float: left;
+      margin-left:5%;
+    }
+    .col-sm-6{
+      float: left;
+    }
+    .btn btn-outline-primary btn-lg{
+      margin-left: 3%;
+    }
+    hr {
+      padding: 20px 0;
+      border: none;
+    }
+    .hr2 {
+      border-top: 5px solid #000;
+    }

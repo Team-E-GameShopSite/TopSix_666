@@ -22,10 +22,17 @@
     $dbmng = new DBManager();
 
     $searchArray = $dbmng->getItemTblAll();
+    echo "<div class='container'>";
+    echo "<div class='row'>";
     foreach ($searchArray as $row) {
-      echo "<img src=" . $row['image_path'] . ">";
-      echo "<h3>-----------------------------------------------------------<br></h3>";
+      echo "<div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><img src=" . $row['image_path'] . " class='img' width='65' height='65'></a></div>";
+      echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
+      echo "<div class='col-sm-2'>" . $row['item_price']. "円</div><div class='col-sm-2'><button class='btn btn-outline-danger btn-lg'   type='button'>お気に入り解除</button></div>
+            <div class='col-sm-2'><button class='btn btn-outline-primary btn-lg'   type='button'>カートに入れる</button></div>";
+      echo "<hr class='hr2'><br>";
     }
+    echo "</div>";
+    echo "</div>";
     ?>
     <a href="kaihatuTOP.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg" type="button">TOPに戻る→</button></a>
   </div>
