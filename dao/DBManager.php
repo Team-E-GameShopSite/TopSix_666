@@ -221,7 +221,7 @@ class DBManager
     $ps->bindValue(1,$user_id,PDO::PARAM_INT);
     $ps->execute();
 
-    $serchItem = $ps->fetchAll();
+    $searchItem = $ps->fetchAll();
 
     return $searchItem;
   }
