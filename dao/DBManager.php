@@ -142,7 +142,7 @@ class DBManager
     $pdo = $this->dbConnect();
     $spl = 'INSERT INTO carts (item_id,item_count,user_id,cart_date)
             VALUES (?,?,?,?)';
-    $date = date('Yhis');
+    $date = date('Ymdhis');
 
     $ps = $pdo->prepare($spl);
     $ps->bindValue(1,(int)$item_id,PDO::PARAM_INT);
@@ -229,7 +229,7 @@ class DBManager
 
     $sql = 'INSERT INTO hstorys (user_id,item_count,item_id,date)
             VALUES (?,?,?,?)';
-    $date = date('Yhis');
+    $date = date('Ymdhis');
     $CartItemListByUserId = $this->GetItemByUserId($user_id);
 
     foreach($CartItemListByUserId as $row){
@@ -273,7 +273,7 @@ class DBManager
     $pdo = $this->dbConnect();
     $spl = 'INSERT INTO favorites (item_id,user_id,favorite_date)
             VALUES (?,?,?)';
-    $date = date('Yhis');
+    $date = date('Ymdhis');
 
     $ps = $pdo->prepare($spl);
     $ps->bindValue(1,(int)$item_id,PDO::PARAM_INT);
@@ -354,6 +354,3 @@ class DBManager
   }
 
 }
-
-  
-?>
