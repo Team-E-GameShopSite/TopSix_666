@@ -27,9 +27,9 @@
     echo "<div class='row'>";
     foreach ($searchArray as $row) {
       echo "<div class='col-sm-2'><img src=" . $row['image_path'] . " class='img' width='65' height='65'></div>";
-      echo "<div class='col-sm-10'>" . $row['item_name'] ."</div>"
-              . $row['item_price']. "円<button class='btn btn-outline-primary btn-lg'   type='button'>お気に入り解除</button>
-              <button class='btn btn-outline-primary btn-lg'   type='button'>カートに入れる</button>";
+      echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>"
+      echo "<div class='col-sm-2'>" . $row['item_price']. "円</div><div class='col-sm-2'><button class='btn btn-outline-danger btn-lg'   type='button'>お気に入り解除</button></div>
+            <div class='col-sm-2'><button class='btn btn-outline-primary btn-lg'   type='button'>カートに入れる</button></div>";
       echo "<h3>-----------------------------------------------------------<br></h3>";
     }
     echo "</div>";
