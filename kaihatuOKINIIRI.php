@@ -25,6 +25,7 @@
     $searchArray = $dbmng->GetItemInfoForFavoritesByUserId($_SESSION['user_id']);
     echo "<div class='container'>";
     echo "<div class='row'>";
+    if (!empty($searchArray)) {
     foreach ($searchArray as $row) {
       echo "<form action='RemoveFavorite.php' method='post'>";
       echo "<div class='col-sm-2'> <img src=" . $row['image_path'] . " class='img' width='65' height='65'></div>";
@@ -36,8 +37,11 @@
       echo "</form>";
       echo "<hr class='hr2'><br>";
     }
+  }else{
+    echo "<div class='TOPNIMODORU'><p class='fs-1'>現在、お気に入りに登録されているものはありません</p></div>";
     echo "</div>";
     echo "</div>";
+  }
     ?>
     <a href="kaihatuTOP.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg" type="button">TOPに戻る→</button></a>
   </div>
