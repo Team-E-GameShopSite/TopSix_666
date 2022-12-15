@@ -136,6 +136,7 @@ class DBManager
 //    $ps->execute();
 //  }
 
+  // カートボタンを押すことでカートテーブルにuser_id,item_id,item_count,dateを保存する関数
   public function AddCartById($user_id,$item_id,$item_count){
 
     $pdo = $this->dbConnect();
@@ -151,19 +152,6 @@ class DBManager
 
     $ps->execute();
 
-  }
-
-  // ジャンルIDからジャンル名を検索するDAOだお
-  public function GetGenretoGenreID($genre_id){
-    $pdo = $this->dbConnect();
-    $sql = "SELECT * FROM genre WHERE genre_id = ?";
-
-    $ps = $pdo->prepare($sql);
-    $ps->bindValue(1,$genre_id,PDO::PARAM_INT);
-    $ps->execute();
-
-    $searchGenre = $ps->fetchAll();
-    return $searchGenre;
   }
 
   // user_idを渡すことでカートに登録されている商品のデータを取得することが出来る関数
@@ -188,6 +176,58 @@ class DBManager
     return $searchItem;
 
   }
+
+  // お気に入りボタンを押すことでfavoritesテーブルにitem_id,user_id,favorite_dateを追加する関数
+  public function AddFavoritesById($user_id,$item_id){
+
+    $pdo = $this->dbConnect();
+    $spl = 'INSERT INTO carts (item_id,user_id,favorite_date)
+            VALUES (?,?,?)';
+    $date = date('Yhis');
+
+    $ps = $pdo->prepare($spl);
+    $ps->bindValue(1,(int)$item_id,PDO::PARAM_INT);
+    $ps->bindValue(2,(int)$user_id,PDO::PARAM_INT);
+    $ps->bindValue(3,$date,PDO::PARAM_STR);
+
+    $ps->execute();
+
+  }
+
+  // user_idを渡すことでカートに登録されている商品のデータを取得することが出来る関数
+  public function GetItemInfoForCartsByUserId($user_id){
+    $pdo = $this->dbConnect();
+    $sql = "SELECT FV.item_id AS item_id,
+            IT.image_path AS image_path,
+            IT.item_name AS item_name,
+            IT.item_price AS item_price
+            FROM favorites AS FV INNER JOIN items_tbl AS IT
+            ON FV.item_id = IT.item_id
+            WHERE FV.user_id = ?
+            ORDER BY FV.cart_date";
+    
+    $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$user_id,PDO::PARAM_INT);
+    $ps->execute();
+
+    $searchItem = $ps->fetchAll();
+    return $searchItem;
+
+  }
+
+  // ジャンルIDからジャンル名を検索するDAOだお
+  public function GetGenretoGenreID($genre_id){
+    $pdo = $this->dbConnect();
+    $sql = "SELECT * FROM genre WHERE genre_id = ?";
+
+    $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$genre_id,PDO::PARAM_INT);
+    $ps->execute();
+
+    $searchGenre = $ps->fetchAll();
+    return $searchGenre;
+  }
+
 }
 
   
