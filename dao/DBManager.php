@@ -181,7 +181,7 @@ class DBManager
   public function AddFavoritesById($user_id,$item_id){
 
     $pdo = $this->dbConnect();
-    $spl = 'INSERT INTO carts (item_id,user_id,favorite_date)
+    $spl = 'INSERT INTO favorites (item_id,user_id,favorite_date)
             VALUES (?,?,?)';
     $date = date('Yhis');
 
