@@ -216,7 +216,7 @@ class DBManager
             FROM carts
             WHERE user_id = ?';
 
-    $ps->prepare($sql);
+    $ps = $pdo->prepare($sql);
 
     $ps->bindValue(1,$user_id,PDO::PARAM_INT);
     $ps->execute();
