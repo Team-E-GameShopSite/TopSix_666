@@ -45,6 +45,7 @@
           <form action='AddFavorite.php' method='post'>
             <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
             <input type='submit' class='btn btn-outline-primary btn-lg ' value='お気に入り'>
+            <input type='submit'  id='cart' class='CARTIRERU  btn btn btn-outline-warning' value='お気に入り'>
           </form>
           </div>
           </div>
