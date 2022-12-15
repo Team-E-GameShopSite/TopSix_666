@@ -41,7 +41,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     echo "</div>";
     echo "</div>";
   ?>
-  <a href="kaihatuKOUNYU.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">購入手続きへ→</button></a>
+  <form action="kaihatuKOUNYU.php" method="post"> 
+  <input type='submit' class='TOPNIMODORU btn btn-outline-primary  btn-lg' value='購入手続きへ→'>
+  </form>
   </div>
   
 
