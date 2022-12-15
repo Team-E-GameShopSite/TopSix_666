@@ -65,13 +65,13 @@
 
   <div class="yuubinotodoke">
     <p class="fs-2">郵便番号</p>
-    <input type="text" value=<?php echo $_SESSION['user_post'] ?> class="form-control" id="post" autocomplete="off">
+    <input type="text" value=<?php echo $_SESSION['user_address'] ?> class="form-control" id="post" autocomplete="off">
   </div>
 
 
   <div class="yuubinotodoke">
     <p class="fs-2">お届け先住所</p>
-    <textarea class="form-control" value=<?php echo $_SESSION['user_address'] ?> id="jyusyo" rows="3" autocomplete="off" placeholder="(例)東京都○○市△△町○○マンション△△号室"></textarea>
+    <textarea class="form-control" placeholder="(例)東京都○○市△△町○○マンション△△号室"         id="jyusyo" rows="3" autocomplete="off"> </textarea>
   </div>
 
   <div class="row">
