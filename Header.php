@@ -8,8 +8,6 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
         <?php
-          
-        
         if (isset($_SESSION['user_id']) == true) {
           require_once 'dao/DBManager.php';
           $dbmng = new DBManager();
@@ -22,10 +20,16 @@
         } 
         ?>
          <?php
-    require_once 'dao/DBManager.php';
-    $dbmng = new DBManager();
-    $searchArray = $dbmng->GetItemInfoForFavoritesByUserId($_SESSION['user_id']);
-        echo "<a href='kaihatuOKINIIRI.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-star'></i>favorite:" . count($searchArray) . "</button></a>";
+         if (isset($_SESSION['user_id']) == true) {
+          require_once 'dao/DBManager.php';
+          $dbmng = new DBManager();
+          $searchArray = $dbmng->GetItemInfoForFavoritesByUserId($_SESSION['user_id']);
+          echo "<a href='kaihatuOKINIIRI.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-star'></i>favorite:";
+          echo count($searchArray) . "</button></a>";
+         }else{
+          echo "<a href='kaihatuOKINIIRI.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-star'></i>favorite:";
+          echo "</button></a>";
+         }
         ?>
         <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
             <?php
