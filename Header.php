@@ -13,7 +13,7 @@
         if (isset($_SESSION['user_id']) == true) {
           require_once 'dao/DBManager.php';
           $dbmng = new DBManager();
-          $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);s
+          $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
           echo "<a href='kaihatuCART.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-cart'></i>cart:";
           echo "count($searchList)" . "</button></a>";
         } else {
