@@ -264,7 +264,7 @@ class DBManager
     $ps->execute();
 
     $hasItem = $ps->fetchAll();
-    return isset($hasItem);
+    return empty($hasItem);
   }
 
   // ジャンルIDからジャンル名を検索するDAOだお

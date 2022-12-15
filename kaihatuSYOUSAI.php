@@ -42,7 +42,7 @@
       
           <div class='okiniiri'>";
 
-            if(!$dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id'])){
+            if($dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id'])){
               echo "<form action='RemoveFavorite.php' method='post'>
                       <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
                       <input type='submit'  id='cart' class='CARTIRERU  btn btn btn-outline-warning  btn-lg' value='お気に入り'>
