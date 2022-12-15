@@ -229,7 +229,7 @@ class DBManager
   public function AddHstorysById($user_id){
     $pdo = $this->dbConnect();
 
-    $spl = 'INSERT INTO hstorys (user_id,item_count,item_id,date)
+    $sql = 'INSERT INTO hstorys (user_id,item_count,item_id,date)
             VALUES (?,?,?,?)';
     $date = date('Yhis');
     $CartItemListByUserId = $this->GetItemByUserId($user_id);
