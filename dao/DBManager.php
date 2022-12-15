@@ -195,7 +195,7 @@ class DBManager
   }
 
   // user_idを渡すことでカートに登録されている商品のデータを取得することが出来る関数
-  public function GetItemInfoForCartsByUserId($user_id){
+  public function GetItemInfoForFavoritesByUserId($user_id){
     $pdo = $this->dbConnect();
     $sql = "SELECT FV.item_id AS item_id,
             IT.image_path AS image_path,
