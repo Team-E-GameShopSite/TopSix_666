@@ -15,7 +15,7 @@
           $dbmng = new DBManager();
           $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
           echo "<a href='kaihatuCART.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-cart'></i>cart:";
-          echo "count($searchList)" . "</button></a>";
+          echo count($searchList) . "</button></a>";
         } else {
           echo "<a href='kaihatuCART.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-cart'></i>cart";
           echo "</button></a>";
