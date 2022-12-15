@@ -22,6 +22,7 @@
     require_once 'dao/DBManager.php';
     $dbmng = new DBManager();
 
+    echo $_SESSION['user_id'];
     $searchArray = $dbmng->GetItemInfoForFavoritesByUserId($_SESSION['user_id']);
     echo "<div class='container'>";
     echo "<div class='row'>";
