@@ -24,16 +24,20 @@
     $searchArray = $dbmng->getItemTblAll();
     echo "<div class='container'>";
     echo "<div class='row'>";
+    if (!empty($searchArray)) {
     foreach ($searchArray as $row) {
       echo "<div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><img src=" . $row['image_path'] . " class='img' width='65' height='65'></a></div>";
       echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
-      echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>
-            <div class='col-sm-2'>数量</div>
-            <div class='col-sm-2'>日時</div>";
+      echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
+      echo" <div class='col-sm-2'>数量</div>";
+      echo" <div class='col-sm-2'>日時</div>";
       echo "<hr class='hr2'><br>";
     }
+  }else{
+    echo "<div class='TOPNIMODORU'><p class='fs-1'>購入履歴がありません</p></div>";
     echo "</div>";
     echo "</div>";
+  }
     ?>
     <a href="kaihatuTOP.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg" type="button">TOPに戻る→</button></a>
   </div>
