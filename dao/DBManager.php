@@ -200,12 +200,18 @@ class DBManager
 
     $spl = 'DELETE 
             FROM favorites 
-            WHERE user_id = ?';
+            WHERE user_id = ?
+            AND item_id = ?'
 
-    $ps = $pdo->prepare($spl);
-    $ps->bindValue(1,(int)$user_id,PDO::PARAM_INT);
+    $CartItemListByUserId = $this->GetItemByUserId($user_id);
 
-    $ps->execute();
+    foreach($CartItemListByUserId as $row){
+      $ps = $pdo->prepare($sql);
+      $ps->bindValue(1,$user_id,PDO::PARAM_INT);
+      $ps->bindValue(2,$row['item_id'],PDO::PARAM_INT);
+      $ps->execute();
+    }
+
   }
 
   // user_idを渡すことでカートテーブルからitem_idとitem_countを取得する関数
