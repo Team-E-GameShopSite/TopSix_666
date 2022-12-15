@@ -34,3 +34,10 @@ margin-top:150px;
 .btn btn-outline-primary btn-lg{
   margin-left: 3%;
 }
+hr {
+  padding: 20px 0;
+  border: none;
+}
+.hr2 {
+  border-top: 5px solid #000;
+}
