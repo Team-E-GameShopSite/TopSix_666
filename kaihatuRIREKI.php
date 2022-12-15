@@ -21,7 +21,7 @@
     require_once 'dao/DBManager.php';
     $dbmng = new DBManager();
 
-    $searchArray = $dbmng->getItemTblAll();
+    $searchArray = $dbmng->GetItemInfoForHstoryByUserId($_SESSION['user_id']);
     echo "<div class='container'>";
     echo "<div class='row'>";
     if (!empty($searchArray)) {
@@ -29,8 +29,8 @@
       echo "<div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><img src=" . $row['image_path'] . " class='img' width='65' height='65'></a></div>";
       echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
       echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
-      echo" <div class='col-sm-2'>数量</div>";
-      echo" <div class='col-sm-2'>日時</div>";
+      echo" <div class='col-sm-2'>". $row['item_count'] ."</div>";
+      echo" <div class='col-sm-2'>". $row['date'] ."</div>";
       echo "<hr class='hr2'><br>";
     }
   }else{

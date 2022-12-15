@@ -244,6 +244,29 @@ class DBManager
 
   }
 
+  // user_idを渡すことでhstoryに登録されている商品のデータを取得することが出来る関数
+  public function GetItemInfoForHstoryByUserId($user_id){
+    $pdo = $this->dbConnect();
+    $sql = "SELECT HT.item_id AS item_id,
+            HT.item_count AS item_count,
+            HT.date AS date,
+            IT.image_path AS image_path,
+            IT.item_name AS item_name,
+            IT.item_price AS item_price
+            FROM hstorys AS HT INNER JOIN items_tbl AS IT
+            ON HT.item_id = IT.item_id
+            WHERE HT.user_id = ?
+            ORDER BY HT.date";
+    
+    $ps = $pdo->prepare($sql);
+    $ps->bindValue(1,$user_id,PDO::PARAM_INT);
+    $ps->execute();
+
+    $searchItem = $ps->fetchAll();
+    return $searchItem;
+
+  }
+
   // お気に入りボタンを押すことでfavoritesテーブルにitem_id,user_id,favorite_dateを追加する関数
   public function AddFavoritesById($user_id,$item_id){
 
