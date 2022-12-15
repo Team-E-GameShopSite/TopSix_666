@@ -27,11 +27,11 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     echo "<div class='row'>";
   if (!empty($searchList)) {
     foreach ($searchList as $row) {
+      echo "<form action='RemoveCart.php' method='post'>";
       echo "<div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><img src=" . $row['image_path'] . " class='img' width='65' height='65'></a></div>";
       echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
       echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
       echo "<div class='col-sm-3'>✖" . $row['item_count'] ."個</div>";
-      echo "<form action='RemoveCart.php' method='post'>";
       echo "<input type='hidden' name='item_id' value=". $row['item_id'] .">";
       echo "<div class='col-sm-2'><input type='submit' class='btn btn-outline-danger btn-lg' value='キャンセル'></div>";
       echo "</form>";
