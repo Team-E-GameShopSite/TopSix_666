@@ -7,7 +7,12 @@
       <form class="d-flex" action="kaihatuITIRAN.php">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i>Search</button>
-        <code language="html"><a href="kaihatuCART.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-cart"></i>cart</button></a><span class="fs-p-cartItemNumber fs-client-cart-count fs-clientInfo is-ready fs-client-cart-count-0">0</span><span class="fs-p-cartItemNumber fs-client-cart-count fs-clientInfo is-ready fs-client-cart-count-0">0</span></code>
+        <?php
+          require_once 'dao/DBManager.php';
+          $dbmng = new DBManager();
+          $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
+        echo "<a href='kaihatuCART.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-cart'></i>cart" . count($searchList) . "</button></a>";
+        ?>
         <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
         <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
             <?php
