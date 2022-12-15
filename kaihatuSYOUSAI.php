@@ -42,8 +42,6 @@
       
           <div class='okiniiri'>";
 
-            echo $dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id']);
-
             if($dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id'])){
               echo "<form action='RemoveFavorite.php' method='post'>
                       <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
