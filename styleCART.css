@@ -28,3 +28,20 @@ margin-top:150px;
 .kounyuu{
   text-align: center;
 }
+
+.img{
+  float: left;
+  margin-left:5%;
+}
+.col-sm-6{
+  float: left;
+}
+.btn btn-outline-primary btn-lg{
+  margin-left: 3%;
+}
+hr {
+  border: none;
+}
+.hr2 {
+  border-top: 5px solid #000;
+}

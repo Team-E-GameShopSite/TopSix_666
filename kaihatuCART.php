@@ -25,7 +25,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
   if (!empty($searchList)) {
     foreach ($searchList as $row) {
+      echo $row['item_price']. "円";
       echo $row['item_name']."<br><br>";
+      echo "<hr class='hr2'><br>";
     }
   }
   ?>
