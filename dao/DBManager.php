@@ -198,10 +198,10 @@ class DBManager
   public function RemoveCartItemAll($user_id){
     $pdo = $this->dbConnect();
 
-    $spl = 'DELETE 
+    $sql = 'DELETE 
             FROM favorites 
             WHERE user_id = ?
-            AND item_id = ?'
+            AND item_id = ?';
 
     $CartItemListByUserId = $this->GetItemByUserId($user_id);
 
