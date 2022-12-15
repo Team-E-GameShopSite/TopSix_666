@@ -43,7 +43,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
             <input type='hidden' name='sum_price' value=". $sum_price .">
             <input type='submit' class='TOPNIMODORU btn btn-outline-primary  btn-lg' value='購入手続きへ→'>
           </form>";
-  }echo "<div class='TOPNIMODORU'><p class='fs-1'>現在、カートには何も入っていません</p></div>"
+  }echo "<div class='TOPNIMODORU'><p class='fs-1'>現在、カートには何も入っていません</p></div>";
     echo "</div>";
     echo "</div>";
 
