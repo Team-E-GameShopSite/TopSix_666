@@ -29,8 +29,9 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     foreach ($searchList as $row) {
       echo "<div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><img src=" . $row['image_path'] . " class='img' width='65' height='65'></a></div>";
       echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
-      echo $row['item_price']. "円";
       echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
+      echo "<div class='col-sm-2'><button class='btn btn-outline-danger btn-lg'   type='button'>お気に入り解除</button></div>";
+      echo "<hr class='hr2'><br>";
     }
   }
     echo "</div>";
