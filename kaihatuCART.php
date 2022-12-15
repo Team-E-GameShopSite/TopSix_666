@@ -23,13 +23,18 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   $dbmng = new DBManager();
 
   $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
+    echo "<div class='container'>";
+    echo "<div class='row'>";
   if (!empty($searchList)) {
     foreach ($searchList as $row) {
+      echo "<div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><img src=" . $row['image_path'] . " class='img' width='65' height='65'></a></div>";
+      echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
       echo $row['item_price']. "円";
-      echo $row['item_name']."<br><br>";
-      echo "<hr class='hr2'><br>";
+      echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
     }
   }
+    echo "</div>";
+    echo "</div>";
   ?>
   <a href="kaihatuKOUNYU.php"  class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg"   type="button">購入手続きへ→</button></a>
   </div>
