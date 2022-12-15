@@ -45,3 +45,7 @@ hr {
 .hr2 {
   border-top: 5px solid #000;
 }
+
+.col-sm-3{
+  float: left;
+}
