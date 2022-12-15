@@ -68,11 +68,10 @@
     <input type="text" value=<?php echo $_SESSION['user_address'] ?> class="form-control" id="post" autocomplete="off">
   </div>
 
-
-  <div class="yuubinotodoke">
-    <p class="fs-2">お届け先住所</p>
-    <textarea class="form-control" id="jyusyo" rows="3" autocomplete="off" placeholder="(例)東京都○○市△△町○○マンション△△号室"  > </textarea>
-  </div>
+   <div class="yuubinotodoke">
+      <p class="fs-2">お届け先住所</p>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="(例)東京都○○市△△町○○マンション△△号室"></textarea>
+    </div>
 
   <div class="row">
     <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
