@@ -11,7 +11,12 @@
           require_once 'dao/DBManager.php';
           $dbmng = new DBManager();
           $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
-        echo "<a href='kaihatuCART.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-cart'></i>cart:" . count($searchList) . "</button></a>";
+        echo "<a href='kaihatuCART.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-cart'></i>cart:"
+        if (isset($_SESSION['user_id']) == true) {
+          echo ". count($searchList)" . "</button></a>";
+        } else {
+          echo "</button></a>";
+        } 
         ?>
          <?php
     require_once 'dao/DBManager.php';
