@@ -158,7 +158,7 @@ class DBManager
   public function RemoveCartById($user_id,$item_id){
 
     $pdo = $this->dbConnect();
-    $spl = 'DELEAT 
+    $spl = 'DELETE 
             FROM carts 
             WHERE item_id = ?
             AND user_id = ?';
