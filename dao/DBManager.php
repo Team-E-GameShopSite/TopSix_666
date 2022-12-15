@@ -194,6 +194,58 @@ class DBManager
 
   }
 
+  // usae_idを渡すことでカートに保存されている商品のデータを消すことが出来る関数
+  public function RemoveCartItemAll($user_id){
+    $pdo = $this->dbConnect();
+
+    $spl = 'DELETE 
+            FROM favorites 
+            WHERE user_id = ?';
+
+    $ps = $pdo->prepare($spl);
+    $ps->bindValue(1,(int)$user_id,PDO::PARAM_INT);
+
+    $ps->execute();
+  }
+
+  // user_idを渡すことでカートテーブルからitem_idとitem_countを取得する関数
+  public function GetItemByUserId($user_id){
+    $pdo = $this->dbConnect();
+
+    $sql = 'SELECT *
+            FROM carts
+            WHERE user_id = ?';
+
+    $ps->prepare($sql);
+
+    $ps->bindValue(1,$user_id,PDO::PARAM_INT);
+    $ps->execute();
+
+    $serchItem = $ps->fetchAll();
+
+    return $searchItem;
+  }
+
+  public function AddHstorysById($user_id){
+    $pdo = $this->dbConnect();
+
+    $spl = 'INSERT INTO hstorys (user_id,item_count,item_id,date)
+            VALUES (?,?,?,?)';
+    $date = date('Yhis');
+    $CartItemListByUserId = $this->GetItemByUserId($user_id);
+
+    foreach($CartItemListByUserId as $row){
+      $ps = $pdo->prepare($sql);
+      $ps->bindValue(1,$row['user_id'],PDO::PARAM_INT);
+      $ps->bindValue(2,$row['item_count'],PDO::PARAM_INT);
+      $ps->bindValue(3,$row['item_id'],PDO::PARAM_INT);
+      $ps->bindValue(4,$date,PDO::PARAM_STR);
+
+      $ps->execute();
+    }
+
+  }
+
   // お気に入りボタンを押すことでfavoritesテーブルにitem_id,user_id,favorite_dateを追加する関数
   public function AddFavoritesById($user_id,$item_id){
 
