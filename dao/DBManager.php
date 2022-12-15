@@ -208,7 +208,6 @@ class DBManager
     $ps->bindValue(3,$date,PDO::PARAM_STR);
 
     $ps->execute();
-
   }
 
   // お気に入り画面でお気に入り解除ボタンを押すことでお気に入りテーブルにから情報をを削除する関数
@@ -247,6 +246,25 @@ class DBManager
     $searchItem = $ps->fetchAll();
     return $searchItem;
 
+  }
+
+  // user_idとitem_idを渡すことでその商品がお気に入りに登録されているか確認する関数
+  public function HasFavoritesById($user_id,$item_id){
+
+    $pdo = $this->dbConnect();
+    $spl = 'SELECT *
+            FROM favorites
+            WHERE item_id = ?
+            AND user_id = ?';
+
+    $ps = $pdo->prepare($spl);
+    $ps->bindValue(1,(int)$item_id,PDO::PARAM_INT);
+    $ps->bindValue(2,(int)$user_id,PDO::PARAM_INT);
+
+    $ps->execute();
+
+    $hasItem = $ps->fetchAll();
+    return isset($hasItem);
   }
 
   // ジャンルIDからジャンル名を検索するDAOだお

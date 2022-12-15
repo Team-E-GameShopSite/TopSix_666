@@ -41,13 +41,21 @@
             <a href='kaihatuTOP.php#contactt'  class='TOPNIMODORU'><button class='btn btn-outline-primary btn-lg'   type='button'>お問い合わせ</button></a>
           </div>
       
-          <div class='okiniiri'>
-          <form action='AddFavorite.php' method='post'>
-            <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
-            <input type='submit' class='btn btn-outline-primary btn-lg ' value='お気に入り'>
-            <input type='submit'  id='cart' class='CARTIRERU  btn btn btn-outline-warning  btn-lg' value='お気に入り'>
-          </form>
-          </div>
+          <div class='okiniiri'>";
+            echo $dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id']));
+
+            if($dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id'])){
+              echo "<form action='RemoveFavorite.php' method='post'>
+                      <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
+                      <input type='submit'  id='cart' class='CARTIRERU  btn btn btn-outline-warning  btn-lg' value='お気に入り'>
+                    </form>";
+            }else{
+              echo "<form action='AddFavorite.php' method='post'>
+                      <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
+                      <input type='submit' class='btn btn-outline-primary btn-lg ' value='お気に入り'>
+                    </form>";
+            }
+          echo "</div>
           </div>
       </div> 
       
