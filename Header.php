@@ -11,7 +11,7 @@
           require_once 'dao/DBManager.php';
           $dbmng = new DBManager();
           $searchList = $dbmng->GetItemInfoForCartsByUserId($_SESSION['user_id']);
-        echo "<a href='kaihatuCART.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-cart'></i>cart</button></a><span class='fs-p-cartItemNumber fs-client-cart-count fs-clientInfo is-ready fs-client-cart-count-0'>" . count($searchList) . "</span>";
+        echo "<a href='kaihatuCART.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-cart'></i>cart" . count($searchList) . "</button></a>";
         ?>
         <a href="kaihatuOKINIIRI.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-star"></i>favorite</button></a>
         <a href="kaihatuLOGIN.php"><button class="btn btn-outline-primary me-2" type="button"><i class="bi bi-person-circle"></i>
