@@ -71,7 +71,7 @@
 
   <div class="yuubinotodoke">
     <p class="fs-2">お届け先住所</p>
-    <textarea class="form-control" placeholder="(例)東京都○○市△△町○○マンション△△号室"         id="jyusyo" rows="3" autocomplete="off"> </textarea>
+    <textarea class="form-control" id="jyusyo" rows="3" autocomplete="off" placeholder="(例)東京都○○市△△町○○マンション△△号室"  > </textarea>
   </div>
 
   <div class="row">
