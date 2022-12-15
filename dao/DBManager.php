@@ -211,7 +211,24 @@ class DBManager
 
   }
 
-  // user_idを渡すことでカートに登録されている商品のデータを取得することが出来る関数
+  // お気に入り画面でお気に入り解除ボタンを押すことでお気に入りテーブルにから情報をを削除する関数
+  public function RemoveFavoritesById($user_id,$item_id){
+
+    $pdo = $this->dbConnect();
+    $spl = 'DELETE 
+            FROM favorites 
+            WHERE item_id = ?
+            AND user_id = ?';
+
+    $ps = $pdo->prepare($spl);
+    $ps->bindValue(1,(int)$item_id,PDO::PARAM_INT);
+    $ps->bindValue(2,(int)$user_id,PDO::PARAM_INT);
+
+    $ps->execute();
+
+  }
+
+  // user_idを渡すことでお気に入りに登録されている商品のデータを取得することが出来る関数
   public function GetItemInfoForFavoritesByUserId($user_id){
     $pdo = $this->dbConnect();
     $sql = "SELECT FV.item_id AS item_id,
