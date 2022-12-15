@@ -42,7 +42,7 @@
           </div>
       
           <div class='okiniiri'>
-          <form action='kaihatuOKINIIRI.php' action='post'>
+          <form action=''AddFavorite.php' action='post'>
             <input type='submit'   class='btn btn-outline-primary btn-lg ' value='お気に入り'>
           </form>
           </div>
@@ -55,7 +55,7 @@
        <h1 class='price'><s class='delete'>" . $row['item_price'] . "円</s>
        <font color='red'>" . $row['sale_price'] . "円</font>
        </h1>
-         <form action='kaihatuCART.php' method='post'>
+         <form action='AddCart.php' method='post'>
          <select name='suuryo'>
           <option value='1'>1</option>
           <option value='2'>2</option>
