@@ -26,10 +26,13 @@
     echo "<div class='container'>";
     echo "<div class='row'>";
     foreach ($searchArray as $row) {
+      echo "<form action='RemoveCart.php' method='post'>";
       echo "<div class='col-sm-2'> <img src=" . $row['image_path'] . " class='img' width='65' height='65'></div>";
       echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
-      echo "<div class='col-sm-2'>" . $row['item_price']. "円</div><div class='col-sm-2'><button class='btn btn-outline-danger btn-lg'   type='button'>お気に入り解除</button></div>
-            <div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><button class='btn btn-outline-primary btn-lg'   type='button'>詳細に行く</button></a></div>";
+      echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
+      echo "<div class='col-sm-2'><input type='submit' class='btn btn-outline-danger btn-lg' value='お気に入り解除'></div>";
+      echo" <div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><button class='btn btn-outline-primary btn-lg'   type='button'>詳細に行く</button></a></div>";
+      echo "</form>";
       echo "<hr class='hr2'><br>";
     }
     echo "</div>";
