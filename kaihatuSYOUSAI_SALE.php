@@ -42,7 +42,8 @@
           </div>
       
           <div class='okiniiri'>
-          <form action=''AddFavorite.php' action='post'>
+          <form action='AddFavorite.php' method='post'>
+            <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
             <input type='submit'   class='btn btn-outline-primary btn-lg ' value='お気に入り'>
           </form>
           </div>
@@ -56,6 +57,7 @@
        <font color='red'>" . $row['sale_price'] . "円</font>
        </h1>
          <form action='AddCart.php' method='post'>
+         <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
          <select name='suuryo'>
           <option value='1'>1</option>
           <option value='2'>2</option>
