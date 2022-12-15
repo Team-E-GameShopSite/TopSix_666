@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content=Type">
@@ -34,7 +34,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       echo "<form action='RemoveCart.php' method='post'>";
       echo "<input type='hidden' name='item_id' value=". $row['item_id'] .">";
       echo "<div class='col-sm-2'><input type='submit' class='btn btn-outline-danger btn-lg' value='キャンセル'></div>";
-      echo "<form>";
+      echo "</form>";
       echo "<hr class='hr2'><br>";
     }
   }
