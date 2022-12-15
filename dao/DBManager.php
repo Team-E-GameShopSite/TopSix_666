@@ -204,7 +204,7 @@ class DBManager
             FROM favorites AS FV INNER JOIN items_tbl AS IT
             ON FV.item_id = IT.item_id
             WHERE FV.user_id = ?
-            ORDER BY FV.cart_date";
+            ORDER BY FV.favorite_date";
     
     $ps = $pdo->prepare($sql);
     $ps->bindValue(1,$user_id,PDO::PARAM_INT);
