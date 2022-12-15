@@ -31,7 +31,10 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
       echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
       echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
       echo "<div class='col-sm-3'>✖" . $row['item_count'] ."個</div>";
-      echo "<div class='col-sm-2'><button class='btn btn-outline-danger btn-lg'   type='button'>キャンセル</button></div>";
+      echo "<form action='RemoveCart.php' method='post'>";
+      echo "<input type='hidden' name='item_id' value=". $row['item_id'] .">";
+      echo "<div class='col-sm-2'><input type='submit' class='btn btn-outline-danger btn-lg' value='キャンセル'></div>";
+      echo "<form>";
       echo "<hr class='hr2'><br>";
     }
   }

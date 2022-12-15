@@ -153,6 +153,23 @@ class DBManager
     $ps->execute();
 
   }
+  
+  // カート画面でキャンセルを押すことでカートテーブルにから情報をを削除する関数
+  public function RemoveCartById($user_id,$item_id){
+
+    $pdo = $this->dbConnect();
+    $spl = 'DELEAT 
+            FROM carts 
+            WHERE item_id = ?
+            AND user_id = ?';
+
+    $ps = $pdo->prepare($spl);
+    $ps->bindValue(1,(int)$item_id,PDO::PARAM_INT);
+    $ps->bindValue(2,(int)$user_id,PDO::PARAM_INT);
+
+    $ps->execute();
+
+  }
 
   // user_idを渡すことでカートに登録されている商品のデータを取得することが出来る関数
   public function GetItemInfoForCartsByUserId($user_id){
