@@ -71,7 +71,7 @@
 
   <div class="yuubinotodoke">
     <p class="fs-2">お届け先住所</p>
-    <textarea class="form-control" value=<?php echo $_SESSION['user_post'] ?> id="jyusyo" rows="3" autocomplete="off"> </textarea>
+    <textarea class="form-control" placeholder="(例)東京都○○市△△町○○マンション△△号室"         id="jyusyo" rows="3" autocomplete="off"> </textarea>
   </div>
 
   <div class="row">
