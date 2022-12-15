@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="form">
-      <input type="text" value="おれおれ"<?php// echo $_SESSION['user_name']; ?> class="form-control" id="customer" autocomplete="off">
+      <input type="text" value=<?php echo $_SESSION['user_name']; ?> class="form-control" id="customer" autocomplete="off">
       </div>
     </div>
     <div class="col-sm-6">
