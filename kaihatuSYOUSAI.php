@@ -36,13 +36,13 @@
             <img src=" . $row['image_path'] .  " class='d-block' alt='...'  weight='100' height='400'>
           </div>
       
-      
           <div class='otoiawase'>
             <a href='kaihatuTOP.php#contactt'  class='TOPNIMODORU'><button class='btn btn-outline-primary btn-lg'   type='button'>お問い合わせ</button></a>
           </div>
       
           <div class='okiniiri'>";
-            echo $dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id']));
+
+            echo $dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id']);
 
             if($dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id'])){
               echo "<form action='RemoveFavorite.php' method='post'>
