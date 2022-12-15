@@ -42,7 +42,7 @@
           </div>
       
           <div class='okiniiri'>
-          <form action=''AddFavorite.php' action='post'>
+          <form action='AddFavorite.php' method='post'>
             <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
             <input type='submit'   class='btn btn-outline-primary btn-lg ' value='お気に入り'>
           </form>
