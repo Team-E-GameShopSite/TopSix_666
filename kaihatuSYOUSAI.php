@@ -55,7 +55,7 @@
                     </form>";
             }
           }else{
-            echo "<form action='AddFavorite.php' method='post'>
+            echo "<form action='' method='post'>
                       <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
                       <input type='submit' class='btn btn-outline-primary btn-lg ' value='お気に入り'>
                     </form>";
