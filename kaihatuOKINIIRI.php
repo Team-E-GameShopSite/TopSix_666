@@ -43,6 +43,8 @@
     echo "</div>";
     echo "</div>";
   }
+}else{
+  echo "<div class='TOPNIMODORU'><p class='fs-2'>ログインしてご利用ください</p></div>";
 }
     ?>
     <a href="kaihatuTOP.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg" type="button">TOPに戻る→</button></a>
