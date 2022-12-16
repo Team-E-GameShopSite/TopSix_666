@@ -19,6 +19,7 @@
   <p class="fs-1">お気に入り<i class="bi bi-star"></i></p>
   <div class="TOPNIMODORU">
     <?php
+    if (isset($_SESSION['user_id']) == true) {
     require_once 'dao/DBManager.php';
     $dbmng = new DBManager();
 
@@ -32,7 +33,7 @@
       echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
       echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
       echo "<input type='hidden' name='item_id' value=". $row['item_id'] .">";
-      echo "<div class='col-sm-2'><input type='submit' class='btn btn-outline-danger btn-lg' value='お気に入り解除'></div>";
+      echo "<div class='col-sm-2'><input type='submit' class='btn btn btn-outline-warning  btn-lg' value='お気に入り解除'></div>";
       echo" <div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><button class='btn btn-outline-primary btn-lg'   type='button'>詳細に行く</button></a></div>";
       echo "</form>";
       echo "<hr class='hr2'><br>";
@@ -42,6 +43,9 @@
     echo "</div>";
     echo "</div>";
   }
+}else{
+  echo "<div class='TOPNIMODORU'><p class='fs-2'>ログインしてご利用ください</p></div>";
+}
     ?>
     <a href="kaihatuTOP.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg" type="button">TOPに戻る→</button></a>
   </div>

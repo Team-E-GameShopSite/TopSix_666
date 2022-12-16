@@ -38,7 +38,7 @@
     ?>
 
 
-    <h5>今月の人気商品</h5>
+    <h5>人気商品</h5>
     <div class="col-sm-9">
       <a href="kaihatuSYOUSAI.php?item_id=4">
         <div class="card  text-white">

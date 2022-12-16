@@ -37,7 +37,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-floating">
-                <input type="text" class="form-control" id="usermail" name="mail" placeholder="abc@abc.com" autocomplete="off">
+                <input type="text" class="form-control" id="usermail" name="mail"  autocomplete="off">
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
           <div class="row">
             <div class="col-md-12 mt-2">
               <div class="form-floating">
-                <input type="password" class="form-control" id="pass" name="pass" placeholder="abc@abc.com" autocomplete="off">
+                <input type="password" class="form-control" id="pass" name="pass"  autocomplete="off">
               </div>
             </div>
           </div>

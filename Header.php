@@ -27,7 +27,7 @@
           echo "<a href='kaihatuOKINIIRI.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-star'></i>favorite:";
           echo count($searchArray) . "</button></a>";
          }else{
-          echo "<a href='kaihatuOKINIIRI.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-star'></i>favorite:";
+          echo "<a href='kaihatuOKINIIRI.php'><button class='btn btn-outline-primary me-2' type='button'><i class='bi bi-star'></i>favorite";
           echo "</button></a>";
          }
         ?>
