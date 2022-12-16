@@ -24,7 +24,6 @@
       <div class='col-sm-6'>
 
         <?php
-         if (isset($_SESSION['user_id']) == true) {
         require_once 'dao/DBManager.php';
         $dbmng = new DBManager();
 
@@ -54,7 +53,6 @@
                       <input type='submit'  id='cart' class='CARTIRERU  btn btn btn-outline-warning  btn-lg' value='お気に入り'>
                     </form>";
             }
-          }
           echo "</div>
           </div>
       </div> 
