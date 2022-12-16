@@ -18,6 +18,7 @@
   <p class="fs-1">購入履歴<i class="bi bi-book"></i></p>
   <div class="kounyuu">
     <?php
+    if (isset($_SESSION['user_id']) == true) {
     require_once 'dao/DBManager.php';
     $dbmng = new DBManager();
 
@@ -38,6 +39,7 @@
     echo "</div>";
     echo "</div>";
   }
+}
     ?>
     <a href="kaihatuTOP.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg" type="button">TOPに戻る→</button></a>
   </div>
