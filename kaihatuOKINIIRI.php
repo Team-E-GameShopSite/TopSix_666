@@ -19,6 +19,7 @@
   <p class="fs-1">お気に入り<i class="bi bi-star"></i></p>
   <div class="TOPNIMODORU">
     <?php
+    if (isset($_SESSION['user_id']) == true) {
     require_once 'dao/DBManager.php';
     $dbmng = new DBManager();
 
@@ -42,6 +43,7 @@
     echo "</div>";
     echo "</div>";
   }
+}
     ?>
     <a href="kaihatuTOP.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  btn-lg" type="button">TOPに戻る→</button></a>
   </div>
