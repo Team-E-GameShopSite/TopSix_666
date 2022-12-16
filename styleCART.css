@@ -16,6 +16,7 @@ position: fixed;
 .fs-1{
 text-align:center;
 }
+
 .fs-2{
   text-align:center;
   color: #ff0000;
@@ -37,21 +38,27 @@ margin-top:150px;
   float: left;
   margin-left:5%;
 }
+
 .col-sm-6{
   float: left;
 }
+
 .btn btn-outline-primary btn-lg{
   margin-left: 3%;
 }
+
 .col-sm-3{
   float: left;
 }
+
 .col-sm-2{
   float: left;
 }
+
 hr {
   border: none;
 }
+
 .hr2 {
   border-top: 5px solid #000;
 }
