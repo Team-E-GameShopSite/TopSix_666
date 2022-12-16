@@ -70,7 +70,7 @@
 
    <div class="yuubinotodoke">
       <p class="fs-2">お届け先住所</p>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="(例)東京都○○市△△町○○マンション△△号室"></textarea>
+      <textarea class="form-control" id="jyusyo" rows="3"  placeholder="(例)東京都○○市△△町○○マンション△△号室"></textarea>
     </div>
 
   <div class="row">
