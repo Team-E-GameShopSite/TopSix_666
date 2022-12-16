@@ -31,7 +31,10 @@
     <?php
     require 'Header.php';
     ?>
-<?php echo $_SESSION['user_name']."さんのマイページ"; ?>
+<?php
+if (isset($_SESSION['user_id']) == true) {
+     echo $_SESSION['user_name']."さんのマイページ"; 
+}?>
     <div class="cart">
         <a href="kaihatuCART.php" style='text-decoration: none;color:black'>
             <p class="fs-1">CART</p>
