@@ -49,6 +49,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     echo "</div>";
     echo "</div>";
   }
+}else{
+  echo "<div class='TOPNIMODORU'><p class='fs-2'>ログインしてご利用ください</p></div>";
 }
   ?>
   </div>
