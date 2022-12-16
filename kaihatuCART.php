@@ -19,7 +19,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <p class="fs-1">ショッピングカート<i class="bi bi-cart"></i></p>
   <div class="TOPNIMODORU">
   <?php
-  require_once 'dao/DBManager.php';
+   if (isset($_SESSION['user_id']) == true) {
+    require_once 'dao/DBManager.php';
   $dbmng = new DBManager();
 
   $sum_price = 0;
@@ -48,6 +49,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     echo "</div>";
     echo "</div>";
   }
+}
   ?>
   </div>
   
