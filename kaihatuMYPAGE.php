@@ -32,8 +32,8 @@
     require 'Header.php';
     ?>
 <?php
-if (isset($_SESSION['user_id']) == true) {
-     echo $_SESSION['user_name']."さんのマイページ"; 
+if (isset($_SESSION['user_name']) == true) {
+     echo "<h1 class='name'>" . $_SESSION['user_name'] . "さんのマイページ"; 
 }?>
     <div class="cart">
         <a href="kaihatuCART.php" style='text-decoration: none;color:black'>

@@ -15,7 +15,9 @@ body {
  }
 
 
- 
+ .name{
+  text-align: center;
+ }
 
  .cart{
  margin-top:10%;
