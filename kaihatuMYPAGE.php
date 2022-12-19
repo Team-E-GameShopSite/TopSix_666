@@ -35,30 +35,49 @@
 if (isset($_SESSION['user_name']) == true) {
      echo "<h1 class='name'>" . $_SESSION['user_name'] . "さんのマイページ"; 
 }?>
-    <div class="cart">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+        <div class="cart">
         <a href="kaihatuCART.php" style='text-decoration: none;color:black'>
             <p class="fs-1">CART</p>
             <i class="bi bi-cart"></i>
         </a>
-    </div>
-    <div class="favorite">
-        <a href="kaihatuOKINIIRI.php" style='text-decoration: none;color:black'>
+        </div>
+      </div>
+        <div class="col-sm-3">
+         <div class="favorite">
+          <a href="kaihatuOKINIIRI.php" style='text-decoration: none;color:black'>
             <p class="fs-1">FAVORITE</p>
             <i class="bi bi-star"></i>
-        </a>
-    </div>
-    <div class="history">
-        <a href="kaihatuRIREKI.php" style='text-decoration: none;color:black'>
+          </a>
+         </div>
+        </div>
+        <div class="col-sm-3">
+         <div class="history">
+          <a href="kaihatuRIREKI.php" style='text-decoration: none;color:black'>
             <p class="fs-1">HISTORY</p>
             <i class="bi bi-book"></i>
-        </a>
-    </div>
-    <div class="logout">
-        <a href="logout.php" style='text-decoration: none;color:black'>
+          </a>
+         </div>
+        </div>
+        <div class="col-sm-3">
+         <div class="logout">
+          <a href="logout.php" style='text-decoration: none;color:black'>
             <p class="fs-1">LOG OUT</p>
             <i class="bi bi-box-arrow-right"></i>
-        </a>
+          </a>
+         </div>
+        </div>
+      </div>
     </div>
+    
+
+    
+
+    
+
+    
     <div class="button">
         <a href="kaihatuTOP.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg" type="button">トップへ</button></a>
         <a href="kaihatuTOP.php#contactt" class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg" type="button">お問い合わせ</button></a>

@@ -22,20 +22,17 @@ body {
  .cart{
  margin-top:10%;
  margin-left: 15%;
- float: left;
  }
 
  .favorite{
     margin-top:10%;
     margin-left:10%;
     margin-right:10% ;
-    float: left;
 }
 
 .history{
     margin-top:10%;
     margin-right: 7%;
-    float: left;
 }
 
 .logout{
