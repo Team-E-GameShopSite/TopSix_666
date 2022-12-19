@@ -71,12 +71,11 @@
    <div class="yuubinotodoke">
       <p class="fs-2">お届け先住所</p>
       <textarea class="form-control" id="jyusyo" rows="3"  placeholder="(例)東京都○○市△△町○○マンション△△号室"></textarea>
+       <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
+       </div>
     </div>
 
-  <div class="row">
-    <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
-    </div>
-  </div>
+  
 
   <div class="cart">
     <a href="kaihatuCART.php" class="TOPNIMODORU"><button class="btn btn-outline-primary  me-2 btn-lg" type="button">カートに戻る</button></a>
