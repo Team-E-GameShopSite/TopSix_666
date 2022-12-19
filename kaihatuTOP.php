@@ -44,7 +44,7 @@
 
   <div class="row mb-3 gr-3">
     <div class="col-sm-6">
-      <div class="card">
+      <div class="card bg-dark text-white">
         <a href="kaihatuITIRAN.php?genre_id=1"><img src="img/soft/pokemon/mainvisual_02_RGB._TTW_.png" class="card-img" alt="..." height="353%">
           <div class="card-img-overlay">
             <h5 class="card-title">ゲームソフト</h5>
