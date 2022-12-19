@@ -77,7 +77,7 @@
     <?php
     require_once 'dao/DBManager.php';
     $dbmng = new DBManager();
-
+ if(isset($_GET['genre_id'])){
     $genre = $dbmng->GetGenretoGenreID($_GET['genre_id']);
 
     if (!empty($genre)) {
@@ -85,6 +85,9 @@
         echo $row['genre'];
       }
     }
+  }else{
+    echo 'ぜんぶ';
+  }
     ?>
   </h1>
 
