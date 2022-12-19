@@ -47,14 +47,12 @@
               <div class="form-floating">
                 <input type="password" class="form-control" id="pass" name="pass"  autocomplete="off">
               </div>
-            </div>
-          </div>
-
-          <div class="row">
             <div class="col-md-12 mt-1 mb-1 alert-danger text-center" id="errorMsg">
             </div>
+            </div>
           </div>
 
+          
 
 
           <div class="row">
