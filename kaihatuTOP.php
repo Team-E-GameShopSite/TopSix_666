@@ -53,6 +53,8 @@
         </a>
       </div>
     </div>
+
+    
     <div class="col-sm-6">
       <div class="card bg-dark text-white">
         <a href="kaihatuITIRAN.php?genre_id=3" style="color:white"><img src="img/otherproduct/gamingdevice1.jpg" class="card-img" alt="..." height="353%">
