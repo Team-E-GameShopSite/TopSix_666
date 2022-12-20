@@ -76,7 +76,7 @@
            echo "</h1>";
          }
 
-         "<form action='AddCart.php' method='post'>
+         echo "<form action='AddCart.php' method='post'>
          <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
          <select name='suuryo'>
           <option value='1'>1</option>
