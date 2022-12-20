@@ -91,10 +91,8 @@
           <option value='10'>10</option>
          </select>";
          if (isset($_SESSION['user_id']) == true) { 
-         if($dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id'])){
           echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
           </form>";
-         }
         }else{
           echo "</form>";
           echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>";
