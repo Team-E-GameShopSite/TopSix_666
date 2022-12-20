@@ -31,7 +31,11 @@
       echo "<form action='RemoveFavorite.php' method='post'>";
       echo "<div class='col-sm-2'> <img src=" . $row['image_path'] . " class='img' width='65' height='65'></div>";
       echo "<div class='col-sm-3'>" . $row['item_name'] ."</div>";
-      echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
+      if($row['sale_flag']==1){
+        echo "<div class='col-sm-2'>" . $row['sale_price']. "円</div>";
+      }else{
+        echo "<div class='col-sm-2'>" . $row['item_price']. "円</div>";
+      }
       echo "<input type='hidden' name='item_id' value=". $row['item_id'] .">";
       echo "<div class='col-sm-2'><input type='submit' class='btn btn btn-outline-warning  btn-lg' value='お気に入り解除'></div>";
       echo" <div class='col-sm-2'> <a href='kaihatuSYOUSAI.php?item_id=" . $row['item_id'] . "' style='text-decoration: none;color:black'><button class='btn btn-outline-primary btn-lg'   type='button'>詳細に行く</button></a></div>";

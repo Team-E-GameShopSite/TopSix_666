@@ -307,11 +307,13 @@ class DBManager
     $sql = "SELECT FV.item_id AS item_id,
             IT.image_path AS image_path,
             IT.item_name AS item_name,
-            IT.item_price AS item_price
+            IT.item_price AS item_price,
+            IT.sale_flag AS sale_flag,
+            IT.sale_price AS sale_price
             FROM favorites AS FV INNER JOIN items_tbl AS IT
             ON FV.item_id = IT.item_id
             WHERE FV.user_id = ?
-            ORDER BY FV.favorite_date";
+            ORDER BY FV.favorite_date DESC";
     
     $ps = $pdo->prepare($sql);
     $ps->bindValue(1,$user_id,PDO::PARAM_INT);
