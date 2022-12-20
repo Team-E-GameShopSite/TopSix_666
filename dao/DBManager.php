@@ -178,12 +178,13 @@ class DBManager
             CT.item_count AS item_count,
             IT.image_path AS image_path,
             IT.item_name AS item_name,
-            IT.item_id AS item_id,
-            IT.item_price AS item_price
+            IT.item_price AS item_price,
+            IT.sale_flag AS sale_flag,
+            IT.sale_price AS sale_price
             FROM carts AS CT INNER JOIN items_tbl AS IT
             ON CT.item_id = IT.item_id
             WHERE CT.user_id = ?
-            ORDER BY CT.cart_date";
+            ORDER BY CT.cart_date DESC";
     
     $ps = $pdo->prepare($sql);
     $ps->bindValue(1,$user_id,PDO::PARAM_INT);
