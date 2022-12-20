@@ -69,10 +69,15 @@
           <option value='8'>8</option>
           <option value='9'>9</option>
           <option value=''>10</option>
-         </select>
-       <input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
-      </form>
-        <div class='setumei'> 
+         </select>";
+         if (isset($_SESSION['user_id']) == true) { 
+          echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
+          </form>";
+        }else{
+          echo "<input type='button'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
+          </form>";
+        }
+         echo "<div class='setumei'> 
               <p>" . $row['item_info'] . "														
               </p>
         </div>";
