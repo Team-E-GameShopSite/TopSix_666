@@ -95,13 +95,14 @@
           echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
           </form>";
          }
+        }else{
+          echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>";
         }
-        echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
-        <div class='setumei'> 
+         echo "<div class='setumei'> 
               <p>" . $row['item_info'] . "														
               </p>
         </div>";
-          }
+      }
         } else {
           echo $_GET['item_id'];
         }
