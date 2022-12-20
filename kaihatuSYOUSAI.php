@@ -66,9 +66,19 @@
       
       <div class='col-sm-6'>
        <div class='syohin'>
-         <h1 class='title'>" . $row['item_name'] . "</h1>
-         <h1 class='price'>" . $row['item_price'] . "円</h1>
-         <form action='AddCart.php' method='post'>
+         <h1 class='title'>" . $row['item_name'] . "</h1>"
+
+
+         if($row['sale_flag']==0){
+           echo "<h1 class='price'>" . $row['item_price'] . "円</h1>";
+         }else{
+           echo "<h1 class='price'><s class='delete'>" . $row['item_price'] . "円";
+           echo "<font color='red'>" . $row['sale_price'] . "円</font>";
+           echo "</h1>";
+         }
+
+
+         "<form action='AddCart.php' method='post'>
          <input type='hidden' name='item_id' value=". $_GET['item_id'] ." >
          <select name='suuryo'>
           <option value='1'>1</option>

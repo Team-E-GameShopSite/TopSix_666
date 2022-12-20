@@ -28,6 +28,13 @@ margin-right: 5%;
 margin-top: 5%;
 }
 
+.delete{
+  margin-right: 5%;
+  text-decoration-line: line-through;
+  text-decoration-style:double;
+  text-decoration-color: red;
+}
+
 .col-sm-4{
 margin-bottom: 5%;
 }
