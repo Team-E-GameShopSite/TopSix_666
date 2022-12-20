@@ -71,7 +71,7 @@
          if($row['sale_flag']==0){
            echo "<h1 class='price'>" . $row['item_price'] . "円</h1>";
          }else{
-           echo "<h1 class='price'><s class='delete'>" . $row['item_price'] . "円";
+           echo "<h1 class='price'><s class='delete'>" . $row['item_price'] . "円</s>";
            echo "<font color='red'>" . $row['sale_price'] . "円</font>";
            echo "</h1>";
          }
