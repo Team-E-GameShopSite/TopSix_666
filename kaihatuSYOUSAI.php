@@ -81,9 +81,14 @@
           <option value='8'>8</option>
           <option value='9'>9</option>
           <option value='10'>10</option>
-         </select>
-       <input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
-      </form>
+         </select>";
+         if (isset($_SESSION['user_id']) == true) { 
+         if($dbmng->HasFavoritesById($_SESSION['user_id'],$_GET['item_id'])){
+          echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
+          </form>";
+         }
+        }
+        echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
         <div class='setumei'> 
               <p>" . $row['item_info'] . "														
               </p>
