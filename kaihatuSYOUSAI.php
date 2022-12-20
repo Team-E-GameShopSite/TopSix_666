@@ -94,8 +94,8 @@
           echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
           </form>";
         }else{
-          echo "</form>";
-          echo "<input type='submit'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>";
+          echo "<input type='button'  id='cart' class='CARTIRERU  btn btn-outline-primary btn-lg' value='カートに入れる'>
+          </form>";
         }
          echo "<div class='setumei'> 
               <p>" . $row['item_info'] . "														
